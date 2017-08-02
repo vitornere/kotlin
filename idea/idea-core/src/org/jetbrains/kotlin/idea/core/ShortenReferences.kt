@@ -25,7 +25,6 @@ import com.intellij.psi.util.PsiTreeUtil
 import org.jetbrains.kotlin.descriptors.*
 import org.jetbrains.kotlin.idea.analysis.analyzeAsReplacement
 import org.jetbrains.kotlin.idea.caches.resolve.getResolutionFacade
-import org.jetbrains.kotlin.idea.core.ShortenReferences.Options
 import org.jetbrains.kotlin.idea.imports.canBeReferencedViaImport
 import org.jetbrains.kotlin.idea.imports.getImportableTargets
 import org.jetbrains.kotlin.idea.util.ImportDescriptorResult
@@ -436,8 +435,7 @@ class ShortenReferences(val options: (KtElement) -> Options = { Options.DEFAULT 
         }
 
         override fun analyzeQualifiedElement(element: KtDotQualifiedExpression, bindingContext: BindingContext): AnalyzeQualifiedElementResult {
-            val receiver = element.receiverExpression
-            if (receiver !is KtThisExpression && bindingContext[BindingContext.QUALIFIER, receiver] == null) return AnalyzeQualifiedElementResult.Skip
+            if (!canBePossibleToDropReceiver(element, bindingContext)) return AnalyzeQualifiedElementResult.Skip
 
             if (PsiTreeUtil.getParentOfType(
                     element,
@@ -490,6 +488,7 @@ class ShortenReferences(val options: (KtElement) -> Options = { Options.DEFAULT 
             }
 
 
+            val receiver = element.receiverExpression
             if (receiver is KtThisExpression) {
                 if (!targetsMatch) return AnalyzeQualifiedElementResult.Skip
                 val originalCall = selector.getResolvedCall(bindingContext) ?: return AnalyzeQualifiedElementResult.Skip
@@ -514,6 +513,17 @@ class ShortenReferences(val options: (KtElement) -> Options = { Options.DEFAULT 
 
                 else -> AnalyzeQualifiedElementResult.ImportDescriptors(targets)
             }
+        }
+
+        private fun canBePossibleToDropReceiver(element: KtDotQualifiedExpression, bindingContext: BindingContext): Boolean {
+            val receiver = element.receiverExpression
+            if (receiver is KtThisExpression) return true
+            val qualifier = bindingContext[BindingContext.QUALIFIER, receiver] ?: return false
+            val classDescriptor = qualifier.descriptor as? ClassDescriptor ?: return true
+            if (classDescriptor.kind != ClassKind.OBJECT) return true
+            // for object receiver we should additionally check that it's dispatch receiver (that is the member is inside the object)
+            val resolvedCall = element.getResolvedCall(bindingContext) ?: return false
+            return resolvedCall.explicitReceiverKind == ExplicitReceiverKind.DISPATCH_RECEIVER
         }
 
         private fun copyShortenAndAnalyze(element: KtDotQualifiedExpression, bindingContext: BindingContext): Pair<BindingContext, KtExpression> {
