@@ -1,4 +1,4 @@
-// HIGHLIGHT: INFORMATION
+// PROBLEM: none
 
 fun abs(x: Int): Int {
     // No highlighting here

@@ -1,4 +1,4 @@
-// PROBLEM: none
+// IS_APPLICABLE: false
 
 enum class AccessMode { READ, WRITE, RW }
 fun whenExpr(mode: Boolean, access: AccessMode) {

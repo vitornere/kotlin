@@ -1,4 +1,4 @@
-// PROBLEM: none
+// IS_APPLICABLE: false
 
 fun bar() {}
 

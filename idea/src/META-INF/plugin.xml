@@ -891,6 +891,11 @@
     </intentionAction>
 
     <intentionAction>
+      <className>org.jetbrains.kotlin.idea.intentions.ConvertToExpressionBodyIntention</className>
+      <category>Kotlin</category>
+    </intentionAction>
+
+    <intentionAction>
       <className>org.jetbrains.kotlin.idea.intentions.ConvertToBlockBodyIntention</className>
       <category>Kotlin</category>
     </intentionAction>
@@ -2413,7 +2418,7 @@
                      language="kotlin"
     />
 
-    <localInspection implementationClass="org.jetbrains.kotlin.idea.inspections.UseExpressionBodyInspection"
+    <localInspection implementationClass="org.jetbrains.kotlin.idea.intentions.UseExpressionBodyInspection"
                      displayName="Expression body syntax is preferable here"
                      groupPath="Kotlin"
                      groupName="Style issues"

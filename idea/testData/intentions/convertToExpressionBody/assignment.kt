@@ -1,4 +1,4 @@
-// PROBLEM: none
+// IS_APPLICABLE: false
 
 var a = 1
 var b = 2

@@ -27,7 +27,7 @@ import org.jetbrains.kotlin.idea.core.replaced
 import org.jetbrains.kotlin.idea.core.setVisibility
 import org.jetbrains.kotlin.idea.inspections.RedundantSamConstructorInspection
 import org.jetbrains.kotlin.idea.inspections.UnnecessaryVariableInspection
-import org.jetbrains.kotlin.idea.inspections.UseExpressionBodyInspection
+import org.jetbrains.kotlin.idea.intentions.UseExpressionBodyInspection
 import org.jetbrains.kotlin.idea.inspections.findExistingEditor
 import org.jetbrains.kotlin.idea.intentions.*
 import org.jetbrains.kotlin.idea.intentions.branchedTransformations.intentions.FoldIfToReturnAsymmetricallyIntention
