@@ -36,4 +36,6 @@ class SimpleKotlinRenderLogTest : AbstractKotlinRenderLogTest() {
     @Test fun testInnerClasses() = doTest("InnerClasses")
 
     @Test fun testSimpleScript() = doTest("SimpleScript")
+
+    @Test fun testDestructuringDeclaration() = doTest("DestructuringDeclaration")
 }
