@@ -15,7 +15,7 @@
  */
 
 package org.jetbrains.kotlin.idea.run
-
+/*
 import com.intellij.execution.configurations.JavaRunConfigurationModule
 import com.intellij.execution.configurations.ModuleBasedConfiguration
 import com.intellij.openapi.externalSystem.model.project.ExternalSystemSourceType
@@ -162,3 +162,4 @@ class MultiplatformGradleOrderEnumeratorHandler : OrderEnumerationHandler() {
 
 private fun Module.isMultiplatformModule(): Boolean =
         languageVersionSettings.supportsFeature(LanguageFeature.MultiPlatformProjects)
+*/
