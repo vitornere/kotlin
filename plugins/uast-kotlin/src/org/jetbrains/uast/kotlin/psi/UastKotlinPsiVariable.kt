@@ -6,14 +6,11 @@ import org.jetbrains.kotlin.asJava.elements.LightVariableBuilder
 import org.jetbrains.kotlin.builtins.createFunctionType
 import org.jetbrains.kotlin.idea.KotlinLanguage
 import org.jetbrains.kotlin.psi.*
+import org.jetbrains.kotlin.psi.psiUtil.getNonStrictParentOfType
 import org.jetbrains.kotlin.psi.psiUtil.startOffset
 import org.jetbrains.kotlin.resolve.BindingContext
 import org.jetbrains.kotlin.resolve.descriptorUtil.builtIns
-import org.jetbrains.kotlin.utils.ifEmpty
-import org.jetbrains.uast.UDeclaration
-import org.jetbrains.uast.UElement
-import org.jetbrains.uast.UastErrorType
-import org.jetbrains.uast.getParentOfType
+import org.jetbrains.uast.*
 import org.jetbrains.uast.kotlin.analyze
 import org.jetbrains.uast.kotlin.lz
 import org.jetbrains.uast.kotlin.orAnonymous
@@ -61,10 +58,11 @@ class UastKotlinPsiVariable(
         fun create(
                 declaration: KtVariableDeclaration, 
                 parent: PsiElement?, 
-                containingElement: UElement, 
+                containingElement: KotlinUDeclarationsExpression,
                 initializer: KtExpression? = null
         ): PsiLocalVariable {
-            val psiParent = containingElement.getParentOfType<UDeclaration>()?.psi ?: parent
+            val psi = containingElement.psiAnchor ?: containingElement.psi
+            val psiParent = psi?.getNonStrictParentOfType<KtDeclaration>() ?: parent
             return UastKotlinPsiVariable(
                     declaration.manager,
                     declaration.name.orAnonymous("unnamed"),
