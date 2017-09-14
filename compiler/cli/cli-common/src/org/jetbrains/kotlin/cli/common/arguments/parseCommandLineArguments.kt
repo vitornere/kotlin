@@ -129,6 +129,9 @@ fun <A : CommonToolArguments> parseCommandLineArguments(args: List<String>, resu
             argument.isAdvanced && arg.startsWith(argument.value + "=") -> {
                 arg.substring(argument.value.length + 1)
             }
+            argument.isAdvanced && arg.startsWith(argument.deprecatedName + "=") -> {
+                arg.substring(argument.deprecatedName.length + 1)
+            }
             i == args.size -> {
                 errors.argumentWithoutValue = arg
                 break@loop
