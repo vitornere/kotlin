@@ -19,6 +19,7 @@ package org.jetbrains.kotlin.resolve.lazy;
 import com.intellij.psi.PsiElement;
 import com.intellij.psi.util.PsiTreeUtil;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import org.jetbrains.kotlin.context.GlobalContext;
 import org.jetbrains.kotlin.descriptors.*;
 import org.jetbrains.kotlin.incremental.KotlinLookupLocation;
@@ -68,6 +69,11 @@ public class LazyDeclarationResolver {
         this.trace = lockBasedLazyResolveStorageManager.createSafeTrace(delegationTrace);
     }
 
+    @Nullable
+    public ClassDescriptor getClassDescriptorIfAny(@NotNull KtClassOrObject classOrObject, @NotNull LookupLocation location) {
+        return findClassDescriptorIfAny(classOrObject, location);
+    }
+
     @NotNull
     public ClassDescriptor getClassDescriptor(@NotNull KtClassOrObject classOrObject, @NotNull LookupLocation location) {
         return findClassDescriptor(classOrObject, location);
@@ -78,8 +84,8 @@ public class LazyDeclarationResolver {
         return (ScriptDescriptor) findClassDescriptor(script, location);
     }
 
-    @NotNull
-    private ClassDescriptor findClassDescriptor(
+    @Nullable
+    private ClassDescriptor findClassDescriptorIfAny(
             @NotNull KtNamedDeclaration classObjectOrScript,
             @NotNull LookupLocation location
     ) {
@@ -89,10 +95,23 @@ public class LazyDeclarationResolver {
         //     class A {} class A { fun foo(): A<completion here>}
         // and if we find the class by name only, we may b-not get the right one.
         // This call is only needed to make sure the classes are written to trace
-        ClassifierDescriptor scopeDescriptor = scope.getContributedClassifier(classObjectOrScript.getNameAsSafeName(), location);
+        scope.getContributedClassifier(classObjectOrScript.getNameAsSafeName(), location);
         DeclarationDescriptor descriptor = getBindingContext().get(BindingContext.DECLARATION_TO_DESCRIPTOR, classObjectOrScript);
 
+        return (ClassDescriptor) descriptor;
+    }
+
+    @NotNull
+    private ClassDescriptor findClassDescriptor(
+            @NotNull KtNamedDeclaration classObjectOrScript,
+            @NotNull LookupLocation location
+    ) {
+        ClassDescriptor descriptor = findClassDescriptorIfAny(classObjectOrScript, location);
+
         if (descriptor == null) {
+            MemberScope scope = getMemberScopeDeclaredIn(classObjectOrScript, location);
+            ClassifierDescriptor scopeDescriptor = scope.getContributedClassifier(classObjectOrScript.getNameAsSafeName(), location);
+
             String providerInfoString = null;
             if (scope instanceof AbstractLazyMemberScope) {
                 AbstractLazyMemberScope lazyMemberScope = (AbstractLazyMemberScope) scope;
@@ -113,7 +132,7 @@ public class LazyDeclarationResolver {
             );
         }
 
-        return (ClassDescriptor) descriptor;
+        return descriptor;
     }
 
     @NotNull
@@ -136,12 +155,12 @@ public class LazyDeclarationResolver {
 
             @Override
             public DeclarationDescriptor visitClass(@NotNull KtClass klass, Void data) {
-                return getClassDescriptor(klass, lookupLocationFor(klass, klass.isTopLevel()));
+                return getClassDescriptorIfAny(klass, lookupLocationFor(klass, klass.isTopLevel()));
             }
 
             @Override
             public DeclarationDescriptor visitObjectDeclaration(@NotNull KtObjectDeclaration declaration, Void data) {
-                return getClassDescriptor(declaration, lookupLocationFor(declaration, declaration.isTopLevel()));
+                return getClassDescriptorIfAny(declaration, lookupLocationFor(declaration, declaration.isTopLevel()));
             }
 
             @Override
@@ -187,8 +206,11 @@ public class LazyDeclarationResolver {
                 if (grandFather instanceof KtPrimaryConstructor) {
                     KtClassOrObject jetClass = ((KtPrimaryConstructor) grandFather).getContainingClassOrObject();
                     // This is a primary constructor parameter
-                    ClassDescriptor classDescriptor = getClassDescriptor(jetClass, lookupLocationFor(jetClass, false));
-                    if (parameter.hasValOrVar()) {
+                    ClassDescriptor classDescriptor = getClassDescriptorIfAny(jetClass, lookupLocationFor(jetClass, false));
+                    if (classDescriptor == null) {
+                        return null;
+                    }
+                    else if (parameter.hasValOrVar()) {
                         classDescriptor.getDefaultType().getMemberScope().getContributedVariables(parameter.getNameAsSafeName(), lookupLocationFor(parameter, false));
                         return getBindingContext().get(BindingContext.PRIMARY_CONSTRUCTOR_PARAMETER, parameter);
                     }
@@ -219,13 +241,13 @@ public class LazyDeclarationResolver {
 
             @Override
             public DeclarationDescriptor visitSecondaryConstructor(@NotNull KtSecondaryConstructor constructor, Void data) {
-                getClassDescriptor((KtClassOrObject) constructor.getParent().getParent(), lookupLocationFor(constructor, false)).getConstructors();
+                getClassDescriptorIfAny((KtClassOrObject) constructor.getParent().getParent(), lookupLocationFor(constructor, false)).getConstructors();
                 return getBindingContext().get(BindingContext.CONSTRUCTOR, constructor);
             }
 
             @Override
             public DeclarationDescriptor visitPrimaryConstructor(@NotNull KtPrimaryConstructor constructor, Void data) {
-                getClassDescriptor(constructor.getContainingClassOrObject(), lookupLocationFor(constructor, false)).getConstructors();
+                getClassDescriptorIfAny(constructor.getContainingClassOrObject(), lookupLocationFor(constructor, false)).getConstructors();
                 return getBindingContext().get(BindingContext.CONSTRUCTOR, constructor);
             }
 
