@@ -1,7 +1,7 @@
 buildscript {
     repositories {
         mavenCentral()
-        mavenLocal()
+        if (System.getProperty('maven.repo.local') == null) { mavenLocal() } else { maven { url 'file://' + new File(System.getProperty('maven.repo.local')).absolutePath } }
         jcenter()
         maven { url 'https://maven.google.com' }
     }

@@ -1,6 +1,6 @@
 buildscript {
     repositories {
-        mavenLocal()
+        if (System.getProperty('maven.repo.local') == null) { mavenLocal() } else { maven { url 'file://' + new File(System.getProperty('maven.repo.local')).absolutePath } }
         mavenCentral()
     }
 
@@ -17,7 +17,7 @@ compileKotlin2Js.kotlinOptions.moduleKind = "amd"
 compileKotlin2Js.kotlinOptions.outputFile = outDir + "app.js"
 
 repositories {
-    mavenLocal()
+    if (System.getProperty('maven.repo.local') == null) { mavenLocal() } else { maven { url 'file://' + new File(System.getProperty('maven.repo.local')).absolutePath } }
     mavenCentral()
 }
 

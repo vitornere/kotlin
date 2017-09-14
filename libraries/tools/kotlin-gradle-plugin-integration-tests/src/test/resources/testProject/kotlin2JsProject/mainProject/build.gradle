@@ -1,6 +1,6 @@
 buildscript {
     repositories {
-        mavenLocal()
+        if (System.getProperty('maven.repo.local') == null) { mavenLocal() } else { maven { url 'file://' + new File(System.getProperty('maven.repo.local')).absolutePath } }
     }
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
@@ -10,7 +10,7 @@ buildscript {
 apply plugin: "kotlin2js"
 
 repositories {
-    mavenLocal()
+    if (System.getProperty('maven.repo.local') == null) { mavenLocal() } else { maven { url 'file://' + new File(System.getProperty('maven.repo.local')).absolutePath } }
 }
 
 dependencies {

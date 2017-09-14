@@ -1,7 +1,7 @@
 apply plugin: "kotlin"
 
 repositories {
-    mavenLocal()
+    if (System.getProperty('maven.repo.local') == null) { mavenLocal() } else { maven { url 'file://' + new File(System.getProperty('maven.repo.local')).absolutePath } }
 }
 
 dependencies {
