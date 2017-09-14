@@ -136,6 +136,8 @@ fun LazyJavaResolverContext.computeNewDefaultTypeQualifiers(
 private fun LazyJavaResolverContext.extractDefaultNullabilityQualifier(
         annotationDescriptor: AnnotationDescriptor
 ): NullabilityQualifierWithApplicability? {
+    if (components.annotationTypeQualifierResolver.jsr305State.isIgnored()) return null
+
     BUILT_IN_TYPE_QUALIFIER_DEFAULT_ANNOTATIONS[annotationDescriptor.fqName]?.let { return it }
 
     val (typeQualifier, applicability) =
