@@ -1,5 +1,5 @@
 /*
- * Copyright 2010-2016 JetBrains s.r.o.
+ * Copyright 2010-2017 JetBrains s.r.o.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -211,7 +211,7 @@ object HeaderImplDeclarationChecker : DeclarationChecker {
                                 Substitutor(headerClass.declaredTypeParameters, container.declaredTypeParameters)
                             }
                             else null
-                    areCompatibleCallables(declaration, impl, parentSubstitutor = substitutor)
+                    areCompatibleCallables(declaration, impl, parentSubstitutor = substitutor, allowAllDefaultValues = false)
                 }
             }
             is ClassifierDescriptorWithTypeParameters -> {
@@ -349,7 +349,8 @@ object HeaderImplDeclarationChecker : DeclarationChecker {
             a: CallableMemberDescriptor,
             b: CallableMemberDescriptor,
             platformModule: ModuleDescriptor = b.module,
-            parentSubstitutor: Substitutor? = null
+            parentSubstitutor: Substitutor? = null,
+            allowAllDefaultValues: Boolean = true
     ): Compatibility {
         assert(a.name == b.name) { "This function should be invoked only for declarations with the same name: $a, $b" }
         assert(a.containingDeclaration is ClassDescriptor == b.containingDeclaration is ClassDescriptor) {
@@ -362,7 +363,9 @@ object HeaderImplDeclarationChecker : DeclarationChecker {
 
         val aParams = a.valueParameters
         val bParams = b.valueParameters
-        if (aParams.size != bParams.size) return Incompatible.ParameterCount
+        if (!valueParametersCountCompatible(a, b, aParams, bParams, allowAllDefaultValues)) {
+            return Incompatible.ParameterCount
+        }
 
         val aTypeParams = a.typeParameters
         val bTypeParams = b.typeParameters
@@ -400,6 +403,25 @@ object HeaderImplDeclarationChecker : DeclarationChecker {
 
         return Compatible
     }
+
+    private fun valueParametersCountCompatible(
+            a: CallableMemberDescriptor,
+            b: CallableMemberDescriptor,
+            aParams: List<ValueParameterDescriptor>,
+            bParams: List<ValueParameterDescriptor>,
+            allowAllDefaultValues: Boolean
+    ): Boolean {
+        if (aParams.size == bParams.size) return true
+        if (!allowAllDefaultValues) return false
+
+        return if (a.isAnnotationConstructor() && b.isAnnotationConstructor())
+            aParams.isEmpty() && bParams.all { it.declaresDefaultValue() }
+        else
+            false
+    }
+
+    private fun CallableDescriptor.isAnnotationConstructor(): Boolean =
+            this is ConstructorDescriptor && DescriptorUtils.isAnnotationClass(this.constructedClass)
 
     private fun areCompatibleTypes(a: KotlinType?, b: KotlinType?, platformModule: ModuleDescriptor): Boolean {
         if (a == null) return b == null
