@@ -423,9 +423,6 @@ class K2JVMCompiler : CLICompiler<K2JVMCompilerArguments>() {
 
                 configuration.put(JVMConfigurationKeys.JDK_HOME, jdkHome)
             }
-            else {
-                configuration.put(JVMConfigurationKeys.JDK_HOME, PathUtil.getJavaHome())
-            }
 
             return OK
         }
