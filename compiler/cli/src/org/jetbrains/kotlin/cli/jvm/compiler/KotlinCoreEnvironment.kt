@@ -113,7 +113,7 @@ import java.io.File
 class KotlinCoreEnvironment private constructor(
         parentDisposable: Disposable,
         applicationEnvironment: JavaCoreApplicationEnvironment,
-        configuration: CompilerConfiguration,
+        initialConfiguration: CompilerConfiguration,
         configFiles: EnvironmentConfigFiles
 ) {
     private val projectEnvironment: JavaCoreProjectEnvironment = object : KotlinCoreProjectEnvironment(parentDisposable, applicationEnvironment) {
@@ -151,7 +151,7 @@ class KotlinCoreEnvironment private constructor(
     private val classpathRootsResolver: ClasspathRootsResolver
     private val initialRoots: List<JavaRoot>
 
-    val configuration: CompilerConfiguration = configuration.apply { setupJdkClasspathRoots(configFiles) }.copy()
+    val configuration: CompilerConfiguration = initialConfiguration.apply { setupJdkClasspathRoots(configFiles) }.copy()
 
     init {
         PersistentFSConstants.setMaxIntellisenseFileSize(FileUtilRt.LARGE_FOR_CONTENT_LOADING)
