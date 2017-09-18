@@ -57,7 +57,7 @@ open class LazyDeclarationResolver @Deprecated("") constructor(
         this.trace = lockBasedLazyResolveStorageManager.createSafeTrace(delegationTrace)
     }
 
-    fun getClassDescriptorIfAny(classOrObject: KtClassOrObject, location: LookupLocation): ClassDescriptor? =
+    open fun getClassDescriptorIfAny(classOrObject: KtClassOrObject, location: LookupLocation): ClassDescriptor? =
             findClassDescriptorIfAny(classOrObject, location)
 
     open fun getClassDescriptor(classOrObject: KtClassOrObject, location: LookupLocation): ClassDescriptor =
