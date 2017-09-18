@@ -115,9 +115,9 @@ open class LazyDeclarationResolver @Deprecated("") constructor(
     }
 
     fun resolveToDescriptor(declaration: KtDeclaration): DeclarationDescriptor =
-            resolveToDescriptor(declaration, /*track =*/true)
+            resolveToDescriptor(declaration, /*track =*/true) ?: absentDescriptorHandler.diagnoseDescriptorNotFound(declaration)
 
-    private fun resolveToDescriptor(declaration: KtDeclaration, track: Boolean): DeclarationDescriptor {
+    private fun resolveToDescriptor(declaration: KtDeclaration, track: Boolean): DeclarationDescriptor? {
         return declaration.accept(object : KtVisitor<DeclarationDescriptor?, Nothing?>() {
             private fun lookupLocationFor(declaration: KtDeclaration, isTopLevel: Boolean): LookupLocation =
                     if (isTopLevel && track) KotlinLookupLocation(declaration)
@@ -232,7 +232,7 @@ open class LazyDeclarationResolver @Deprecated("") constructor(
                 throw IllegalArgumentException("Unsupported declaration type: " + element + " " +
                                                element.getElementTextWithContext())
             }
-        }, null) ?: absentDescriptorHandler.diagnoseDescriptorNotFound(declaration)
+        }, null)
     }
 
     internal fun getMemberScopeDeclaredIn(declaration: KtDeclaration, location: LookupLocation):
