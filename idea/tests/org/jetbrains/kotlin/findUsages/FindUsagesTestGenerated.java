@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
 public class FindUsagesTestGenerated extends AbstractFindUsagesTest {
     @TestMetadata("idea/testData/findUsages/kotlin")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Kotlin extends AbstractFindUsagesTest {
         public void testAllFilesPresentInKotlin() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/findUsages/kotlin"), Pattern.compile("^(.+)\\.0\\.kt$"), TargetBackend.ANY, true);
@@ -40,7 +39,6 @@ public class FindUsagesTestGenerated extends AbstractFindUsagesTest {
 
         @TestMetadata("idea/testData/findUsages/kotlin/companionObject")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class CompanionObject extends AbstractFindUsagesTest {
             public void testAllFilesPresentInCompanionObject() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/findUsages/kotlin/companionObject"), Pattern.compile("^(.+)\\.0\\.kt$"), TargetBackend.ANY, true);
@@ -73,7 +71,6 @@ public class FindUsagesTestGenerated extends AbstractFindUsagesTest {
 
         @TestMetadata("idea/testData/findUsages/kotlin/conventions")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Conventions extends AbstractFindUsagesTest {
             public void testAllFilesPresentInConventions() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/findUsages/kotlin/conventions"), Pattern.compile("^(.+)\\.0\\.kt$"), TargetBackend.ANY, true);
@@ -183,7 +180,6 @@ public class FindUsagesTestGenerated extends AbstractFindUsagesTest {
 
             @TestMetadata("idea/testData/findUsages/kotlin/conventions/components")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Components extends AbstractFindUsagesTest {
                 public void testAllFilesPresentInComponents() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/findUsages/kotlin/conventions/components"), Pattern.compile("^(.+)\\.0\\.kt$"), TargetBackend.ANY, true);
@@ -307,7 +303,6 @@ public class FindUsagesTestGenerated extends AbstractFindUsagesTest {
 
         @TestMetadata("idea/testData/findUsages/kotlin/findClassUsages")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class FindClassUsages extends AbstractFindUsagesTest {
             public void testAllFilesPresentInFindClassUsages() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/findUsages/kotlin/findClassUsages"), Pattern.compile("^(.+)\\.0\\.kt$"), TargetBackend.ANY, true);
@@ -652,7 +647,6 @@ public class FindUsagesTestGenerated extends AbstractFindUsagesTest {
 
         @TestMetadata("idea/testData/findUsages/kotlin/findFunctionUsages")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class FindFunctionUsages extends AbstractFindUsagesTest {
             public void testAllFilesPresentInFindFunctionUsages() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/findUsages/kotlin/findFunctionUsages"), Pattern.compile("^(.+)\\.0\\.kt$"), TargetBackend.ANY, true);
@@ -847,7 +841,6 @@ public class FindUsagesTestGenerated extends AbstractFindUsagesTest {
 
         @TestMetadata("idea/testData/findUsages/kotlin/findJavaPropertyUsages")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class FindJavaPropertyUsages extends AbstractFindUsagesTest {
             public void testAllFilesPresentInFindJavaPropertyUsages() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/findUsages/kotlin/findJavaPropertyUsages"), Pattern.compile("^(.+)\\.0\\.kt$"), TargetBackend.ANY, true);
@@ -874,7 +867,6 @@ public class FindUsagesTestGenerated extends AbstractFindUsagesTest {
 
         @TestMetadata("idea/testData/findUsages/kotlin/findObjectUsages")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class FindObjectUsages extends AbstractFindUsagesTest {
             public void testAllFilesPresentInFindObjectUsages() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/findUsages/kotlin/findObjectUsages"), Pattern.compile("^(.+)\\.0\\.kt$"), TargetBackend.ANY, true);
@@ -925,7 +917,6 @@ public class FindUsagesTestGenerated extends AbstractFindUsagesTest {
 
         @TestMetadata("idea/testData/findUsages/kotlin/findPackageUsages")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class FindPackageUsages extends AbstractFindUsagesTest {
             public void testAllFilesPresentInFindPackageUsages() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/findUsages/kotlin/findPackageUsages"), Pattern.compile("^(.+)\\.0\\.kt$"), TargetBackend.ANY, true);
@@ -940,7 +931,6 @@ public class FindUsagesTestGenerated extends AbstractFindUsagesTest {
 
         @TestMetadata("idea/testData/findUsages/kotlin/findParameterUsages")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class FindParameterUsages extends AbstractFindUsagesTest {
             public void testAllFilesPresentInFindParameterUsages() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/findUsages/kotlin/findParameterUsages"), Pattern.compile("^(.+)\\.0\\.kt$"), TargetBackend.ANY, true);
@@ -991,7 +981,6 @@ public class FindUsagesTestGenerated extends AbstractFindUsagesTest {
 
         @TestMetadata("idea/testData/findUsages/kotlin/findPrimaryConstructorUsages")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class FindPrimaryConstructorUsages extends AbstractFindUsagesTest {
             public void testAllFilesPresentInFindPrimaryConstructorUsages() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/findUsages/kotlin/findPrimaryConstructorUsages"), Pattern.compile("^(.+)\\.0\\.kt$"), TargetBackend.ANY, true);
@@ -1042,7 +1031,6 @@ public class FindUsagesTestGenerated extends AbstractFindUsagesTest {
 
         @TestMetadata("idea/testData/findUsages/kotlin/findPropertyUsages")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class FindPropertyUsages extends AbstractFindUsagesTest {
             public void testAllFilesPresentInFindPropertyUsages() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/findUsages/kotlin/findPropertyUsages"), Pattern.compile("^(.+)\\.0\\.kt$"), TargetBackend.ANY, true);
@@ -1219,7 +1207,6 @@ public class FindUsagesTestGenerated extends AbstractFindUsagesTest {
 
         @TestMetadata("idea/testData/findUsages/kotlin/findSecondaryConstructorUsages")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class FindSecondaryConstructorUsages extends AbstractFindUsagesTest {
             public void testAllFilesPresentInFindSecondaryConstructorUsages() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/findUsages/kotlin/findSecondaryConstructorUsages"), Pattern.compile("^(.+)\\.0\\.kt$"), TargetBackend.ANY, true);
@@ -1252,7 +1239,6 @@ public class FindUsagesTestGenerated extends AbstractFindUsagesTest {
 
         @TestMetadata("idea/testData/findUsages/kotlin/findTypeAliasUsages")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class FindTypeAliasUsages extends AbstractFindUsagesTest {
             public void testAllFilesPresentInFindTypeAliasUsages() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/findUsages/kotlin/findTypeAliasUsages"), Pattern.compile("^(.+)\\.0\\.kt$"), TargetBackend.ANY, true);
@@ -1267,7 +1253,6 @@ public class FindUsagesTestGenerated extends AbstractFindUsagesTest {
 
         @TestMetadata("idea/testData/findUsages/kotlin/findTypeParameterUsages")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class FindTypeParameterUsages extends AbstractFindUsagesTest {
             public void testAllFilesPresentInFindTypeParameterUsages() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/findUsages/kotlin/findTypeParameterUsages"), Pattern.compile("^(.+)\\.0\\.kt$"), TargetBackend.ANY, true);
@@ -1294,7 +1279,6 @@ public class FindUsagesTestGenerated extends AbstractFindUsagesTest {
 
         @TestMetadata("idea/testData/findUsages/kotlin/findWithFilteringImports")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class FindWithFilteringImports extends AbstractFindUsagesTest {
             public void testAllFilesPresentInFindWithFilteringImports() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/findUsages/kotlin/findWithFilteringImports"), Pattern.compile("^(.+)\\.0\\.kt$"), TargetBackend.ANY, true);
@@ -1309,7 +1293,6 @@ public class FindUsagesTestGenerated extends AbstractFindUsagesTest {
 
         @TestMetadata("idea/testData/findUsages/kotlin/findWithStructuralGrouping")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class FindWithStructuralGrouping extends AbstractFindUsagesTest {
             public void testAllFilesPresentInFindWithStructuralGrouping() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/findUsages/kotlin/findWithStructuralGrouping"), Pattern.compile("^(.+)\\.0\\.kt$"), TargetBackend.ANY, true);
@@ -1336,7 +1319,6 @@ public class FindUsagesTestGenerated extends AbstractFindUsagesTest {
 
         @TestMetadata("idea/testData/findUsages/kotlin/internal")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Internal extends AbstractFindUsagesTest {
             public void testAllFilesPresentInInternal() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/findUsages/kotlin/internal"), Pattern.compile("^(.+)\\.0\\.kt$"), TargetBackend.ANY, true);
@@ -1344,7 +1326,6 @@ public class FindUsagesTestGenerated extends AbstractFindUsagesTest {
 
             @TestMetadata("idea/testData/findUsages/kotlin/internal/findFunctionUsages")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class FindFunctionUsages extends AbstractFindUsagesTest {
                 public void testAllFilesPresentInFindFunctionUsages() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/findUsages/kotlin/internal/findFunctionUsages"), Pattern.compile("^(.+)\\.0\\.kt$"), TargetBackend.ANY, true);
@@ -1395,7 +1376,6 @@ public class FindUsagesTestGenerated extends AbstractFindUsagesTest {
 
             @TestMetadata("idea/testData/findUsages/kotlin/internal/findPrimaryConstructorUsages")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class FindPrimaryConstructorUsages extends AbstractFindUsagesTest {
                 public void testAllFilesPresentInFindPrimaryConstructorUsages() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/findUsages/kotlin/internal/findPrimaryConstructorUsages"), Pattern.compile("^(.+)\\.0\\.kt$"), TargetBackend.ANY, true);
@@ -1416,7 +1396,6 @@ public class FindUsagesTestGenerated extends AbstractFindUsagesTest {
 
             @TestMetadata("idea/testData/findUsages/kotlin/internal/findPropertyUsages")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class FindPropertyUsages extends AbstractFindUsagesTest {
                 public void testAllFilesPresentInFindPropertyUsages() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/findUsages/kotlin/internal/findPropertyUsages"), Pattern.compile("^(.+)\\.0\\.kt$"), TargetBackend.ANY, true);
@@ -1449,7 +1428,6 @@ public class FindUsagesTestGenerated extends AbstractFindUsagesTest {
 
             @TestMetadata("idea/testData/findUsages/kotlin/internal/findSecondaryConstructorUsages")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class FindSecondaryConstructorUsages extends AbstractFindUsagesTest {
                 public void testAllFilesPresentInFindSecondaryConstructorUsages() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/findUsages/kotlin/internal/findSecondaryConstructorUsages"), Pattern.compile("^(.+)\\.0\\.kt$"), TargetBackend.ANY, true);
@@ -1477,7 +1455,6 @@ public class FindUsagesTestGenerated extends AbstractFindUsagesTest {
 
         @TestMetadata("idea/testData/findUsages/kotlin/propertyFiles")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class PropertyFiles extends AbstractFindUsagesTest {
             public void testAllFilesPresentInPropertyFiles() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/findUsages/kotlin/propertyFiles"), Pattern.compile("^(.+)\\.0\\.kt$"), TargetBackend.ANY, true);
@@ -1498,7 +1475,6 @@ public class FindUsagesTestGenerated extends AbstractFindUsagesTest {
 
         @TestMetadata("idea/testData/findUsages/kotlin/unresolvedAnnotation")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class UnresolvedAnnotation extends AbstractFindUsagesTest {
             public void testAllFilesPresentInUnresolvedAnnotation() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/findUsages/kotlin/unresolvedAnnotation"), Pattern.compile("^(.+)\\.0\\.kt$"), TargetBackend.ANY, true);
@@ -1513,7 +1489,6 @@ public class FindUsagesTestGenerated extends AbstractFindUsagesTest {
 
         @TestMetadata("idea/testData/findUsages/kotlin/variable")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Variable extends AbstractFindUsagesTest {
             public void testAllFilesPresentInVariable() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/findUsages/kotlin/variable"), Pattern.compile("^(.+)\\.0\\.kt$"), TargetBackend.ANY, true);
@@ -1547,7 +1522,6 @@ public class FindUsagesTestGenerated extends AbstractFindUsagesTest {
 
     @TestMetadata("idea/testData/findUsages/java")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Java extends AbstractFindUsagesTest {
         public void testAllFilesPresentInJava() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/findUsages/java"), Pattern.compile("^(.+)\\.0\\.java$"), TargetBackend.ANY, true);
@@ -1555,7 +1529,6 @@ public class FindUsagesTestGenerated extends AbstractFindUsagesTest {
 
         @TestMetadata("idea/testData/findUsages/java/findConstructorUsages")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class FindConstructorUsages extends AbstractFindUsagesTest {
             public void testAllFilesPresentInFindConstructorUsages() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/findUsages/java/findConstructorUsages"), Pattern.compile("^(.+)\\.0\\.java$"), TargetBackend.ANY, true);
@@ -1600,7 +1573,6 @@ public class FindUsagesTestGenerated extends AbstractFindUsagesTest {
 
         @TestMetadata("idea/testData/findUsages/java/findJavaClassUsages")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class FindJavaClassUsages extends AbstractFindUsagesTest {
             public void testAllFilesPresentInFindJavaClassUsages() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/findUsages/java/findJavaClassUsages"), Pattern.compile("^(.+)\\.0\\.java$"), TargetBackend.ANY, true);
@@ -1741,7 +1713,6 @@ public class FindUsagesTestGenerated extends AbstractFindUsagesTest {
 
         @TestMetadata("idea/testData/findUsages/java/findJavaFieldUsages")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class FindJavaFieldUsages extends AbstractFindUsagesTest {
             public void testAllFilesPresentInFindJavaFieldUsages() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/findUsages/java/findJavaFieldUsages"), Pattern.compile("^(.+)\\.0\\.java$"), TargetBackend.ANY, true);
@@ -1756,7 +1727,6 @@ public class FindUsagesTestGenerated extends AbstractFindUsagesTest {
 
         @TestMetadata("idea/testData/findUsages/java/findJavaMethodUsages")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class FindJavaMethodUsages extends AbstractFindUsagesTest {
             public void testAllFilesPresentInFindJavaMethodUsages() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/findUsages/java/findJavaMethodUsages"), Pattern.compile("^(.+)\\.0\\.java$"), TargetBackend.ANY, true);
@@ -1837,7 +1807,6 @@ public class FindUsagesTestGenerated extends AbstractFindUsagesTest {
 
         @TestMetadata("idea/testData/findUsages/java/findJavaPropertyUsages")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class FindJavaPropertyUsages extends AbstractFindUsagesTest {
             public void testAllFilesPresentInFindJavaPropertyUsages() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/findUsages/java/findJavaPropertyUsages"), Pattern.compile("^(.+)\\.0\\.java$"), TargetBackend.ANY, true);
@@ -1859,7 +1828,6 @@ public class FindUsagesTestGenerated extends AbstractFindUsagesTest {
 
     @TestMetadata("idea/testData/findUsages/propertyFiles")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class PropertyFiles extends AbstractFindUsagesTest {
         public void testAllFilesPresentInPropertyFiles() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/findUsages/propertyFiles"), Pattern.compile("^(.+)\\.0\\.properties$"), TargetBackend.ANY, true);

@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
 public class JsOptimizeImportsTestGenerated extends AbstractJsOptimizeImportsTest {
     @TestMetadata("idea/testData/editor/optimizeImports/js")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Js extends AbstractJsOptimizeImportsTest {
         public void testAllFilesPresentInJs() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/editor/optimizeImports/js"), Pattern.compile("^([^.]+)\\.kt$"), TargetBackend.ANY, true);
@@ -47,7 +46,6 @@ public class JsOptimizeImportsTestGenerated extends AbstractJsOptimizeImportsTes
 
     @TestMetadata("idea/testData/editor/optimizeImports/common")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Common extends AbstractJsOptimizeImportsTest {
         public void testAllFilesPresentInCommon() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/editor/optimizeImports/common"), Pattern.compile("^([^.]+)\\.kt$"), TargetBackend.ANY, true);

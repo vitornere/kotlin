@@ -200,7 +200,6 @@ public class BasicCompletionWeigherTestGenerated extends AbstractBasicCompletion
 
     @TestMetadata("idea/idea-completion/testData/weighers/basic/expectedInfo")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ExpectedInfo extends AbstractBasicCompletionWeigherTest {
         @TestMetadata("AfterAs.kt")
         public void testAfterAs() throws Exception {
@@ -299,7 +298,6 @@ public class BasicCompletionWeigherTestGenerated extends AbstractBasicCompletion
 
     @TestMetadata("idea/idea-completion/testData/weighers/basic/parameterNameAndType")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ParameterNameAndType extends AbstractBasicCompletionWeigherTest {
         public void testAllFilesPresentInParameterNameAndType() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/idea-completion/testData/weighers/basic/parameterNameAndType"), Pattern.compile("^([^.]+)\\.kt$"), TargetBackend.ANY, true);

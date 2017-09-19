@@ -38,7 +38,6 @@ public class LineMarkersTestGenerated extends AbstractLineMarkersTest {
 
     @TestMetadata("idea/testData/codeInsight/lineMarker/overrideImplement")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class OverrideImplement extends AbstractLineMarkersTest {
         public void testAllFilesPresentInOverrideImplement() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/codeInsight/lineMarker/overrideImplement"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -203,7 +202,6 @@ public class LineMarkersTestGenerated extends AbstractLineMarkersTest {
 
     @TestMetadata("idea/testData/codeInsight/lineMarker/recursiveCall")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class RecursiveCall extends AbstractLineMarkersTest {
         public void testAllFilesPresentInRecursiveCall() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/codeInsight/lineMarker/recursiveCall"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -314,7 +312,6 @@ public class LineMarkersTestGenerated extends AbstractLineMarkersTest {
 
     @TestMetadata("idea/testData/codeInsight/lineMarker/runMarkers")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class RunMarkers extends AbstractLineMarkersTest {
         public void testAllFilesPresentInRunMarkers() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/codeInsight/lineMarker/runMarkers"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -335,7 +332,6 @@ public class LineMarkersTestGenerated extends AbstractLineMarkersTest {
 
     @TestMetadata("idea/testData/codeInsight/lineMarker/suspendCall")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class SuspendCall extends AbstractLineMarkersTest {
         public void testAllFilesPresentInSuspendCall() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/codeInsight/lineMarker/suspendCall"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);

@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
 public class IncrementalJvmCompilerRunnerTestGenerated extends AbstractIncrementalJvmCompilerRunnerTest {
     @TestMetadata("jps-plugin/testData/incremental/pureKotlin")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class PureKotlin extends AbstractIncrementalJvmCompilerRunnerTest {
         @TestMetadata("accessingFunctionsViaPackagePart")
         public void testAccessingFunctionsViaPackagePart() throws Exception {
@@ -731,7 +730,6 @@ public class IncrementalJvmCompilerRunnerTestGenerated extends AbstractIncrement
 
     @TestMetadata("jps-plugin/testData/incremental/classHierarchyAffected")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ClassHierarchyAffected extends AbstractIncrementalJvmCompilerRunnerTest {
         public void testAllFilesPresentInClassHierarchyAffected() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("jps-plugin/testData/incremental/classHierarchyAffected"), Pattern.compile("^([^\\.]+)$"), TargetBackend.ANY, false);
@@ -968,7 +966,6 @@ public class IncrementalJvmCompilerRunnerTestGenerated extends AbstractIncrement
 
     @TestMetadata("jps-plugin/testData/incremental/inlineFunCallSite")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class InlineFunCallSite extends AbstractIncrementalJvmCompilerRunnerTest {
         public void testAllFilesPresentInInlineFunCallSite() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("jps-plugin/testData/incremental/inlineFunCallSite"), Pattern.compile("^([^\\.]+)$"), TargetBackend.ANY, true);
@@ -1061,7 +1058,6 @@ public class IncrementalJvmCompilerRunnerTestGenerated extends AbstractIncrement
 
     @TestMetadata("jps-plugin/testData/incremental/withJava")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class WithJava extends AbstractIncrementalJvmCompilerRunnerTest {
         public void testAllFilesPresentInWithJava() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("jps-plugin/testData/incremental/withJava"), Pattern.compile("^([^\\.]+)$"), TargetBackend.ANY, true);
@@ -1069,7 +1065,6 @@ public class IncrementalJvmCompilerRunnerTestGenerated extends AbstractIncrement
 
         @TestMetadata("jps-plugin/testData/incremental/withJava/convertBetweenJavaAndKotlin")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ConvertBetweenJavaAndKotlin extends AbstractIncrementalJvmCompilerRunnerTest {
             public void testAllFilesPresentInConvertBetweenJavaAndKotlin() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("jps-plugin/testData/incremental/withJava/convertBetweenJavaAndKotlin"), Pattern.compile("^([^\\.]+)$"), TargetBackend.ANY, true);
@@ -1102,7 +1097,6 @@ public class IncrementalJvmCompilerRunnerTestGenerated extends AbstractIncrement
 
         @TestMetadata("jps-plugin/testData/incremental/withJava/javaUsedInKotlin")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class JavaUsedInKotlin extends AbstractIncrementalJvmCompilerRunnerTest {
             public void testAllFilesPresentInJavaUsedInKotlin() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("jps-plugin/testData/incremental/withJava/javaUsedInKotlin"), Pattern.compile("^([^\\.]+)$"), TargetBackend.ANY, true);
@@ -1188,7 +1182,6 @@ public class IncrementalJvmCompilerRunnerTestGenerated extends AbstractIncrement
 
             @TestMetadata("jps-plugin/testData/incremental/withJava/javaUsedInKotlin/samConversions")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class SamConversions extends AbstractIncrementalJvmCompilerRunnerTest {
                 public void testAllFilesPresentInSamConversions() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("jps-plugin/testData/incremental/withJava/javaUsedInKotlin/samConversions"), Pattern.compile("^([^\\.]+)$"), TargetBackend.ANY, true);
@@ -1210,7 +1203,6 @@ public class IncrementalJvmCompilerRunnerTestGenerated extends AbstractIncrement
 
         @TestMetadata("jps-plugin/testData/incremental/withJava/kotlinUsedInJava")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class KotlinUsedInJava extends AbstractIncrementalJvmCompilerRunnerTest {
             @TestMetadata("addOptionalParameter")
             public void testAddOptionalParameter() throws Exception {
@@ -1303,7 +1295,6 @@ public class IncrementalJvmCompilerRunnerTestGenerated extends AbstractIncrement
 
         @TestMetadata("jps-plugin/testData/incremental/withJava/other")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Other extends AbstractIncrementalJvmCompilerRunnerTest {
             @TestMetadata("accessingFunctionsViaRenamedFileClass")
             public void testAccessingFunctionsViaRenamedFileClass() throws Exception {

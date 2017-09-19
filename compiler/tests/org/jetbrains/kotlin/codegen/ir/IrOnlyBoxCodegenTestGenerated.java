@@ -80,7 +80,6 @@ public class IrOnlyBoxCodegenTestGenerated extends AbstractIrBlackBoxCodegenTest
 
     @TestMetadata("compiler/testData/ir/box/closureConversion")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ClosureConversion extends AbstractIrBlackBoxCodegenTest {
         public void testAllFilesPresentInClosureConversion() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/ir/box/closureConversion"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JVM, true);

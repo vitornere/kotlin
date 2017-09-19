@@ -38,7 +38,6 @@ public class GenerateToStringActionTestGenerated extends AbstractGenerateToStrin
 
     @TestMetadata("idea/testData/codeInsight/generate/toString/common")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Common extends AbstractGenerateToStringActionTest {
         public void testAllFilesPresentInCommon() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/codeInsight/generate/toString/common"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -65,7 +64,6 @@ public class GenerateToStringActionTestGenerated extends AbstractGenerateToStrin
 
     @TestMetadata("idea/testData/codeInsight/generate/toString/multipeTemplates")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class MultipeTemplates extends AbstractGenerateToStringActionTest {
         public void testAllFilesPresentInMultipeTemplates() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/codeInsight/generate/toString/multipeTemplates"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -128,7 +126,6 @@ public class GenerateToStringActionTestGenerated extends AbstractGenerateToStrin
 
     @TestMetadata("idea/testData/codeInsight/generate/toString/singleTemplate")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class SingleTemplate extends AbstractGenerateToStringActionTest {
         public void testAllFilesPresentInSingleTemplate() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/codeInsight/generate/toString/singleTemplate"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);

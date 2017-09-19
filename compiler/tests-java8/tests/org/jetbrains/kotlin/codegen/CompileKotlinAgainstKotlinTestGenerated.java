@@ -38,7 +38,6 @@ public class CompileKotlinAgainstKotlinTestGenerated extends AbstractCompileKotl
 
     @TestMetadata("compiler/testData/codegen/java8/compileKotlinAgainstKotlin/jvm6")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Jvm6 extends AbstractCompileKotlinAgainstKotlinTest {
         public void testAllFilesPresentInJvm6() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/java8/compileKotlinAgainstKotlin/jvm6"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -53,7 +52,6 @@ public class CompileKotlinAgainstKotlinTestGenerated extends AbstractCompileKotl
 
     @TestMetadata("compiler/testData/codegen/java8/compileKotlinAgainstKotlin/jvm8against6")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Jvm8against6 extends AbstractCompileKotlinAgainstKotlinTest {
         public void testAllFilesPresentInJvm8against6() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/java8/compileKotlinAgainstKotlin/jvm8against6"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -79,7 +77,6 @@ public class CompileKotlinAgainstKotlinTestGenerated extends AbstractCompileKotl
 
         @TestMetadata("compiler/testData/codegen/java8/compileKotlinAgainstKotlin/jvm8against6/delegation")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Delegation extends AbstractCompileKotlinAgainstKotlinTest {
             public void testAllFilesPresentInDelegation() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/java8/compileKotlinAgainstKotlin/jvm8against6/delegation"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);

@@ -158,7 +158,6 @@ public class CompilerLightClassTestGenerated extends AbstractCompilerLightClassT
 
     @TestMetadata("compiler/testData/asJava/lightClasses/compilationErrors")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class CompilationErrors extends AbstractCompilerLightClassTest {
         public void testAllFilesPresentInCompilationErrors() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/asJava/lightClasses/compilationErrors"), Pattern.compile("^([^.]+)\\.(kt|kts)$"), TargetBackend.ANY, true);
@@ -209,7 +208,6 @@ public class CompilerLightClassTestGenerated extends AbstractCompilerLightClassT
 
     @TestMetadata("compiler/testData/asJava/lightClasses/delegation")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Delegation extends AbstractCompilerLightClassTest {
         public void testAllFilesPresentInDelegation() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/asJava/lightClasses/delegation"), Pattern.compile("^([^.]+)\\.(kt|kts)$"), TargetBackend.ANY, true);
@@ -230,7 +228,6 @@ public class CompilerLightClassTestGenerated extends AbstractCompilerLightClassT
 
     @TestMetadata("compiler/testData/asJava/lightClasses/facades")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Facades extends AbstractCompilerLightClassTest {
         public void testAllFilesPresentInFacades() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/asJava/lightClasses/facades"), Pattern.compile("^([^.]+)\\.(kt|kts)$"), TargetBackend.ANY, true);
@@ -257,7 +254,6 @@ public class CompilerLightClassTestGenerated extends AbstractCompilerLightClassT
 
     @TestMetadata("compiler/testData/asJava/lightClasses/nullabilityAnnotations")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class NullabilityAnnotations extends AbstractCompilerLightClassTest {
         public void testAllFilesPresentInNullabilityAnnotations() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/asJava/lightClasses/nullabilityAnnotations"), Pattern.compile("^([^.]+)\\.(kt|kts)$"), TargetBackend.ANY, true);
@@ -374,7 +370,6 @@ public class CompilerLightClassTestGenerated extends AbstractCompilerLightClassT
 
     @TestMetadata("compiler/testData/asJava/lightClasses/object")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Object extends AbstractCompilerLightClassTest {
         public void testAllFilesPresentInObject() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/asJava/lightClasses/object"), Pattern.compile("^([^.]+)\\.(kt|kts)$"), TargetBackend.ANY, true);
@@ -389,7 +384,6 @@ public class CompilerLightClassTestGenerated extends AbstractCompilerLightClassT
 
     @TestMetadata("compiler/testData/asJava/lightClasses/publicField")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class PublicField extends AbstractCompilerLightClassTest {
         public void testAllFilesPresentInPublicField() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/asJava/lightClasses/publicField"), Pattern.compile("^([^.]+)\\.(kt|kts)$"), TargetBackend.ANY, true);
@@ -410,7 +404,6 @@ public class CompilerLightClassTestGenerated extends AbstractCompilerLightClassT
 
     @TestMetadata("compiler/testData/asJava/lightClasses/script")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Script extends AbstractCompilerLightClassTest {
         public void testAllFilesPresentInScript() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/asJava/lightClasses/script"), Pattern.compile("^([^.]+)\\.(kt|kts)$"), TargetBackend.ANY, true);

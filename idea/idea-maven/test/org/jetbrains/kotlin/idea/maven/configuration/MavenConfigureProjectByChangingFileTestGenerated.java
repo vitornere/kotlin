@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
 public class MavenConfigureProjectByChangingFileTestGenerated extends AbstractMavenConfigureProjectByChangingFileTest {
     @TestMetadata("idea/idea-maven/testData/configurator/jvm")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Jvm extends AbstractMavenConfigureProjectByChangingFileTest {
         public void testAllFilesPresentInJvm() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/idea-maven/testData/configurator/jvm"), Pattern.compile("^([^\\.]+)$"), TargetBackend.ANY, false);
@@ -83,7 +82,6 @@ public class MavenConfigureProjectByChangingFileTestGenerated extends AbstractMa
 
     @TestMetadata("idea/idea-maven/testData/configurator/js")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Js extends AbstractMavenConfigureProjectByChangingFileTest {
         public void testAllFilesPresentInJs() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/idea-maven/testData/configurator/js"), Pattern.compile("^([^\\.]+)$"), TargetBackend.ANY, false);

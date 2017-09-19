@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
 public class JvmOptimizeImportsTestGenerated extends AbstractJvmOptimizeImportsTest {
     @TestMetadata("idea/testData/editor/optimizeImports/jvm")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Jvm extends AbstractJvmOptimizeImportsTest {
         public void testAllFilesPresentInJvm() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/editor/optimizeImports/jvm"), Pattern.compile("^([^.]+)\\.kt$"), TargetBackend.ANY, true);
@@ -184,7 +183,6 @@ public class JvmOptimizeImportsTestGenerated extends AbstractJvmOptimizeImportsT
 
         @TestMetadata("idea/testData/editor/optimizeImports/jvm/allUnderImports")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class AllUnderImports extends AbstractJvmOptimizeImportsTest {
             public void testAllFilesPresentInAllUnderImports() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/editor/optimizeImports/jvm/allUnderImports"), Pattern.compile("^([^.]+)\\.kt$"), TargetBackend.ANY, true);
@@ -248,7 +246,6 @@ public class JvmOptimizeImportsTestGenerated extends AbstractJvmOptimizeImportsT
 
     @TestMetadata("idea/testData/editor/optimizeImports/common")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Common extends AbstractJvmOptimizeImportsTest {
         public void testAllFilesPresentInCommon() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/editor/optimizeImports/common"), Pattern.compile("^([^.]+)\\.kt$"), TargetBackend.ANY, true);

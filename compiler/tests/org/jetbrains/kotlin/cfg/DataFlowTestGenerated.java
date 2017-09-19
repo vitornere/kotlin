@@ -38,7 +38,6 @@ public class DataFlowTestGenerated extends AbstractDataFlowTest {
 
     @TestMetadata("compiler/testData/cfg-variables/basic")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Basic extends AbstractDataFlowTest {
         public void testAllFilesPresentInBasic() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/cfg-variables/basic"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -89,7 +88,6 @@ public class DataFlowTestGenerated extends AbstractDataFlowTest {
 
     @TestMetadata("compiler/testData/cfg-variables/bugs")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Bugs extends AbstractDataFlowTest {
         public void testAllFilesPresentInBugs() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/cfg-variables/bugs"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -164,7 +162,6 @@ public class DataFlowTestGenerated extends AbstractDataFlowTest {
 
     @TestMetadata("compiler/testData/cfg-variables/lexicalScopes")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class LexicalScopes extends AbstractDataFlowTest {
         public void testAllFilesPresentInLexicalScopes() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/cfg-variables/lexicalScopes"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);

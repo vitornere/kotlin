@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
 public class CodeFragmentHighlightingTestGenerated extends AbstractCodeFragmentHighlightingTest {
     @TestMetadata("idea/testData/checker/codeFragments")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class CodeFragments extends AbstractCodeFragmentHighlightingTest {
         public void testAllFilesPresentInCodeFragments() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/checker/codeFragments"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, false);
@@ -185,7 +184,6 @@ public class CodeFragmentHighlightingTestGenerated extends AbstractCodeFragmentH
 
     @TestMetadata("idea/testData/checker/codeFragments/imports")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Imports extends AbstractCodeFragmentHighlightingTest {
         public void testAllFilesPresentInImports() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/checker/codeFragments/imports"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);

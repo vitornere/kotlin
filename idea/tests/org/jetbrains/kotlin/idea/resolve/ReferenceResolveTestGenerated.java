@@ -488,7 +488,6 @@ public class ReferenceResolveTestGenerated extends AbstractReferenceResolveTest 
 
     @TestMetadata("idea/testData/resolve/references/delegatedPropertyAccessors")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class DelegatedPropertyAccessors extends AbstractReferenceResolveTest {
         public void testAllFilesPresentInDelegatedPropertyAccessors() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/resolve/references/delegatedPropertyAccessors"), Pattern.compile("^([^.]+)\\.kt$"), TargetBackend.ANY, true);
@@ -502,7 +501,6 @@ public class ReferenceResolveTestGenerated extends AbstractReferenceResolveTest 
 
         @TestMetadata("idea/testData/resolve/references/delegatedPropertyAccessors/inSource")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class InSource extends AbstractReferenceResolveTest {
             public void testAllFilesPresentInInSource() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/resolve/references/delegatedPropertyAccessors/inSource"), Pattern.compile("^([^.]+)\\.kt$"), TargetBackend.ANY, true);
@@ -535,7 +533,6 @@ public class ReferenceResolveTestGenerated extends AbstractReferenceResolveTest 
 
         @TestMetadata("idea/testData/resolve/references/delegatedPropertyAccessors/inStandardLibrary")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class InStandardLibrary extends AbstractReferenceResolveTest {
             public void testAllFilesPresentInInStandardLibrary() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/resolve/references/delegatedPropertyAccessors/inStandardLibrary"), Pattern.compile("^([^.]+)\\.kt$"), TargetBackend.ANY, true);
@@ -557,7 +554,6 @@ public class ReferenceResolveTestGenerated extends AbstractReferenceResolveTest 
 
     @TestMetadata("idea/testData/resolve/references/forLoopIn")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ForLoopIn extends AbstractReferenceResolveTest {
         public void testAllFilesPresentInForLoopIn() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/resolve/references/forLoopIn"), Pattern.compile("^([^.]+)\\.kt$"), TargetBackend.ANY, true);
@@ -571,7 +567,6 @@ public class ReferenceResolveTestGenerated extends AbstractReferenceResolveTest 
 
         @TestMetadata("idea/testData/resolve/references/forLoopIn/inBuiltIns")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class InBuiltIns extends AbstractReferenceResolveTest {
             public void testAllFilesPresentInInBuiltIns() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/resolve/references/forLoopIn/inBuiltIns"), Pattern.compile("^([^.]+)\\.kt$"), TargetBackend.ANY, true);
@@ -592,7 +587,6 @@ public class ReferenceResolveTestGenerated extends AbstractReferenceResolveTest 
 
         @TestMetadata("idea/testData/resolve/references/forLoopIn/inLibrary")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class InLibrary extends AbstractReferenceResolveTest {
             public void testAllFilesPresentInInLibrary() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/resolve/references/forLoopIn/inLibrary"), Pattern.compile("^([^.]+)\\.kt$"), TargetBackend.ANY, true);
@@ -607,7 +601,6 @@ public class ReferenceResolveTestGenerated extends AbstractReferenceResolveTest 
 
         @TestMetadata("idea/testData/resolve/references/forLoopIn/inSource")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class InSource extends AbstractReferenceResolveTest {
             @TestMetadata("allExtensions.kt")
             public void testAllExtensions() throws Exception {
@@ -635,7 +628,6 @@ public class ReferenceResolveTestGenerated extends AbstractReferenceResolveTest 
 
     @TestMetadata("idea/testData/resolve/references/invoke")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Invoke extends AbstractReferenceResolveTest {
         public void testAllFilesPresentInInvoke() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/resolve/references/invoke"), Pattern.compile("^([^.]+)\\.kt$"), TargetBackend.ANY, true);

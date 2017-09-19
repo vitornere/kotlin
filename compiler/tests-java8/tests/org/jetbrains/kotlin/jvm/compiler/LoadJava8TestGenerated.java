@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
 public class LoadJava8TestGenerated extends AbstractLoadJava8Test {
     @TestMetadata("compiler/testData/loadJava8/compiledJava")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class CompiledJava extends AbstractLoadJava8Test {
         public void testAllFilesPresentInCompiledJava() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava8/compiledJava"), Pattern.compile("^(.+)\\.java$"), TargetBackend.ANY, true);
@@ -65,7 +64,6 @@ public class LoadJava8TestGenerated extends AbstractLoadJava8Test {
 
     @TestMetadata("compiler/testData/loadJava8/sourceJava")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class SourceJava extends AbstractLoadJava8Test {
         public void testAllFilesPresentInSourceJava() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava8/sourceJava"), Pattern.compile("^(.+)\\.java$"), TargetBackend.ANY, true);

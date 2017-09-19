@@ -38,7 +38,6 @@ public class ConstraintSystemTestGenerated extends AbstractConstraintSystemTest 
 
     @TestMetadata("compiler/testData/constraintSystem/checkStatus")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class CheckStatus extends AbstractConstraintSystemTest {
         public void testAllFilesPresentInCheckStatus() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/constraintSystem/checkStatus"), Pattern.compile("^(.+)\\.constraints$"), TargetBackend.ANY, true);
@@ -71,7 +70,6 @@ public class ConstraintSystemTestGenerated extends AbstractConstraintSystemTest 
 
     @TestMetadata("compiler/testData/constraintSystem/computeValues")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ComputeValues extends AbstractConstraintSystemTest {
         public void testAllFilesPresentInComputeValues() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/constraintSystem/computeValues"), Pattern.compile("^(.+)\\.constraints$"), TargetBackend.ANY, true);
@@ -104,7 +102,6 @@ public class ConstraintSystemTestGenerated extends AbstractConstraintSystemTest 
 
     @TestMetadata("compiler/testData/constraintSystem/integerValueTypes")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class IntegerValueTypes extends AbstractConstraintSystemTest {
         public void testAllFilesPresentInIntegerValueTypes() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/constraintSystem/integerValueTypes"), Pattern.compile("^(.+)\\.constraints$"), TargetBackend.ANY, true);
@@ -161,7 +158,6 @@ public class ConstraintSystemTestGenerated extends AbstractConstraintSystemTest 
 
     @TestMetadata("compiler/testData/constraintSystem/severalVariables")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class SeveralVariables extends AbstractConstraintSystemTest {
         public void testAllFilesPresentInSeveralVariables() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/constraintSystem/severalVariables"), Pattern.compile("^(.+)\\.constraints$"), TargetBackend.ANY, true);
@@ -205,7 +201,6 @@ public class ConstraintSystemTestGenerated extends AbstractConstraintSystemTest 
 
         @TestMetadata("compiler/testData/constraintSystem/severalVariables/direct")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Direct extends AbstractConstraintSystemTest {
             public void testAllFilesPresentInDirect() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/constraintSystem/severalVariables/direct"), Pattern.compile("^(.+)\\.constraints$"), TargetBackend.ANY, true);
@@ -213,7 +208,6 @@ public class ConstraintSystemTestGenerated extends AbstractConstraintSystemTest 
 
             @TestMetadata("compiler/testData/constraintSystem/severalVariables/direct/contravariant")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Contravariant extends AbstractConstraintSystemTest {
                 public void testAllFilesPresentInContravariant() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/constraintSystem/severalVariables/direct/contravariant"), Pattern.compile("^(.+)\\.constraints$"), TargetBackend.ANY, true);
@@ -276,7 +270,6 @@ public class ConstraintSystemTestGenerated extends AbstractConstraintSystemTest 
 
             @TestMetadata("compiler/testData/constraintSystem/severalVariables/direct/covariant")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Covariant extends AbstractConstraintSystemTest {
                 public void testAllFilesPresentInCovariant() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/constraintSystem/severalVariables/direct/covariant"), Pattern.compile("^(.+)\\.constraints$"), TargetBackend.ANY, true);
@@ -339,7 +332,6 @@ public class ConstraintSystemTestGenerated extends AbstractConstraintSystemTest 
 
             @TestMetadata("compiler/testData/constraintSystem/severalVariables/direct/invariant")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Invariant extends AbstractConstraintSystemTest {
                 public void testAllFilesPresentInInvariant() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/constraintSystem/severalVariables/direct/invariant"), Pattern.compile("^(.+)\\.constraints$"), TargetBackend.ANY, true);
@@ -403,7 +395,6 @@ public class ConstraintSystemTestGenerated extends AbstractConstraintSystemTest 
 
         @TestMetadata("compiler/testData/constraintSystem/severalVariables/interdependency")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Interdependency extends AbstractConstraintSystemTest {
             public void testAllFilesPresentInInterdependency() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/constraintSystem/severalVariables/interdependency"), Pattern.compile("^(.+)\\.constraints$"), TargetBackend.ANY, true);
@@ -430,7 +421,6 @@ public class ConstraintSystemTestGenerated extends AbstractConstraintSystemTest 
 
         @TestMetadata("compiler/testData/constraintSystem/severalVariables/nullable")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Nullable extends AbstractConstraintSystemTest {
             public void testAllFilesPresentInNullable() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/constraintSystem/severalVariables/nullable"), Pattern.compile("^(.+)\\.constraints$"), TargetBackend.ANY, true);
@@ -438,7 +428,6 @@ public class ConstraintSystemTestGenerated extends AbstractConstraintSystemTest 
 
             @TestMetadata("compiler/testData/constraintSystem/severalVariables/nullable/contravariant")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Contravariant extends AbstractConstraintSystemTest {
                 public void testAllFilesPresentInContravariant() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/constraintSystem/severalVariables/nullable/contravariant"), Pattern.compile("^(.+)\\.constraints$"), TargetBackend.ANY, true);
@@ -501,7 +490,6 @@ public class ConstraintSystemTestGenerated extends AbstractConstraintSystemTest 
 
             @TestMetadata("compiler/testData/constraintSystem/severalVariables/nullable/covariant")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Covariant extends AbstractConstraintSystemTest {
                 public void testAllFilesPresentInCovariant() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/constraintSystem/severalVariables/nullable/covariant"), Pattern.compile("^(.+)\\.constraints$"), TargetBackend.ANY, true);
@@ -564,7 +552,6 @@ public class ConstraintSystemTestGenerated extends AbstractConstraintSystemTest 
 
             @TestMetadata("compiler/testData/constraintSystem/severalVariables/nullable/invariant")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Invariant extends AbstractConstraintSystemTest {
                 public void testAllFilesPresentInInvariant() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/constraintSystem/severalVariables/nullable/invariant"), Pattern.compile("^(.+)\\.constraints$"), TargetBackend.ANY, true);
@@ -628,7 +615,6 @@ public class ConstraintSystemTestGenerated extends AbstractConstraintSystemTest 
 
         @TestMetadata("compiler/testData/constraintSystem/severalVariables/other")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Other extends AbstractConstraintSystemTest {
             public void testAllFilesPresentInOther() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/constraintSystem/severalVariables/other"), Pattern.compile("^(.+)\\.constraints$"), TargetBackend.ANY, true);
@@ -709,7 +695,6 @@ public class ConstraintSystemTestGenerated extends AbstractConstraintSystemTest 
 
         @TestMetadata("compiler/testData/constraintSystem/severalVariables/recursive")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Recursive extends AbstractConstraintSystemTest {
             public void testAllFilesPresentInRecursive() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/constraintSystem/severalVariables/recursive"), Pattern.compile("^(.+)\\.constraints$"), TargetBackend.ANY, true);
@@ -742,7 +727,6 @@ public class ConstraintSystemTestGenerated extends AbstractConstraintSystemTest 
 
         @TestMetadata("compiler/testData/constraintSystem/severalVariables/reversed")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Reversed extends AbstractConstraintSystemTest {
             public void testAllFilesPresentInReversed() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/constraintSystem/severalVariables/reversed"), Pattern.compile("^(.+)\\.constraints$"), TargetBackend.ANY, true);
@@ -750,7 +734,6 @@ public class ConstraintSystemTestGenerated extends AbstractConstraintSystemTest 
 
             @TestMetadata("compiler/testData/constraintSystem/severalVariables/reversed/contravariant")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Contravariant extends AbstractConstraintSystemTest {
                 public void testAllFilesPresentInContravariant() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/constraintSystem/severalVariables/reversed/contravariant"), Pattern.compile("^(.+)\\.constraints$"), TargetBackend.ANY, true);
@@ -813,7 +796,6 @@ public class ConstraintSystemTestGenerated extends AbstractConstraintSystemTest 
 
             @TestMetadata("compiler/testData/constraintSystem/severalVariables/reversed/covariant")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Covariant extends AbstractConstraintSystemTest {
                 public void testAllFilesPresentInCovariant() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/constraintSystem/severalVariables/reversed/covariant"), Pattern.compile("^(.+)\\.constraints$"), TargetBackend.ANY, true);
@@ -876,7 +858,6 @@ public class ConstraintSystemTestGenerated extends AbstractConstraintSystemTest 
 
             @TestMetadata("compiler/testData/constraintSystem/severalVariables/reversed/invariant")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Invariant extends AbstractConstraintSystemTest {
                 public void testAllFilesPresentInInvariant() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/constraintSystem/severalVariables/reversed/invariant"), Pattern.compile("^(.+)\\.constraints$"), TargetBackend.ANY, true);
@@ -941,7 +922,6 @@ public class ConstraintSystemTestGenerated extends AbstractConstraintSystemTest 
 
     @TestMetadata("compiler/testData/constraintSystem/variance")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Variance extends AbstractConstraintSystemTest {
         public void testAllFilesPresentInVariance() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/constraintSystem/variance"), Pattern.compile("^(.+)\\.constraints$"), TargetBackend.ANY, true);

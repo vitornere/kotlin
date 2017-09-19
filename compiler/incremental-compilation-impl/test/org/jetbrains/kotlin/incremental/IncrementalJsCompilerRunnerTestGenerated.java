@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
 public class IncrementalJsCompilerRunnerTestGenerated extends AbstractIncrementalJsCompilerRunnerTest {
     @TestMetadata("jps-plugin/testData/incremental/pureKotlin")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class PureKotlin extends AbstractIncrementalJsCompilerRunnerTest {
         @TestMetadata("accessingFunctionsViaPackagePart")
         public void testAccessingFunctionsViaPackagePart() throws Exception {
@@ -731,7 +730,6 @@ public class IncrementalJsCompilerRunnerTestGenerated extends AbstractIncrementa
 
     @TestMetadata("jps-plugin/testData/incremental/classHierarchyAffected")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ClassHierarchyAffected extends AbstractIncrementalJsCompilerRunnerTest {
         public void testAllFilesPresentInClassHierarchyAffected() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("jps-plugin/testData/incremental/classHierarchyAffected"), Pattern.compile("^([^\\.]+)$"), TargetBackend.ANY, false);

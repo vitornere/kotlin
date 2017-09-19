@@ -440,7 +440,6 @@ public class JsLegacyPrimitiveArraysBoxTestGenerated extends AbstractJsLegacyPri
 
     @TestMetadata("compiler/testData/codegen/box/arrays/multiDecl")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class MultiDecl extends AbstractJsLegacyPrimitiveArraysBoxTest {
         public void testAllFilesPresentInMultiDecl() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/arrays/multiDecl"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -496,7 +495,6 @@ public class JsLegacyPrimitiveArraysBoxTestGenerated extends AbstractJsLegacyPri
 
         @TestMetadata("compiler/testData/codegen/box/arrays/multiDecl/int")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Int extends AbstractJsLegacyPrimitiveArraysBoxTest {
             public void testAllFilesPresentInInt() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/arrays/multiDecl/int"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -529,7 +527,6 @@ public class JsLegacyPrimitiveArraysBoxTestGenerated extends AbstractJsLegacyPri
 
         @TestMetadata("compiler/testData/codegen/box/arrays/multiDecl/long")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Long extends AbstractJsLegacyPrimitiveArraysBoxTest {
             public void testAllFilesPresentInLong() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/arrays/multiDecl/long"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);

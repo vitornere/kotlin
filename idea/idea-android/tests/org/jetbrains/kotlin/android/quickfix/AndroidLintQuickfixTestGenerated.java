@@ -38,7 +38,6 @@ public class AndroidLintQuickfixTestGenerated extends AbstractAndroidLintQuickfi
 
     @TestMetadata("idea/testData/android/lintQuickfix/findViewById")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class FindViewById extends AbstractAndroidLintQuickfixTest {
         public void testAllFilesPresentInFindViewById() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/android/lintQuickfix/findViewById"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -59,7 +58,6 @@ public class AndroidLintQuickfixTestGenerated extends AbstractAndroidLintQuickfi
 
     @TestMetadata("idea/testData/android/lintQuickfix/parcelable")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Parcelable extends AbstractAndroidLintQuickfixTest {
         public void testAllFilesPresentInParcelable() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/android/lintQuickfix/parcelable"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -80,7 +78,6 @@ public class AndroidLintQuickfixTestGenerated extends AbstractAndroidLintQuickfi
 
     @TestMetadata("idea/testData/android/lintQuickfix/requiresApi")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class RequiresApi extends AbstractAndroidLintQuickfixTest {
         public void testAllFilesPresentInRequiresApi() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/android/lintQuickfix/requiresApi"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -149,7 +146,6 @@ public class AndroidLintQuickfixTestGenerated extends AbstractAndroidLintQuickfi
 
     @TestMetadata("idea/testData/android/lintQuickfix/suppressLint")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class SuppressLint extends AbstractAndroidLintQuickfixTest {
         @TestMetadata("activityMethod.kt")
         public void testActivityMethod() throws Exception {
@@ -212,7 +208,6 @@ public class AndroidLintQuickfixTestGenerated extends AbstractAndroidLintQuickfi
 
     @TestMetadata("idea/testData/android/lintQuickfix/targetApi")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class TargetApi extends AbstractAndroidLintQuickfixTest {
         public void testAllFilesPresentInTargetApi() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/android/lintQuickfix/targetApi"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -281,7 +276,6 @@ public class AndroidLintQuickfixTestGenerated extends AbstractAndroidLintQuickfi
 
     @TestMetadata("idea/testData/android/lintQuickfix/targetVersionCheck")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class TargetVersionCheck extends AbstractAndroidLintQuickfixTest {
         public void testAllFilesPresentInTargetVersionCheck() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/android/lintQuickfix/targetVersionCheck"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);

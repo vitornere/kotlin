@@ -206,7 +206,6 @@ public class ResolveTestGenerated extends AbstractResolveTest {
 
     @TestMetadata("compiler/testData/resolve/candidatesPriority")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class CandidatesPriority extends AbstractResolveTest {
         public void testAllFilesPresentInCandidatesPriority() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/resolve/candidatesPriority"), Pattern.compile("^(.+)\\.resolve$"), TargetBackend.ANY, true);
@@ -317,7 +316,6 @@ public class ResolveTestGenerated extends AbstractResolveTest {
 
     @TestMetadata("compiler/testData/resolve/delegatedProperty")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class DelegatedProperty extends AbstractResolveTest {
         public void testAllFilesPresentInDelegatedProperty() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/resolve/delegatedProperty"), Pattern.compile("^(.+)\\.resolve$"), TargetBackend.ANY, true);
@@ -368,7 +366,6 @@ public class ResolveTestGenerated extends AbstractResolveTest {
 
     @TestMetadata("compiler/testData/resolve/imports")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Imports extends AbstractResolveTest {
         public void testAllFilesPresentInImports() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/resolve/imports"), Pattern.compile("^(.+)\\.resolve$"), TargetBackend.ANY, true);
@@ -449,7 +446,6 @@ public class ResolveTestGenerated extends AbstractResolveTest {
 
     @TestMetadata("compiler/testData/resolve/labels")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Labels extends AbstractResolveTest {
         public void testAllFilesPresentInLabels() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/resolve/labels"), Pattern.compile("^(.+)\\.resolve$"), TargetBackend.ANY, true);
@@ -470,7 +466,6 @@ public class ResolveTestGenerated extends AbstractResolveTest {
 
     @TestMetadata("compiler/testData/resolve/regressions")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Regressions extends AbstractResolveTest {
         public void testAllFilesPresentInRegressions() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/resolve/regressions"), Pattern.compile("^(.+)\\.resolve$"), TargetBackend.ANY, true);
@@ -491,7 +486,6 @@ public class ResolveTestGenerated extends AbstractResolveTest {
 
     @TestMetadata("compiler/testData/resolve/varargs")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Varargs extends AbstractResolveTest {
         public void testAllFilesPresentInVarargs() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/resolve/varargs"), Pattern.compile("^(.+)\\.resolve$"), TargetBackend.ANY, true);

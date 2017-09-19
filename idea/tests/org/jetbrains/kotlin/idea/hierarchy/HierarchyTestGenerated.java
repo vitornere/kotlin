@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
 public class HierarchyTestGenerated extends AbstractHierarchyTest {
     @TestMetadata("idea/testData/hierarchy/class/type")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Type extends AbstractHierarchyTest {
         public void testAllFilesPresentInType() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/hierarchy/class/type"), Pattern.compile("^([^\\.]+)$"), TargetBackend.ANY, false);
@@ -215,7 +214,6 @@ public class HierarchyTestGenerated extends AbstractHierarchyTest {
 
     @TestMetadata("idea/testData/hierarchy/class/super")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Super extends AbstractHierarchyTest {
         public void testAllFilesPresentInSuper() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/hierarchy/class/super"), Pattern.compile("^([^\\.]+)$"), TargetBackend.ANY, false);
@@ -248,7 +246,6 @@ public class HierarchyTestGenerated extends AbstractHierarchyTest {
 
     @TestMetadata("idea/testData/hierarchy/class/sub")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Sub extends AbstractHierarchyTest {
         public void testAllFilesPresentInSub() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/hierarchy/class/sub"), Pattern.compile("^([^\\.]+)$"), TargetBackend.ANY, false);
@@ -317,7 +314,6 @@ public class HierarchyTestGenerated extends AbstractHierarchyTest {
 
     @TestMetadata("idea/testData/hierarchy/calls/callers")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Callers extends AbstractHierarchyTest {
         public void testAllFilesPresentInCallers() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/hierarchy/calls/callers"), Pattern.compile("^([^\\.]+)$"), TargetBackend.ANY, false);
@@ -452,7 +448,6 @@ public class HierarchyTestGenerated extends AbstractHierarchyTest {
 
     @TestMetadata("idea/testData/hierarchy/calls/callersJava")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class CallersJava extends AbstractHierarchyTest {
         public void testAllFilesPresentInCallersJava() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/hierarchy/calls/callersJava"), Pattern.compile("^([^\\.]+)$"), TargetBackend.ANY, false);
@@ -467,7 +462,6 @@ public class HierarchyTestGenerated extends AbstractHierarchyTest {
 
     @TestMetadata("idea/testData/hierarchy/calls/callees")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Callees extends AbstractHierarchyTest {
         public void testAllFilesPresentInCallees() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/hierarchy/calls/callees"), Pattern.compile("^([^\\.]+)$"), TargetBackend.ANY, false);
@@ -554,7 +548,6 @@ public class HierarchyTestGenerated extends AbstractHierarchyTest {
 
     @TestMetadata("idea/testData/hierarchy/overrides")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Overrides extends AbstractHierarchyTest {
         public void testAllFilesPresentInOverrides() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/hierarchy/overrides"), Pattern.compile("^([^\\.]+)$"), TargetBackend.ANY, false);

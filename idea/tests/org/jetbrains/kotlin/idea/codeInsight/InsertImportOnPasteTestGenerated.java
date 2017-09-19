@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
 public class InsertImportOnPasteTestGenerated extends AbstractInsertImportOnPasteTest {
     @TestMetadata("idea/testData/copyPaste/imports")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Copy extends AbstractInsertImportOnPasteTest {
         public void testAllFilesPresentInCopy() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/copyPaste/imports"), Pattern.compile("^([^.]+)\\.kt$"), TargetBackend.ANY, false);
@@ -401,7 +400,6 @@ public class InsertImportOnPasteTestGenerated extends AbstractInsertImportOnPast
 
     @TestMetadata("idea/testData/copyPaste/imports")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Cut extends AbstractInsertImportOnPasteTest {
         public void testAllFilesPresentInCut() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/copyPaste/imports"), Pattern.compile("^([^.]+)\\.kt$"), TargetBackend.ANY, false);

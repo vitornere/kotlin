@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
 public class JsProtoComparisonTestGenerated extends AbstractJsProtoComparisonTest {
     @TestMetadata("jps-plugin/testData/comparison/classSignatureChange")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ClassSignatureChange extends AbstractJsProtoComparisonTest {
         public void testAllFilesPresentInClassSignatureChange() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("jps-plugin/testData/comparison/classSignatureChange"), Pattern.compile("^([^\\.]+)$"), TargetBackend.ANY, true);
@@ -107,7 +106,6 @@ public class JsProtoComparisonTestGenerated extends AbstractJsProtoComparisonTes
 
     @TestMetadata("jps-plugin/testData/comparison/classPrivateOnlyChange")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ClassPrivateOnlyChange extends AbstractJsProtoComparisonTest {
         public void testAllFilesPresentInClassPrivateOnlyChange() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("jps-plugin/testData/comparison/classPrivateOnlyChange"), Pattern.compile("^([^\\.]+)$"), TargetBackend.ANY, true);
@@ -146,7 +144,6 @@ public class JsProtoComparisonTestGenerated extends AbstractJsProtoComparisonTes
 
     @TestMetadata("jps-plugin/testData/comparison/classMembersOnlyChanged")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ClassMembersOnlyChanged extends AbstractJsProtoComparisonTest {
         public void testAllFilesPresentInClassMembersOnlyChanged() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("jps-plugin/testData/comparison/classMembersOnlyChanged"), Pattern.compile("^([^\\.]+)$"), TargetBackend.ANY, true);
@@ -215,7 +212,6 @@ public class JsProtoComparisonTestGenerated extends AbstractJsProtoComparisonTes
 
     @TestMetadata("jps-plugin/testData/comparison/packageMembers")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class PackageMembers extends AbstractJsProtoComparisonTest {
         public void testAllFilesPresentInPackageMembers() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("jps-plugin/testData/comparison/packageMembers"), Pattern.compile("^([^\\.]+)$"), TargetBackend.ANY, true);
@@ -254,7 +250,6 @@ public class JsProtoComparisonTestGenerated extends AbstractJsProtoComparisonTes
 
     @TestMetadata("jps-plugin/testData/comparison/unchanged")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Unchanged extends AbstractJsProtoComparisonTest {
         public void testAllFilesPresentInUnchanged() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("jps-plugin/testData/comparison/unchanged"), Pattern.compile("^([^\\.]+)$"), TargetBackend.ANY, true);
@@ -275,7 +270,6 @@ public class JsProtoComparisonTestGenerated extends AbstractJsProtoComparisonTes
 
     @TestMetadata("jps-plugin/testData/comparison/jsOnly")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class JsOnly extends AbstractJsProtoComparisonTest {
         public void testAllFilesPresentInJsOnly() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("jps-plugin/testData/comparison/jsOnly"), Pattern.compile("^([^\\.]+)$"), TargetBackend.ANY, true);

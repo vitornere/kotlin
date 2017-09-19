@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
 public class IncrementalLazyCachesTestGenerated extends AbstractIncrementalLazyCachesTest {
     @TestMetadata("jps-plugin/testData/incremental/lazyKotlinCaches")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class LazyKotlinCaches extends AbstractIncrementalLazyCachesTest {
         public void testAllFilesPresentInLazyKotlinCaches() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("jps-plugin/testData/incremental/lazyKotlinCaches"), Pattern.compile("^([^\\.]+)$"), TargetBackend.ANY, true);
@@ -89,7 +88,6 @@ public class IncrementalLazyCachesTestGenerated extends AbstractIncrementalLazyC
 
     @TestMetadata("jps-plugin/testData/incremental/changeIncrementalOption")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ChangeIncrementalOption extends AbstractIncrementalLazyCachesTest {
         public void testAllFilesPresentInChangeIncrementalOption() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("jps-plugin/testData/incremental/changeIncrementalOption"), Pattern.compile("^([^\\.]+)$"), TargetBackend.ANY, true);

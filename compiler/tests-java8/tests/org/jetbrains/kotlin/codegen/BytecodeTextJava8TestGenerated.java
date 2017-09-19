@@ -38,7 +38,6 @@ public class BytecodeTextJava8TestGenerated extends AbstractBytecodeTextTest {
 
     @TestMetadata("compiler/testData/codegen/java8/bytecodeText/hashCode")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class HashCode extends AbstractBytecodeTextTest {
         public void testAllFilesPresentInHashCode() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/java8/bytecodeText/hashCode"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);

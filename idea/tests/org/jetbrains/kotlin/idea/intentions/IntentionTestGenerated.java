@@ -38,7 +38,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/addBraces")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class AddBraces extends AbstractIntentionTest {
         @TestMetadata("addBracesForDoWhile.kt")
         public void testAddBracesForDoWhile() throws Exception {
@@ -113,7 +112,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/addConstModifier")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class AddConstModifier extends AbstractIntentionTest {
         public void testAllFilesPresentInAddConstModifier() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/addConstModifier"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -152,7 +150,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/addForLoopIndices")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class AddForLoopIndices extends AbstractIntentionTest {
         public void testAllFilesPresentInAddForLoopIndices() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/addForLoopIndices"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -239,7 +236,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/addJvmOverloads")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class AddJvmOverloads extends AbstractIntentionTest {
         public void testAllFilesPresentInAddJvmOverloads() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/addJvmOverloads"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -290,7 +286,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/addJvmStatic")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class AddJvmStatic extends AbstractIntentionTest {
         public void testAllFilesPresentInAddJvmStatic() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/addJvmStatic"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -353,7 +348,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/addMissingDestructuring")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class AddMissingDestructuring extends AbstractIntentionTest {
         public void testAllFilesPresentInAddMissingDestructuring() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/addMissingDestructuring"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -386,7 +380,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/addNameToArgument")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class AddNameToArgument extends AbstractIntentionTest {
         public void testAllFilesPresentInAddNameToArgument() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/addNameToArgument"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -515,7 +508,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/addNamesToCallArguments")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class AddNamesToCallArguments extends AbstractIntentionTest {
         public void testAllFilesPresentInAddNamesToCallArguments() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/addNamesToCallArguments"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -596,7 +588,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/addOpenModifier")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class AddOpenModifier extends AbstractIntentionTest {
         @TestMetadata("abstractClass.kt")
         public void testAbstractClass() throws Exception {
@@ -689,7 +680,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/addOperatorModifier")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class AddOperatorModifier extends AbstractIntentionTest {
         public void testAllFilesPresentInAddOperatorModifier() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/addOperatorModifier"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -740,7 +730,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/addPropertyAccessors")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class AddPropertyAccessors extends AbstractIntentionTest {
         public void testAllFilesPresentInAddPropertyAccessors() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/addPropertyAccessors"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -748,7 +737,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/addPropertyAccessors/both")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Both extends AbstractIntentionTest {
             @TestMetadata("abstract.kt")
             public void testAbstract() throws Exception {
@@ -817,7 +805,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/addPropertyAccessors/getter")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Getter extends AbstractIntentionTest {
             @TestMetadata("abstract.kt")
             public void testAbstract() throws Exception {
@@ -892,7 +879,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/addPropertyAccessors/setter")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Setter extends AbstractIntentionTest {
             @TestMetadata("abstract.kt")
             public void testAbstract() throws Exception {
@@ -962,7 +948,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/addValOrVar")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class AddValOrVar extends AbstractIntentionTest {
         @TestMetadata("addVal.kt")
         public void testAddVal() throws Exception {
@@ -1013,7 +998,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/anonymousFunctionToLambda")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class AnonymousFunctionToLambda extends AbstractIntentionTest {
         public void testAllFilesPresentInAnonymousFunctionToLambda() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/anonymousFunctionToLambda"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -1082,7 +1066,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/branched")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Branched extends AbstractIntentionTest {
         public void testAllFilesPresentInBranched() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/branched"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -1090,7 +1073,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/branched/doubleBangToIfThen")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class DoubleBangToIfThen extends AbstractIntentionTest {
             public void testAllFilesPresentInDoubleBangToIfThen() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/branched/doubleBangToIfThen"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -1177,7 +1159,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/branched/elvisToIfThen")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ElvisToIfThen extends AbstractIntentionTest {
             public void testAllFilesPresentInElvisToIfThen() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/branched/elvisToIfThen"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -1252,7 +1233,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/branched/folding")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Folding extends AbstractIntentionTest {
             public void testAllFilesPresentInFolding() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/branched/folding"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -1260,7 +1240,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
             @TestMetadata("idea/testData/intentions/branched/folding/ifToReturnAsymmetrically")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class IfToReturnAsymmetrically extends AbstractIntentionTest {
                 public void testAllFilesPresentInIfToReturnAsymmetrically() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/branched/folding/ifToReturnAsymmetrically"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -1288,7 +1267,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/branched/ifThenToDoubleBang")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class IfThenToDoubleBang extends AbstractIntentionTest {
             @TestMetadata("acceptableEmptyElseBlockForStatement.kt")
             public void testAcceptableEmptyElseBlockForStatement() throws Exception {
@@ -1507,7 +1485,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/branched/ifThenToElvis")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class IfThenToElvis extends AbstractIntentionTest {
             public void testAllFilesPresentInIfThenToElvis() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/branched/ifThenToElvis"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -1792,7 +1769,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/branched/ifThenToSafeAccess")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class IfThenToSafeAccess extends AbstractIntentionTest {
             public void testAllFilesPresentInIfThenToSafeAccess() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/branched/ifThenToSafeAccess"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -2083,7 +2059,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/branched/ifWhen")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class IfWhen extends AbstractIntentionTest {
             public void testAllFilesPresentInIfWhen() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/branched/ifWhen"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -2091,7 +2066,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
             @TestMetadata("idea/testData/intentions/branched/ifWhen/ifToWhen")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class IfToWhen extends AbstractIntentionTest {
                 public void testAllFilesPresentInIfToWhen() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/branched/ifWhen/ifToWhen"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -2226,7 +2200,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
             @TestMetadata("idea/testData/intentions/branched/ifWhen/whenToIf")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class WhenToIf extends AbstractIntentionTest {
                 public void testAllFilesPresentInWhenToIf() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/branched/ifWhen/whenToIf"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -2338,7 +2311,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/branched/safeAccessToIfThen")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class SafeAccessToIfThen extends AbstractIntentionTest {
             public void testAllFilesPresentInSafeAccessToIfThen() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/branched/safeAccessToIfThen"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -2503,7 +2475,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/branched/unfolding")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Unfolding extends AbstractIntentionTest {
             public void testAllFilesPresentInUnfolding() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/branched/unfolding"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -2511,7 +2482,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
             @TestMetadata("idea/testData/intentions/branched/unfolding/assignmentToIf")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class AssignmentToIf extends AbstractIntentionTest {
                 public void testAllFilesPresentInAssignmentToIf() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/branched/unfolding/assignmentToIf"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -2562,7 +2532,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
             @TestMetadata("idea/testData/intentions/branched/unfolding/assignmentToWhen")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class AssignmentToWhen extends AbstractIntentionTest {
                 public void testAllFilesPresentInAssignmentToWhen() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/branched/unfolding/assignmentToWhen"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -2595,7 +2564,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
             @TestMetadata("idea/testData/intentions/branched/unfolding/propertyToIf")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class PropertyToIf extends AbstractIntentionTest {
                 public void testAllFilesPresentInPropertyToIf() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/branched/unfolding/propertyToIf"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -2658,7 +2626,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
             @TestMetadata("idea/testData/intentions/branched/unfolding/propertyToWhen")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class PropertyToWhen extends AbstractIntentionTest {
                 public void testAllFilesPresentInPropertyToWhen() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/branched/unfolding/propertyToWhen"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -2709,7 +2676,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
             @TestMetadata("idea/testData/intentions/branched/unfolding/returnToIf")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class ReturnToIf extends AbstractIntentionTest {
                 public void testAllFilesPresentInReturnToIf() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/branched/unfolding/returnToIf"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -2736,7 +2702,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
             @TestMetadata("idea/testData/intentions/branched/unfolding/returnToWhen")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class ReturnToWhen extends AbstractIntentionTest {
                 public void testAllFilesPresentInReturnToWhen() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/branched/unfolding/returnToWhen"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -2764,7 +2729,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/branched/when")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class When extends AbstractIntentionTest {
             public void testAllFilesPresentInWhen() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/branched/when"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -2772,7 +2736,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
             @TestMetadata("idea/testData/intentions/branched/when/eliminateSubject")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class EliminateSubject extends AbstractIntentionTest {
                 public void testAllFilesPresentInEliminateSubject() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/branched/when/eliminateSubject"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -2835,7 +2798,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
             @TestMetadata("idea/testData/intentions/branched/when/flatten")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Flatten extends AbstractIntentionTest {
                 public void testAllFilesPresentInFlatten() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/branched/when/flatten"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -2862,7 +2824,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
             @TestMetadata("idea/testData/intentions/branched/when/introduceSubject")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class IntroduceSubject extends AbstractIntentionTest {
                 public void testAllFilesPresentInIntroduceSubject() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/branched/when/introduceSubject"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -2937,7 +2898,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
             @TestMetadata("idea/testData/intentions/branched/when/merge")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Merge extends AbstractIntentionTest {
                 public void testAllFilesPresentInMerge() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/branched/when/merge"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -3056,7 +3016,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/changeVisibility")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ChangeVisibility extends AbstractIntentionTest {
         public void testAllFilesPresentInChangeVisibility() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/changeVisibility"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -3064,7 +3023,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/changeVisibility/internal")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Internal extends AbstractIntentionTest {
             public void testAllFilesPresentInInternal() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/changeVisibility/internal"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -3091,7 +3049,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/changeVisibility/private")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Private extends AbstractIntentionTest {
             public void testAllFilesPresentInPrivate() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/changeVisibility/private"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -3244,7 +3201,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/changeVisibility/protected")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Protected extends AbstractIntentionTest {
             public void testAllFilesPresentInProtected() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/changeVisibility/protected"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -3301,7 +3257,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/changeVisibility/public")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Public extends AbstractIntentionTest {
             public void testAllFilesPresentInPublic() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/changeVisibility/public"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -3353,7 +3308,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/chop")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Chop extends AbstractIntentionTest {
         public void testAllFilesPresentInChop() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/chop"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -3361,7 +3315,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/chop/argumentList")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ArgumentList extends AbstractIntentionTest {
             public void testAllFilesPresentInArgumentList() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/chop/argumentList"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -3376,7 +3329,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/chop/parameterList")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ParameterList extends AbstractIntentionTest {
             public void testAllFilesPresentInParameterList() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/chop/parameterList"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -3422,7 +3374,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/conventionNameCalls")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ConventionNameCalls extends AbstractIntentionTest {
         public void testAllFilesPresentInConventionNameCalls() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/conventionNameCalls"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -3430,7 +3381,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/conventionNameCalls/replaceCallWithBinaryOperator")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ReplaceCallWithBinaryOperator extends AbstractIntentionTest {
             public void testAllFilesPresentInReplaceCallWithBinaryOperator() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/conventionNameCalls/replaceCallWithBinaryOperator"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -3595,7 +3545,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/conventionNameCalls/replaceCallWithUnaryOperator")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ReplaceCallWithUnaryOperator extends AbstractIntentionTest {
             public void testAllFilesPresentInReplaceCallWithUnaryOperator() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/conventionNameCalls/replaceCallWithUnaryOperator"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -3682,7 +3631,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/conventionNameCalls/replaceContains")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ReplaceContains extends AbstractIntentionTest {
             public void testAllFilesPresentInReplaceContains() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/conventionNameCalls/replaceContains"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -3817,7 +3765,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/conventionNameCalls/replaceGetOrSet")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ReplaceGetOrSet extends AbstractIntentionTest {
             @TestMetadata("acceptableVararg.kt")
             public void testAcceptableVararg() throws Exception {
@@ -3964,7 +3911,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/conventionNameCalls/replaceInvoke")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ReplaceInvoke extends AbstractIntentionTest {
             public void testAllFilesPresentInReplaceInvoke() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/conventionNameCalls/replaceInvoke"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -4040,7 +3986,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/convertAssertToIf")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ConvertAssertToIf extends AbstractIntentionTest {
         public void testAllFilesPresentInConvertAssertToIf() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/convertAssertToIf"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -4175,7 +4120,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/convertBinaryExpressionWithDemorgansLaw")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ConvertBinaryExpressionWithDemorgansLaw extends AbstractIntentionTest {
         public void testAllFilesPresentInConvertBinaryExpressionWithDemorgansLaw() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/convertBinaryExpressionWithDemorgansLaw"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -4292,7 +4236,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/convertCamelCaseTestFunctionToSpaced")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ConvertCamelCaseTestFunctionToSpaced extends AbstractIntentionTest {
         public void testAllFilesPresentInConvertCamelCaseTestFunctionToSpaced() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/convertCamelCaseTestFunctionToSpaced"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -4337,7 +4280,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/convertClassToSealedClass")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ConvertClassToSealedClass extends AbstractIntentionTest {
         @TestMetadata("abstract.kt")
         public void testAbstract() throws Exception {
@@ -4412,7 +4354,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/convertEnumToSealedClass")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ConvertEnumToSealedClass extends AbstractIntentionTest {
         public void testAllFilesPresentInConvertEnumToSealedClass() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/convertEnumToSealedClass"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -4451,7 +4392,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/convertForEachToForLoop")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ConvertForEachToForLoop extends AbstractIntentionTest {
         public void testAllFilesPresentInConvertForEachToForLoop() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/convertForEachToForLoop"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -4544,7 +4484,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/convertFunctionToProperty")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ConvertFunctionToProperty extends AbstractIntentionTest {
         @TestMetadata("addExplicitAnonymousType.kt")
         public void testAddExplicitAnonymousType() throws Exception {
@@ -4721,7 +4660,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/convertFunctionTypeParameterToReceiver")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ConvertFunctionTypeParameterToReceiver extends AbstractIntentionTest {
         public void testAllFilesPresentInConvertFunctionTypeParameterToReceiver() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/convertFunctionTypeParameterToReceiver"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -4832,7 +4770,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/convertFunctionTypeReceiverToParameter")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ConvertFunctionTypeReceiverToParameter extends AbstractIntentionTest {
         public void testAllFilesPresentInConvertFunctionTypeReceiverToParameter() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/convertFunctionTypeReceiverToParameter"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -4883,7 +4820,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/convertIfWithThrowToAssert")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ConvertIfWithThrowToAssert extends AbstractIntentionTest {
         public void testAllFilesPresentInConvertIfWithThrowToAssert() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/convertIfWithThrowToAssert"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -4970,7 +4906,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/convertLambdaToReference")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ConvertLambdaToReference extends AbstractIntentionTest {
         public void testAllFilesPresentInConvertLambdaToReference() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/convertLambdaToReference"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -5279,7 +5214,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/convertNegatedBooleanSequence")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ConvertNegatedBooleanSequence extends AbstractIntentionTest {
         public void testAllFilesPresentInConvertNegatedBooleanSequence() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/convertNegatedBooleanSequence"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -5348,7 +5282,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/convertObjectLiteralToClass")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ConvertObjectLiteralToClass extends AbstractIntentionTest {
         public void testAllFilesPresentInConvertObjectLiteralToClass() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/convertObjectLiteralToClass"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -5375,7 +5308,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/convertParameterToReceiver")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ConvertParameterToReceiver extends AbstractIntentionTest {
         public void testAllFilesPresentInConvertParameterToReceiver() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/convertParameterToReceiver"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -5462,7 +5394,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/convertPrimaryConstructorToSecondary")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ConvertPrimaryConstructorToSecondary extends AbstractIntentionTest {
         public void testAllFilesPresentInConvertPrimaryConstructorToSecondary() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/convertPrimaryConstructorToSecondary"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -5651,7 +5582,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/convertPropertyInitializerToGetter")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ConvertPropertyInitializerToGetter extends AbstractIntentionTest {
         public void testAllFilesPresentInConvertPropertyInitializerToGetter() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/convertPropertyInitializerToGetter"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -5720,7 +5650,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/convertPropertyToFunction")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ConvertPropertyToFunction extends AbstractIntentionTest {
         @TestMetadata("accessorCallGroovy.kt")
         public void testAccessorCallGroovy() throws Exception {
@@ -5819,7 +5748,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/convertRangeCheckToTwoComparisons")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ConvertRangeCheckToTwoComparisons extends AbstractIntentionTest {
         public void testAllFilesPresentInConvertRangeCheckToTwoComparisons() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/convertRangeCheckToTwoComparisons"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -5876,7 +5804,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/convertReceiverToParameter")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ConvertReceiverToParameter extends AbstractIntentionTest {
         public void testAllFilesPresentInConvertReceiverToParameter() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/convertReceiverToParameter"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -5951,7 +5878,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/convertReferenceToLambda")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ConvertReferenceToLambda extends AbstractIntentionTest {
         public void testAllFilesPresentInConvertReferenceToLambda() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/convertReferenceToLambda"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -6104,7 +6030,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/convertSealedClassToEnum")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ConvertSealedClassToEnum extends AbstractIntentionTest {
         public void testAllFilesPresentInConvertSealedClassToEnum() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/convertSealedClassToEnum"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -6173,7 +6098,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/convertSecondaryConstructorToPrimary")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ConvertSecondaryConstructorToPrimary extends AbstractIntentionTest {
         public void testAllFilesPresentInConvertSecondaryConstructorToPrimary() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/convertSecondaryConstructorToPrimary"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -6332,7 +6256,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/convertToApply")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ConvertToApply extends AbstractIntentionTest {
         public void testAllFilesPresentInConvertToApply() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/convertToApply"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -6407,7 +6330,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/convertToBlockBody")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ConvertToBlockBody extends AbstractIntentionTest {
         @TestMetadata("addSpace.kt")
         public void testAddSpace() throws Exception {
@@ -6560,7 +6482,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/convertToConcatenatedString")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ConvertToConcatenatedString extends AbstractIntentionTest {
         public void testAllFilesPresentInConvertToConcatenatedString() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/convertToConcatenatedString"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -6719,7 +6640,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/convertToForEachFunctionCall")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ConvertToForEachFunctionCall extends AbstractIntentionTest {
         public void testAllFilesPresentInConvertToForEachFunctionCall() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/convertToForEachFunctionCall"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -6806,7 +6726,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/convertToRawStringTemplate")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ConvertToRawStringTemplate extends AbstractIntentionTest {
         public void testAllFilesPresentInConvertToRawStringTemplate() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/convertToRawStringTemplate"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -6821,7 +6740,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/convertToRun")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ConvertToRun extends AbstractIntentionTest {
         public void testAllFilesPresentInConvertToRun() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/convertToRun"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -6896,7 +6814,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/convertToStringTemplate")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ConvertToStringTemplate extends AbstractIntentionTest {
         public void testAllFilesPresentInConvertToStringTemplate() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/convertToStringTemplate"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -7133,7 +7050,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/convertToWith")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ConvertToWith extends AbstractIntentionTest {
         public void testAllFilesPresentInConvertToWith() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/convertToWith"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -7208,7 +7124,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/convertTryFinallyToUseCall")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ConvertTryFinallyToUseCall extends AbstractIntentionTest {
         public void testAllFilesPresentInConvertTryFinallyToUseCall() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/convertTryFinallyToUseCall"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -7289,7 +7204,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/convertTwoComparisonsToRangeCheck")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ConvertTwoComparisonsToRangeCheck extends AbstractIntentionTest {
         public void testAllFilesPresentInConvertTwoComparisonsToRangeCheck() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/convertTwoComparisonsToRangeCheck"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -7478,7 +7392,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/copyConcatenatedStringToClipboard")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class CopyConcatenatedStringToClipboard extends AbstractIntentionTest {
         public void testAllFilesPresentInCopyConcatenatedStringToClipboard() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/copyConcatenatedStringToClipboard"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -7517,7 +7430,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/declarations")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Declarations extends AbstractIntentionTest {
         public void testAllFilesPresentInDeclarations() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/declarations"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -7525,7 +7437,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/declarations/convertMemberToExtension")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ConvertMemberToExtension extends AbstractIntentionTest {
             @TestMetadata("abstract.kt")
             public void testAbstract() throws Exception {
@@ -7768,7 +7679,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/declarations/split")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Split extends AbstractIntentionTest {
             public void testAllFilesPresentInSplit() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/declarations/split"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -7850,7 +7760,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/deprecatedCallableAddReplaceWith")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class DeprecatedCallableAddReplaceWith extends AbstractIntentionTest {
         public void testAllFilesPresentInDeprecatedCallableAddReplaceWith() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/deprecatedCallableAddReplaceWith"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -7991,7 +7900,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/destructuringInLambda")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class DestructuringInLambda extends AbstractIntentionTest {
         public void testAllFilesPresentInDestructuringInLambda() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/destructuringInLambda"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -8108,7 +8016,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/destructuringVariables")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class DestructuringVariables extends AbstractIntentionTest {
         public void testAllFilesPresentInDestructuringVariables() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/destructuringVariables"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -8165,7 +8072,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/foldInitializerAndIfToElvis")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class FoldInitializerAndIfToElvis extends AbstractIntentionTest {
         public void testAllFilesPresentInFoldInitializerAndIfToElvis() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/foldInitializerAndIfToElvis"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -8288,7 +8194,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/implementAbstractMember")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ImplementAbstractMember extends AbstractIntentionTest {
         public void testAllFilesPresentInImplementAbstractMember() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/implementAbstractMember"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -8296,7 +8201,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/implementAbstractMember/function")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Function extends AbstractIntentionTest {
             public void testAllFilesPresentInFunction() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/implementAbstractMember/function"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -8383,7 +8287,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/implementAbstractMember/property")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Property extends AbstractIntentionTest {
             public void testAllFilesPresentInProperty() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/implementAbstractMember/property"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -8471,7 +8374,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/implementAsConstructorParameter")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ImplementAsConstructorParameter extends AbstractIntentionTest {
         public void testAllFilesPresentInImplementAsConstructorParameter() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/implementAsConstructorParameter"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -8546,7 +8448,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/importAllMembers")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ImportAllMembers extends AbstractIntentionTest {
         public void testAllFilesPresentInImportAllMembers() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/importAllMembers"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -8627,7 +8528,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/importMember")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ImportMember extends AbstractIntentionTest {
         public void testAllFilesPresentInImportMember() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/importMember"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -8732,7 +8632,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/infixCallToOrdinary")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class InfixCallToOrdinary extends AbstractIntentionTest {
         public void testAllFilesPresentInInfixCallToOrdinary() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/infixCallToOrdinary"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -8777,7 +8676,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/insertCurlyBracesToTemplate")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class InsertCurlyBracesToTemplate extends AbstractIntentionTest {
         public void testAllFilesPresentInInsertCurlyBracesToTemplate() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/insertCurlyBracesToTemplate"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -8822,7 +8720,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/insertExplicitTypeArguments")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class InsertExplicitTypeArguments extends AbstractIntentionTest {
         public void testAllFilesPresentInInsertExplicitTypeArguments() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/insertExplicitTypeArguments"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -8945,7 +8842,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/introduceBackingProperty")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class IntroduceBackingProperty extends AbstractIntentionTest {
         public void testAllFilesPresentInIntroduceBackingProperty() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/introduceBackingProperty"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -9008,7 +8904,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/introduceVariable")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class IntroduceVariable extends AbstractIntentionTest {
         @TestMetadata("afterExpression.kt")
         public void testAfterExpression() throws Exception {
@@ -9065,7 +8960,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/invertIfCondition")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class InvertIfCondition extends AbstractIntentionTest {
         @TestMetadata("addSurroundingBlock_preserveComments.kt")
         public void testAddSurroundingBlock_preserveComments() throws Exception {
@@ -9302,7 +9196,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/iterateExpression")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class IterateExpression extends AbstractIntentionTest {
         public void testAllFilesPresentInIterateExpression() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/iterateExpression"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -9383,7 +9276,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/iterationOverMap")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class IterationOverMap extends AbstractIntentionTest {
         public void testAllFilesPresentInIterationOverMap() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/iterationOverMap"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -9632,7 +9524,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/joinDeclarationAndAssignment")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class JoinDeclarationAndAssignment extends AbstractIntentionTest {
         public void testAllFilesPresentInJoinDeclarationAndAssignment() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/joinDeclarationAndAssignment"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -9767,7 +9658,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/loopToCallChain")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class LoopToCallChain extends AbstractIntentionTest {
         public void testAllFilesPresentInLoopToCallChain() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/loopToCallChain"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -9853,7 +9743,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/loopToCallChain/any")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Any extends AbstractIntentionTest {
             public void testAllFilesPresentInAny() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/loopToCallChain/any"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -9946,7 +9835,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/loopToCallChain/contains")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Contains extends AbstractIntentionTest {
             @TestMetadata("1.kt")
             public void test1() throws Exception {
@@ -9979,7 +9867,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/loopToCallChain/count")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Count extends AbstractIntentionTest {
             @TestMetadata("1.kt")
             public void test1() throws Exception {
@@ -10048,7 +9935,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/loopToCallChain/filter")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Filter extends AbstractIntentionTest {
             public void testAllFilesPresentInFilter() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/loopToCallChain/filter"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -10357,7 +10243,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/loopToCallChain/firstOrNull")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class FirstOrNull extends AbstractIntentionTest {
             public void testAllFilesPresentInFirstOrNull() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/loopToCallChain/firstOrNull"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -10486,7 +10371,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/loopToCallChain/flatMap")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class FlatMap extends AbstractIntentionTest {
             public void testAllFilesPresentInFlatMap() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/loopToCallChain/flatMap"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -10561,7 +10445,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/loopToCallChain/forEach")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ForEach extends AbstractIntentionTest {
             public void testAllFilesPresentInForEach() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/loopToCallChain/forEach"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -10606,7 +10489,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/loopToCallChain/indexOf")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class IndexOf extends AbstractIntentionTest {
             public void testAllFilesPresentInIndexOf() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/loopToCallChain/indexOf"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -10657,7 +10539,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/loopToCallChain/introduceIndex")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class IntroduceIndex extends AbstractIntentionTest {
             public void testAllFilesPresentInIntroduceIndex() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/loopToCallChain/introduceIndex"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -10714,7 +10595,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/loopToCallChain/map")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Map extends AbstractIntentionTest {
             public void testAllFilesPresentInMap() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/loopToCallChain/map"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -10885,7 +10765,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/loopToCallChain/maxMin")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class MaxMin extends AbstractIntentionTest {
             public void testAllFilesPresentInMaxMin() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/loopToCallChain/maxMin"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -10972,7 +10851,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/loopToCallChain/smartCasts")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class SmartCasts extends AbstractIntentionTest {
             public void testAllFilesPresentInSmartCasts() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/loopToCallChain/smartCasts"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -11071,7 +10949,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/loopToCallChain/sum")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Sum extends AbstractIntentionTest {
             public void testAllFilesPresentInSum() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/loopToCallChain/sum"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -11182,7 +11059,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/loopToCallChain/takeWhile")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class TakeWhile extends AbstractIntentionTest {
             public void testAllFilesPresentInTakeWhile() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/loopToCallChain/takeWhile"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -11221,7 +11097,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/loopToCallChain/toCollection")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ToCollection extends AbstractIntentionTest {
             @TestMetadata("addAfterLoop.kt")
             public void testAddAfterLoop() throws Exception {
@@ -11321,7 +11196,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/mergeIfs")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class MergeIfs extends AbstractIntentionTest {
         public void testAllFilesPresentInMergeIfs() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/mergeIfs"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -11360,7 +11234,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/moveLambdaInsideParentheses")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class MoveLambdaInsideParentheses extends AbstractIntentionTest {
         public void testAllFilesPresentInMoveLambdaInsideParentheses() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/moveLambdaInsideParentheses"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -11477,7 +11350,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/moveLambdaOutsideParentheses")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class MoveLambdaOutsideParentheses extends AbstractIntentionTest {
         public void testAllFilesPresentInMoveLambdaOutsideParentheses() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/moveLambdaOutsideParentheses"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -11594,7 +11466,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/moveOutOfCompanion")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class MoveOutOfCompanion extends AbstractIntentionTest {
         public void testAllFilesPresentInMoveOutOfCompanion() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/moveOutOfCompanion"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -11657,7 +11528,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/movePropertyToClassBody")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class MovePropertyToClassBody extends AbstractIntentionTest {
         public void testAllFilesPresentInMovePropertyToClassBody() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/movePropertyToClassBody"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -11714,7 +11584,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/movePropertyToConstructor")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class MovePropertyToConstructor extends AbstractIntentionTest {
         public void testAllFilesPresentInMovePropertyToConstructor() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/movePropertyToConstructor"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -11807,7 +11676,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/moveToCompanion")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class MoveToCompanion extends AbstractIntentionTest {
         @TestMetadata("abstractFunction.kt")
         public void testAbstractFunction() throws Exception {
@@ -11942,7 +11810,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/nullableBooleanEqualityCheckToElvis")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class NullableBooleanEqualityCheckToElvis extends AbstractIntentionTest {
         public void testAllFilesPresentInNullableBooleanEqualityCheckToElvis() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/nullableBooleanEqualityCheckToElvis"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -11981,7 +11848,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/objectLiteralToLambda")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ObjectLiteralToLambda extends AbstractIntentionTest {
         public void testAllFilesPresentInObjectLiteralToLambda() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/objectLiteralToLambda"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -12158,7 +12024,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/operatorToFunction")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class OperatorToFunction extends AbstractIntentionTest {
         public void testAllFilesPresentInOperatorToFunction() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/operatorToFunction"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -12335,7 +12200,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/reconstructTypeInCastOrIs")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ReconstructTypeInCastOrIs extends AbstractIntentionTest {
         public void testAllFilesPresentInReconstructTypeInCastOrIs() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/reconstructTypeInCastOrIs"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -12374,7 +12238,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/removeArgumentName")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class RemoveArgumentName extends AbstractIntentionTest {
         public void testAllFilesPresentInRemoveArgumentName() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/removeArgumentName"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -12443,7 +12306,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/removeBraces")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class RemoveBraces extends AbstractIntentionTest {
         public void testAllFilesPresentInRemoveBraces() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/removeBraces"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -12578,7 +12440,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/removeCurlyBracesFromTemplate")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class RemoveCurlyBracesFromTemplate extends AbstractIntentionTest {
         public void testAllFilesPresentInRemoveCurlyBracesFromTemplate() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/removeCurlyBracesFromTemplate"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -12653,7 +12514,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/removeEmptyClassBody")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class RemoveEmptyClassBody extends AbstractIntentionTest {
         public void testAllFilesPresentInRemoveEmptyClassBody() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/removeEmptyClassBody"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -12740,7 +12600,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/removeEmptyParenthesesFromLambdaCall")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class RemoveEmptyParenthesesFromLambdaCall extends AbstractIntentionTest {
         public void testAllFilesPresentInRemoveEmptyParenthesesFromLambdaCall() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/removeEmptyParenthesesFromLambdaCall"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -12755,7 +12614,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/removeEmptyPrimaryConstructor")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class RemoveEmptyPrimaryConstructor extends AbstractIntentionTest {
         public void testAllFilesPresentInRemoveEmptyPrimaryConstructor() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/removeEmptyPrimaryConstructor"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -12794,7 +12652,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/removeEmptySecondaryConstructorBody")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class RemoveEmptySecondaryConstructorBody extends AbstractIntentionTest {
         public void testAllFilesPresentInRemoveEmptySecondaryConstructorBody() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/removeEmptySecondaryConstructorBody"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -12815,7 +12672,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/removeExplicitLambdaParameterTypes")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class RemoveExplicitLambdaParameterTypes extends AbstractIntentionTest {
         public void testAllFilesPresentInRemoveExplicitLambdaParameterTypes() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/removeExplicitLambdaParameterTypes"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -12878,7 +12734,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/removeExplicitSuperQualifier")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class RemoveExplicitSuperQualifier extends AbstractIntentionTest {
         public void testAllFilesPresentInRemoveExplicitSuperQualifier() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/removeExplicitSuperQualifier"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -12953,7 +12808,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/removeExplicitType")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class RemoveExplicitType extends AbstractIntentionTest {
         public void testAllFilesPresentInRemoveExplicitType() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/removeExplicitType"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -13022,7 +12876,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/removeExplicitTypeArguments")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class RemoveExplicitTypeArguments extends AbstractIntentionTest {
         public void testAllFilesPresentInRemoveExplicitTypeArguments() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/removeExplicitTypeArguments"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -13217,7 +13070,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/removeForLoopIndices")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class RemoveForLoopIndices extends AbstractIntentionTest {
         public void testAllFilesPresentInRemoveForLoopIndices() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/removeForLoopIndices"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -13268,7 +13120,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/removeRedundantCallsOfConversionMethods")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class RemoveRedundantCallsOfConversionMethods extends AbstractIntentionTest {
         public void testAllFilesPresentInRemoveRedundantCallsOfConversionMethods() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/removeRedundantCallsOfConversionMethods"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -13349,7 +13200,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/removeSingleExpressionStringTemplate")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class RemoveSingleExpressionStringTemplate extends AbstractIntentionTest {
         public void testAllFilesPresentInRemoveSingleExpressionStringTemplate() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/removeSingleExpressionStringTemplate"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -13400,7 +13250,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/removeUnnecessaryParentheses")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class RemoveUnnecessaryParentheses extends AbstractIntentionTest {
         public void testAllFilesPresentInRemoveUnnecessaryParentheses() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/removeUnnecessaryParentheses"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -13493,7 +13342,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/replaceAddWithPlusAssign")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ReplaceAddWithPlusAssign extends AbstractIntentionTest {
         @TestMetadata("add.kt")
         public void testAdd() throws Exception {
@@ -13544,7 +13392,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/replaceArrayEqualityOpWithArraysEquals")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ReplaceArrayEqualityOpWithArraysEquals extends AbstractIntentionTest {
         public void testAllFilesPresentInReplaceArrayEqualityOpWithArraysEquals() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/replaceArrayEqualityOpWithArraysEquals"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -13571,7 +13418,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/replaceExplicitFunctionLiteralParamWithIt")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ReplaceExplicitFunctionLiteralParamWithIt extends AbstractIntentionTest {
         public void testAllFilesPresentInReplaceExplicitFunctionLiteralParamWithIt() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/replaceExplicitFunctionLiteralParamWithIt"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -13664,7 +13510,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/replaceItWithExplicitFunctionLiteralParam")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ReplaceItWithExplicitFunctionLiteralParam extends AbstractIntentionTest {
         public void testAllFilesPresentInReplaceItWithExplicitFunctionLiteralParam() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/replaceItWithExplicitFunctionLiteralParam"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -13703,7 +13548,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/replaceMathMaxWithCoerceAtLeast")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ReplaceMathMaxWithCoerceAtLeast extends AbstractIntentionTest {
         public void testAllFilesPresentInReplaceMathMaxWithCoerceAtLeast() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/replaceMathMaxWithCoerceAtLeast"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -13766,7 +13610,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/replaceMathMinWithCoerceAtMost")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ReplaceMathMinWithCoerceAtMost extends AbstractIntentionTest {
         public void testAllFilesPresentInReplaceMathMinWithCoerceAtMost() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/replaceMathMinWithCoerceAtMost"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -13823,7 +13666,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/replaceSingleLineLetIntention")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ReplaceSingleLineLetIntention extends AbstractIntentionTest {
         public void testAllFilesPresentInReplaceSingleLineLetIntention() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/replaceSingleLineLetIntention"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -14060,7 +13902,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/replaceSizeCheckWithIsNotEmpty")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ReplaceSizeCheckWithIsNotEmpty extends AbstractIntentionTest {
         public void testAllFilesPresentInReplaceSizeCheckWithIsNotEmpty() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/replaceSizeCheckWithIsNotEmpty"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -14171,7 +14012,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/replaceSizeZeroCheckWithIsEmpty")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ReplaceSizeZeroCheckWithIsEmpty extends AbstractIntentionTest {
         public void testAllFilesPresentInReplaceSizeZeroCheckWithIsEmpty() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/replaceSizeZeroCheckWithIsEmpty"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -14252,7 +14092,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/replaceSubstringWithDropLast")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ReplaceSubstringWithDropLast extends AbstractIntentionTest {
         public void testAllFilesPresentInReplaceSubstringWithDropLast() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/replaceSubstringWithDropLast"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -14291,7 +14130,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/replaceSubstringWithSubstringAfter")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ReplaceSubstringWithSubstringAfter extends AbstractIntentionTest {
         public void testAllFilesPresentInReplaceSubstringWithSubstringAfter() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/replaceSubstringWithSubstringAfter"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -14324,7 +14162,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/replaceSubstringWithSubstringBefore")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ReplaceSubstringWithSubstringBefore extends AbstractIntentionTest {
         public void testAllFilesPresentInReplaceSubstringWithSubstringBefore() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/replaceSubstringWithSubstringBefore"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -14363,7 +14200,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/replaceSubstringWithTake")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ReplaceSubstringWithTake extends AbstractIntentionTest {
         public void testAllFilesPresentInReplaceSubstringWithTake() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/replaceSubstringWithTake"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -14402,7 +14238,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/replaceUnderscoreWithParameterName")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ReplaceUnderscoreWithParameterName extends AbstractIntentionTest {
         public void testAllFilesPresentInReplaceUnderscoreWithParameterName() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/replaceUnderscoreWithParameterName"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -14465,7 +14300,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/replaceUntilWithRangeTo")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ReplaceUntilWithRangeTo extends AbstractIntentionTest {
         public void testAllFilesPresentInReplaceUntilWithRangeTo() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/replaceUntilWithRangeTo"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -14480,7 +14314,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/replaceWithOperatorAssignment")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ReplaceWithOperatorAssignment extends AbstractIntentionTest {
         public void testAllFilesPresentInReplaceWithOperatorAssignment() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/replaceWithOperatorAssignment"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -14561,7 +14394,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/replaceWithOrdinaryAssignment")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ReplaceWithOrdinaryAssignment extends AbstractIntentionTest {
         public void testAllFilesPresentInReplaceWithOrdinaryAssignment() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/replaceWithOrdinaryAssignment"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -14594,7 +14426,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/simplifyAssertNotNull")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class SimplifyAssertNotNull extends AbstractIntentionTest {
         public void testAllFilesPresentInSimplifyAssertNotNull() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/simplifyAssertNotNull"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -14669,7 +14500,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/simplifyBooleanWithConstants")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class SimplifyBooleanWithConstants extends AbstractIntentionTest {
         public void testAllFilesPresentInSimplifyBooleanWithConstants() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/simplifyBooleanWithConstants"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -14864,7 +14694,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/simplifyNegatedBinaryExpression")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class SimplifyNegatedBinaryExpression extends AbstractIntentionTest {
         public void testAllFilesPresentInSimplifyNegatedBinaryExpression() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/simplifyNegatedBinaryExpression"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -14945,7 +14774,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/specifyExplicitLambdaSignature")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class SpecifyExplicitLambdaSignature extends AbstractIntentionTest {
         public void testAllFilesPresentInSpecifyExplicitLambdaSignature() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/specifyExplicitLambdaSignature"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -15056,7 +14884,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/specifyTypeExplicitly")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class SpecifyTypeExplicitly extends AbstractIntentionTest {
         public void testAllFilesPresentInSpecifyTypeExplicitly() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/specifyTypeExplicitly"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -15179,7 +15006,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/splitIf")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class SplitIf extends AbstractIntentionTest {
         public void testAllFilesPresentInSplitIf() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/splitIf"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -15337,7 +15163,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
         @TestMetadata("idea/testData/intentions/splitIf/keepComments")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class KeepComments extends AbstractIntentionTest {
             public void testAllFilesPresentInKeepComments() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/splitIf/keepComments"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -15371,7 +15196,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/swapBinaryExpression")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class SwapBinaryExpression extends AbstractIntentionTest {
         public void testAllFilesPresentInSwapBinaryExpression() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/swapBinaryExpression"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -15638,7 +15462,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/swapStringEqualsIgnoreCase")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class SwapStringEqualsIgnoreCase extends AbstractIntentionTest {
         public void testAllFilesPresentInSwapStringEqualsIgnoreCase() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/swapStringEqualsIgnoreCase"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -15659,7 +15482,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/toInfixCall")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ToInfixCall extends AbstractIntentionTest {
         public void testAllFilesPresentInToInfixCall() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/toInfixCall"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -15788,7 +15610,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/toOrdinaryStringLiteral")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ToOrdinaryStringLiteral extends AbstractIntentionTest {
         public void testAllFilesPresentInToOrdinaryStringLiteral() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/toOrdinaryStringLiteral"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -15815,7 +15636,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/toRawStringLiteral")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ToRawStringLiteral extends AbstractIntentionTest {
         @TestMetadata("3quotes.kt")
         public void test3quotes() throws Exception {
@@ -15890,7 +15710,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/usePropertyAccessSyntax")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class UsePropertyAccessSyntax extends AbstractIntentionTest {
         @TestMetadata("accessThroughKotlinClassInstance.kt")
         public void testAccessThroughKotlinClassInstance() throws Exception {
@@ -16043,7 +15862,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/useWithIndex")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class UseWithIndex extends AbstractIntentionTest {
         public void testAllFilesPresentInUseWithIndex() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/useWithIndex"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -16094,7 +15912,6 @@ public class IntentionTestGenerated extends AbstractIntentionTest {
 
     @TestMetadata("idea/testData/intentions/valToObject")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ValToObject extends AbstractIntentionTest {
         public void testAllFilesPresentInValToObject() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/intentions/valToObject"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);

@@ -38,7 +38,6 @@ public class AndroidIntentionTestGenerated extends AbstractAndroidIntentionTest 
 
     @TestMetadata("idea/testData/android/intention/addActivityToManifest")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class AddActivityToManifest extends AbstractAndroidIntentionTest {
         @TestMetadata("abstract.kt")
         public void testAbstract() throws Exception {
@@ -107,7 +106,6 @@ public class AndroidIntentionTestGenerated extends AbstractAndroidIntentionTest 
 
     @TestMetadata("idea/testData/android/intention/addBroadcastReceiverToManifest")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class AddBroadcastReceiverToManifest extends AbstractAndroidIntentionTest {
         @TestMetadata("abstract.kt")
         public void testAbstract() throws Exception {
@@ -176,7 +174,6 @@ public class AndroidIntentionTestGenerated extends AbstractAndroidIntentionTest 
 
     @TestMetadata("idea/testData/android/intention/addServiceToManifest")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class AddServiceToManifest extends AbstractAndroidIntentionTest {
         @TestMetadata("abstract.kt")
         public void testAbstract() throws Exception {
@@ -245,7 +242,6 @@ public class AndroidIntentionTestGenerated extends AbstractAndroidIntentionTest 
 
     @TestMetadata("idea/testData/android/intention/implementParcelable")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ImplementParcelable extends AbstractAndroidIntentionTest {
         public void testAllFilesPresentInImplementParcelable() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/android/intention/implementParcelable"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -314,7 +310,6 @@ public class AndroidIntentionTestGenerated extends AbstractAndroidIntentionTest 
 
     @TestMetadata("idea/testData/android/intention/redoParcelable")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class RedoParcelable extends AbstractAndroidIntentionTest {
         public void testAllFilesPresentInRedoParcelable() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/android/intention/redoParcelable"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);
@@ -371,7 +366,6 @@ public class AndroidIntentionTestGenerated extends AbstractAndroidIntentionTest 
 
     @TestMetadata("idea/testData/android/intention/removeParcelable")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class RemoveParcelable extends AbstractAndroidIntentionTest {
         public void testAllFilesPresentInRemoveParcelable() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/android/intention/removeParcelable"), Pattern.compile("^([\\w\\-_]+)\\.kt$"), TargetBackend.ANY, true);

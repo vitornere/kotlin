@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
 public class JavacFieldResolutionTestGenerated extends AbstractJavacFieldResolutionTest {
     @TestMetadata("compiler/testData/javac/fieldsResolution/tests")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Tests extends AbstractJavacFieldResolutionTest {
         public void testAllFilesPresentInTests() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/javac/fieldsResolution/tests"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -113,7 +112,6 @@ public class JavacFieldResolutionTestGenerated extends AbstractJavacFieldResolut
 
     @TestMetadata("compiler/testData/javac/fieldsResolution/tests")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class TestsWithoutJavac extends AbstractJavacFieldResolutionTest {
         public void testAllFilesPresentInTestsWithoutJavac() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/javac/fieldsResolution/tests"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);

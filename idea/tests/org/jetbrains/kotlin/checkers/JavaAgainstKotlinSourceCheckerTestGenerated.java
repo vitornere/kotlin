@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
 public class JavaAgainstKotlinSourceCheckerTestGenerated extends AbstractJavaAgainstKotlinSourceCheckerTest {
     @TestMetadata("idea/testData/kotlinAndJavaChecker/javaAgainstKotlin")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class JavaAgainstKotlin extends AbstractJavaAgainstKotlinSourceCheckerTest {
         public void testAllFilesPresentInJavaAgainstKotlin() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/kotlinAndJavaChecker/javaAgainstKotlin"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -209,7 +208,6 @@ public class JavaAgainstKotlinSourceCheckerTestGenerated extends AbstractJavaAga
 
     @TestMetadata("idea/testData/kotlinAndJavaChecker/javaWithKotlin")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class JavaWithKotlin extends AbstractJavaAgainstKotlinSourceCheckerTest {
         public void testAllFilesPresentInJavaWithKotlin() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/kotlinAndJavaChecker/javaWithKotlin"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);

@@ -230,7 +230,6 @@ public class BasicCompletionHandlerTestGenerated extends AbstractBasicCompletion
 
     @TestMetadata("idea/idea-completion/testData/handlers/basic/annotation")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Annotation extends AbstractBasicCompletionHandlerTest {
         public void testAllFilesPresentInAnnotation() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/idea-completion/testData/handlers/basic/annotation"), Pattern.compile("^([^.]+)\\.kt$"), TargetBackend.ANY, true);
@@ -263,7 +262,6 @@ public class BasicCompletionHandlerTestGenerated extends AbstractBasicCompletion
 
     @TestMetadata("idea/idea-completion/testData/handlers/basic/callableReference")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class CallableReference extends AbstractBasicCompletionHandlerTest {
         public void testAllFilesPresentInCallableReference() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/idea-completion/testData/handlers/basic/callableReference"), Pattern.compile("^([^.]+)\\.kt$"), TargetBackend.ANY, true);
@@ -302,7 +300,6 @@ public class BasicCompletionHandlerTestGenerated extends AbstractBasicCompletion
 
     @TestMetadata("idea/idea-completion/testData/handlers/basic/exclChar")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ExclChar extends AbstractBasicCompletionHandlerTest {
         @TestMetadata("1.kt")
         public void test1() throws Exception {
@@ -341,7 +338,6 @@ public class BasicCompletionHandlerTestGenerated extends AbstractBasicCompletion
 
     @TestMetadata("idea/idea-completion/testData/handlers/basic/highOrderFunctions")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class HighOrderFunctions extends AbstractBasicCompletionHandlerTest {
         public void testAllFilesPresentInHighOrderFunctions() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/idea-completion/testData/handlers/basic/highOrderFunctions"), Pattern.compile("^([^.]+)\\.kt$"), TargetBackend.ANY, true);
@@ -464,7 +460,6 @@ public class BasicCompletionHandlerTestGenerated extends AbstractBasicCompletion
 
     @TestMetadata("idea/idea-completion/testData/handlers/basic/importAliases")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ImportAliases extends AbstractBasicCompletionHandlerTest {
         public void testAllFilesPresentInImportAliases() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/idea-completion/testData/handlers/basic/importAliases"), Pattern.compile("^([^.]+)\\.kt$"), TargetBackend.ANY, true);
@@ -515,7 +510,6 @@ public class BasicCompletionHandlerTestGenerated extends AbstractBasicCompletion
 
     @TestMetadata("idea/idea-completion/testData/handlers/basic/override")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Override extends AbstractBasicCompletionHandlerTest {
         @TestMetadata("AfterFunKeyword.kt")
         public void testAfterFunKeyword() throws Exception {
@@ -632,7 +626,6 @@ public class BasicCompletionHandlerTestGenerated extends AbstractBasicCompletion
 
     @TestMetadata("idea/idea-completion/testData/handlers/basic/parameterNameAndType")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ParameterNameAndType extends AbstractBasicCompletionHandlerTest {
         public void testAllFilesPresentInParameterNameAndType() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/idea-completion/testData/handlers/basic/parameterNameAndType"), Pattern.compile("^([^.]+)\\.kt$"), TargetBackend.ANY, true);
@@ -713,7 +706,6 @@ public class BasicCompletionHandlerTestGenerated extends AbstractBasicCompletion
 
     @TestMetadata("idea/idea-completion/testData/handlers/basic/staticMemberOfNotImported")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class StaticMemberOfNotImported extends AbstractBasicCompletionHandlerTest {
         public void testAllFilesPresentInStaticMemberOfNotImported() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/idea-completion/testData/handlers/basic/staticMemberOfNotImported"), Pattern.compile("^([^.]+)\\.kt$"), TargetBackend.ANY, true);
@@ -752,7 +744,6 @@ public class BasicCompletionHandlerTestGenerated extends AbstractBasicCompletion
 
     @TestMetadata("idea/idea-completion/testData/handlers/basic/staticMembers")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class StaticMembers extends AbstractBasicCompletionHandlerTest {
         public void testAllFilesPresentInStaticMembers() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/idea-completion/testData/handlers/basic/staticMembers"), Pattern.compile("^([^.]+)\\.kt$"), TargetBackend.ANY, true);
@@ -785,7 +776,6 @@ public class BasicCompletionHandlerTestGenerated extends AbstractBasicCompletion
 
     @TestMetadata("idea/idea-completion/testData/handlers/basic/stringTemplate")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class StringTemplate extends AbstractBasicCompletionHandlerTest {
         @TestMetadata("1.kt")
         public void test1() throws Exception {
@@ -878,7 +868,6 @@ public class BasicCompletionHandlerTestGenerated extends AbstractBasicCompletion
 
     @TestMetadata("idea/idea-completion/testData/handlers/basic/typeArgsForCall")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class TypeArgsForCall extends AbstractBasicCompletionHandlerTest {
         @TestMetadata("AfterElse.kt")
         public void testAfterElse() throws Exception {

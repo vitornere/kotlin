@@ -38,7 +38,6 @@ public class ParcelQuickFixTestGenerated extends AbstractParcelQuickFixTest {
 
     @TestMetadata("plugins/android-extensions/android-extensions-idea/testData/android/parcel/quickfix/addPrimaryConstructor")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class AddPrimaryConstructor extends AbstractParcelQuickFixTest {
         public void testAllFilesPresentInAddPrimaryConstructor() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("plugins/android-extensions/android-extensions-idea/testData/android/parcel/quickfix/addPrimaryConstructor"), Pattern.compile("^(\\w+)\\.((before\\.Main\\.\\w+)|(test))$"), TargetBackend.ANY, true);
@@ -65,7 +64,6 @@ public class ParcelQuickFixTestGenerated extends AbstractParcelQuickFixTest {
 
     @TestMetadata("plugins/android-extensions/android-extensions-idea/testData/android/parcel/quickfix/cantBeInnerClass")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class CantBeInnerClass extends AbstractParcelQuickFixTest {
         public void testAllFilesPresentInCantBeInnerClass() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("plugins/android-extensions/android-extensions-idea/testData/android/parcel/quickfix/cantBeInnerClass"), Pattern.compile("^(\\w+)\\.((before\\.Main\\.\\w+)|(test))$"), TargetBackend.ANY, true);
@@ -80,7 +78,6 @@ public class ParcelQuickFixTestGenerated extends AbstractParcelQuickFixTest {
 
     @TestMetadata("plugins/android-extensions/android-extensions-idea/testData/android/parcel/quickfix/deleteIncompatible")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class DeleteIncompatible extends AbstractParcelQuickFixTest {
         public void testAllFilesPresentInDeleteIncompatible() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("plugins/android-extensions/android-extensions-idea/testData/android/parcel/quickfix/deleteIncompatible"), Pattern.compile("^(\\w+)\\.((before\\.Main\\.\\w+)|(test))$"), TargetBackend.ANY, true);
@@ -101,7 +98,6 @@ public class ParcelQuickFixTestGenerated extends AbstractParcelQuickFixTest {
 
     @TestMetadata("plugins/android-extensions/android-extensions-idea/testData/android/parcel/quickfix/migrations")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Migrations extends AbstractParcelQuickFixTest {
         public void testAllFilesPresentInMigrations() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("plugins/android-extensions/android-extensions-idea/testData/android/parcel/quickfix/migrations"), Pattern.compile("^(\\w+)\\.((before\\.Main\\.\\w+)|(test))$"), TargetBackend.ANY, true);
@@ -158,7 +154,6 @@ public class ParcelQuickFixTestGenerated extends AbstractParcelQuickFixTest {
 
     @TestMetadata("plugins/android-extensions/android-extensions-idea/testData/android/parcel/quickfix/noParcelableSupertype")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class NoParcelableSupertype extends AbstractParcelQuickFixTest {
         public void testAllFilesPresentInNoParcelableSupertype() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("plugins/android-extensions/android-extensions-idea/testData/android/parcel/quickfix/noParcelableSupertype"), Pattern.compile("^(\\w+)\\.((before\\.Main\\.\\w+)|(test))$"), TargetBackend.ANY, true);
@@ -179,7 +174,6 @@ public class ParcelQuickFixTestGenerated extends AbstractParcelQuickFixTest {
 
     @TestMetadata("plugins/android-extensions/android-extensions-idea/testData/android/parcel/quickfix/propertyWontBeSerialized")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class PropertyWontBeSerialized extends AbstractParcelQuickFixTest {
         public void testAllFilesPresentInPropertyWontBeSerialized() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("plugins/android-extensions/android-extensions-idea/testData/android/parcel/quickfix/propertyWontBeSerialized"), Pattern.compile("^(\\w+)\\.((before\\.Main\\.\\w+)|(test))$"), TargetBackend.ANY, true);

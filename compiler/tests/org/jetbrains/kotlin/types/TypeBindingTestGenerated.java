@@ -38,7 +38,6 @@ public class TypeBindingTestGenerated extends AbstractTypeBindingTest {
 
     @TestMetadata("compiler/testData/type/binding/explicit")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Explicit extends AbstractTypeBindingTest {
         public void testAllFilesPresentInExplicit() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/type/binding/explicit"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -155,7 +154,6 @@ public class TypeBindingTestGenerated extends AbstractTypeBindingTest {
 
     @TestMetadata("compiler/testData/type/binding/implicit")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Implicit extends AbstractTypeBindingTest {
         public void testAllFilesPresentInImplicit() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/type/binding/implicit"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);

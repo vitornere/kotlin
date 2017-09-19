@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
 public class KotlinEvaluateExpressionTestGenerated extends AbstractKotlinEvaluateExpressionTest {
     @TestMetadata("idea/testData/debugger/tinyApp/src/evaluate/singleBreakpoint")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class SingleBreakpoint extends AbstractKotlinEvaluateExpressionTest {
         @TestMetadata("abstractFunCall.kt")
         public void testAbstractFunCall() throws Exception {
@@ -388,7 +387,6 @@ public class KotlinEvaluateExpressionTestGenerated extends AbstractKotlinEvaluat
 
         @TestMetadata("idea/testData/debugger/tinyApp/src/evaluate/singleBreakpoint/compilingEvaluator")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class CompilingEvaluator extends AbstractKotlinEvaluateExpressionTest {
             public void testAllFilesPresentInCompilingEvaluator() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/debugger/tinyApp/src/evaluate/singleBreakpoint/compilingEvaluator"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -463,7 +461,6 @@ public class KotlinEvaluateExpressionTestGenerated extends AbstractKotlinEvaluat
 
         @TestMetadata("idea/testData/debugger/tinyApp/src/evaluate/singleBreakpoint/createExpression")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class CreateExpression extends AbstractKotlinEvaluateExpressionTest {
             public void testAllFilesPresentInCreateExpression() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/debugger/tinyApp/src/evaluate/singleBreakpoint/createExpression"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -490,7 +487,6 @@ public class KotlinEvaluateExpressionTestGenerated extends AbstractKotlinEvaluat
 
         @TestMetadata("idea/testData/debugger/tinyApp/src/evaluate/singleBreakpoint/extraVariables")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ExtraVariables extends AbstractKotlinEvaluateExpressionTest {
             public void testAllFilesPresentInExtraVariables() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/debugger/tinyApp/src/evaluate/singleBreakpoint/extraVariables"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -565,7 +561,6 @@ public class KotlinEvaluateExpressionTestGenerated extends AbstractKotlinEvaluat
 
         @TestMetadata("idea/testData/debugger/tinyApp/src/evaluate/singleBreakpoint/frame")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Frame extends AbstractKotlinEvaluateExpressionTest {
             public void testAllFilesPresentInFrame() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/debugger/tinyApp/src/evaluate/singleBreakpoint/frame"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -724,7 +719,6 @@ public class KotlinEvaluateExpressionTestGenerated extends AbstractKotlinEvaluat
 
         @TestMetadata("idea/testData/debugger/tinyApp/src/evaluate/singleBreakpoint/javaContext")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class JavaContext extends AbstractKotlinEvaluateExpressionTest {
             public void testAllFilesPresentInJavaContext() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/debugger/tinyApp/src/evaluate/singleBreakpoint/javaContext"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -769,7 +763,6 @@ public class KotlinEvaluateExpressionTestGenerated extends AbstractKotlinEvaluat
 
         @TestMetadata("idea/testData/debugger/tinyApp/src/evaluate/singleBreakpoint/labels")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Labels extends AbstractKotlinEvaluateExpressionTest {
             public void testAllFilesPresentInLabels() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/debugger/tinyApp/src/evaluate/singleBreakpoint/labels"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -808,7 +801,6 @@ public class KotlinEvaluateExpressionTestGenerated extends AbstractKotlinEvaluat
 
         @TestMetadata("idea/testData/debugger/tinyApp/src/evaluate/singleBreakpoint/lambdas")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Lambdas extends AbstractKotlinEvaluateExpressionTest {
             public void testAllFilesPresentInLambdas() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/debugger/tinyApp/src/evaluate/singleBreakpoint/lambdas"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -877,7 +869,6 @@ public class KotlinEvaluateExpressionTestGenerated extends AbstractKotlinEvaluat
 
         @TestMetadata("idea/testData/debugger/tinyApp/src/evaluate/singleBreakpoint/renderer")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Renderer extends AbstractKotlinEvaluateExpressionTest {
             public void testAllFilesPresentInRenderer() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/debugger/tinyApp/src/evaluate/singleBreakpoint/renderer"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -893,7 +884,6 @@ public class KotlinEvaluateExpressionTestGenerated extends AbstractKotlinEvaluat
 
     @TestMetadata("idea/testData/debugger/tinyApp/src/evaluate/multipleBreakpoints")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class MultipleBreakpoints extends AbstractKotlinEvaluateExpressionTest {
         public void testAllFilesPresentInMultipleBreakpoints() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/debugger/tinyApp/src/evaluate/multipleBreakpoints"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1021,7 +1011,6 @@ public class KotlinEvaluateExpressionTestGenerated extends AbstractKotlinEvaluat
 
         @TestMetadata("idea/testData/debugger/tinyApp/src/evaluate/multipleBreakpoints/library")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Library extends AbstractKotlinEvaluateExpressionTest {
             public void testAllFilesPresentInLibrary() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/debugger/tinyApp/src/evaluate/multipleBreakpoints/library"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);

@@ -38,7 +38,6 @@ public class GenerateTestSupportMethodActionTestGenerated extends AbstractGenera
 
     @TestMetadata("idea/testData/codeInsight/generate/testFrameworkSupport/jUnit4")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class JUnit4 extends AbstractGenerateTestSupportMethodActionTest {
         public void testAllFilesPresentInJUnit4() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/codeInsight/generate/testFrameworkSupport/jUnit4"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -89,7 +88,6 @@ public class GenerateTestSupportMethodActionTestGenerated extends AbstractGenera
 
     @TestMetadata("idea/testData/codeInsight/generate/testFrameworkSupport/junit3")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Junit3 extends AbstractGenerateTestSupportMethodActionTest {
         public void testAllFilesPresentInJunit3() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/codeInsight/generate/testFrameworkSupport/junit3"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -128,7 +126,6 @@ public class GenerateTestSupportMethodActionTestGenerated extends AbstractGenera
 
     @TestMetadata("idea/testData/codeInsight/generate/testFrameworkSupport/testNG")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class TestNG extends AbstractGenerateTestSupportMethodActionTest {
         public void testAllFilesPresentInTestNG() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/codeInsight/generate/testFrameworkSupport/testNG"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);

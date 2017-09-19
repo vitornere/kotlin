@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
 public class GradleConfigureProjectByChangingFileTestGenerated extends AbstractGradleConfigureProjectByChangingFileTest {
     @TestMetadata("idea/testData/configuration/gradle")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Gradle extends AbstractGradleConfigureProjectByChangingFileTest {
         public void testAllFilesPresentInGradle() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/configuration/gradle"), Pattern.compile("(\\w+)_before\\.gradle$"), TargetBackend.ANY, true);
@@ -83,7 +82,6 @@ public class GradleConfigureProjectByChangingFileTestGenerated extends AbstractG
 
     @TestMetadata("idea/testData/configuration/gsk")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Gsk extends AbstractGradleConfigureProjectByChangingFileTest {
         public void testAllFilesPresentInGsk() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/configuration/gsk"), Pattern.compile("(\\w+)_before\\.gradle.kts$"), TargetBackend.ANY, true);

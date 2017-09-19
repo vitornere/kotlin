@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
 public class PushDownTestGenerated extends AbstractPushDownTest {
     @TestMetadata("idea/testData/refactoring/pushDown/k2k")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class K2K extends AbstractPushDownTest {
         @TestMetadata("accidentalOverrides.kt")
         public void testAccidentalOverrides() throws Exception {
@@ -161,7 +160,6 @@ public class PushDownTestGenerated extends AbstractPushDownTest {
 
     @TestMetadata("idea/testData/refactoring/pushDown/k2j")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class K2J extends AbstractPushDownTest {
         public void testAllFilesPresentInK2J() throws Exception {
             KotlinTestUtils.assertAllTestsPresentInSingleGeneratedClass(this.getClass(), new File("idea/testData/refactoring/pushDown/k2j"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY);
@@ -176,7 +174,6 @@ public class PushDownTestGenerated extends AbstractPushDownTest {
 
     @TestMetadata("idea/testData/refactoring/pushDown/j2k")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class J2K extends AbstractPushDownTest {
         public void testAllFilesPresentInJ2K() throws Exception {
             KotlinTestUtils.assertAllTestsPresentInSingleGeneratedClass(this.getClass(), new File("idea/testData/refactoring/pushDown/j2k"), Pattern.compile("^(.+)\\.java$"), TargetBackend.ANY);

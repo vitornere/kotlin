@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
 public class IncrementalJpsTestGenerated extends AbstractIncrementalJpsTest {
     @TestMetadata("jps-plugin/testData/incremental/multiModule")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class MultiModule extends AbstractIncrementalJpsTest {
         public void testAllFilesPresentInMultiModule() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("jps-plugin/testData/incremental/multiModule"), Pattern.compile("^([^\\.]+)$"), TargetBackend.ANY, true);
@@ -203,7 +202,6 @@ public class IncrementalJpsTestGenerated extends AbstractIncrementalJpsTest {
 
     @TestMetadata("jps-plugin/testData/incremental/pureKotlin")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class PureKotlin extends AbstractIncrementalJpsTest {
         @TestMetadata("accessingFunctionsViaPackagePart")
         public void testAccessingFunctionsViaPackagePart() throws Exception {
@@ -902,7 +900,6 @@ public class IncrementalJpsTestGenerated extends AbstractIncrementalJpsTest {
 
     @TestMetadata("jps-plugin/testData/incremental/withJava")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class WithJava extends AbstractIncrementalJpsTest {
         public void testAllFilesPresentInWithJava() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("jps-plugin/testData/incremental/withJava"), Pattern.compile("^([^\\.]+)$"), TargetBackend.ANY, true);
@@ -910,7 +907,6 @@ public class IncrementalJpsTestGenerated extends AbstractIncrementalJpsTest {
 
         @TestMetadata("jps-plugin/testData/incremental/withJava/convertBetweenJavaAndKotlin")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ConvertBetweenJavaAndKotlin extends AbstractIncrementalJpsTest {
             public void testAllFilesPresentInConvertBetweenJavaAndKotlin() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("jps-plugin/testData/incremental/withJava/convertBetweenJavaAndKotlin"), Pattern.compile("^([^\\.]+)$"), TargetBackend.ANY, true);
@@ -943,7 +939,6 @@ public class IncrementalJpsTestGenerated extends AbstractIncrementalJpsTest {
 
         @TestMetadata("jps-plugin/testData/incremental/withJava/javaUsedInKotlin")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class JavaUsedInKotlin extends AbstractIncrementalJpsTest {
             public void testAllFilesPresentInJavaUsedInKotlin() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("jps-plugin/testData/incremental/withJava/javaUsedInKotlin"), Pattern.compile("^([^\\.]+)$"), TargetBackend.ANY, true);
@@ -1029,7 +1024,6 @@ public class IncrementalJpsTestGenerated extends AbstractIncrementalJpsTest {
 
             @TestMetadata("jps-plugin/testData/incremental/withJava/javaUsedInKotlin/samConversions")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class SamConversions extends AbstractIncrementalJpsTest {
                 public void testAllFilesPresentInSamConversions() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("jps-plugin/testData/incremental/withJava/javaUsedInKotlin/samConversions"), Pattern.compile("^([^\\.]+)$"), TargetBackend.ANY, true);
@@ -1051,7 +1045,6 @@ public class IncrementalJpsTestGenerated extends AbstractIncrementalJpsTest {
 
         @TestMetadata("jps-plugin/testData/incremental/withJava/kotlinUsedInJava")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class KotlinUsedInJava extends AbstractIncrementalJpsTest {
             @TestMetadata("addOptionalParameter")
             public void testAddOptionalParameter() throws Exception {
@@ -1144,7 +1137,6 @@ public class IncrementalJpsTestGenerated extends AbstractIncrementalJpsTest {
 
         @TestMetadata("jps-plugin/testData/incremental/withJava/other")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Other extends AbstractIncrementalJpsTest {
             @TestMetadata("accessingFunctionsViaRenamedFileClass")
             public void testAccessingFunctionsViaRenamedFileClass() throws Exception {
@@ -1310,7 +1302,6 @@ public class IncrementalJpsTestGenerated extends AbstractIncrementalJpsTest {
 
     @TestMetadata("jps-plugin/testData/incremental/inlineFunCallSite")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class InlineFunCallSite extends AbstractIncrementalJpsTest {
         public void testAllFilesPresentInInlineFunCallSite() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("jps-plugin/testData/incremental/inlineFunCallSite"), Pattern.compile("^([^\\.]+)$"), TargetBackend.ANY, true);
@@ -1403,7 +1394,6 @@ public class IncrementalJpsTestGenerated extends AbstractIncrementalJpsTest {
 
     @TestMetadata("jps-plugin/testData/incremental/classHierarchyAffected")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ClassHierarchyAffected extends AbstractIncrementalJpsTest {
         public void testAllFilesPresentInClassHierarchyAffected() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("jps-plugin/testData/incremental/classHierarchyAffected"), Pattern.compile("^([^\\.]+)$"), TargetBackend.ANY, true);

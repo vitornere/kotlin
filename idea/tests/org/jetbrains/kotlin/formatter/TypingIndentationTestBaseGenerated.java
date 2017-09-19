@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
 public class TypingIndentationTestBaseGenerated extends AbstractTypingIndentationTestBase {
     @TestMetadata("idea/testData/indentationOnNewline")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class DirectSettings extends AbstractTypingIndentationTestBase {
         @TestMetadata("AfterCatch.after.kt")
         public void testAfterCatch() throws Exception {
@@ -304,7 +303,6 @@ public class TypingIndentationTestBaseGenerated extends AbstractTypingIndentatio
 
         @TestMetadata("idea/testData/indentationOnNewline/script")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Script extends AbstractTypingIndentationTestBase {
             public void testAllFilesPresentInScript() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/indentationOnNewline/script"), Pattern.compile("^([^\\.]+)\\.after\\.kt.*$"), TargetBackend.ANY, true);
@@ -350,7 +348,6 @@ public class TypingIndentationTestBaseGenerated extends AbstractTypingIndentatio
 
     @TestMetadata("idea/testData/indentationOnNewline")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class InvertedSettings extends AbstractTypingIndentationTestBase {
         public void testAllFilesPresentInInvertedSettings() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/indentationOnNewline"), Pattern.compile("^([^\\.]+)\\.after\\.inv\\.kt.*$"), TargetBackend.ANY, true);

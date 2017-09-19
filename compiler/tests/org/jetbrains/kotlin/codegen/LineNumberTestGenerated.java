@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
 public class LineNumberTestGenerated extends AbstractLineNumberTest {
     @TestMetadata("compiler/testData/lineNumber")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class LineNumber extends AbstractLineNumberTest {
         public void testAllFilesPresentInLineNumber() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/lineNumber"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, false);
@@ -143,7 +142,6 @@ public class LineNumberTestGenerated extends AbstractLineNumberTest {
 
     @TestMetadata("compiler/testData/lineNumber/custom")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Custom extends AbstractLineNumberTest {
         public void testAllFilesPresentInCustom() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/lineNumber/custom"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);

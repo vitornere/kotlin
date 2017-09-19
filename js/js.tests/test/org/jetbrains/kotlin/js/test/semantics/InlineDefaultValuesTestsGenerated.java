@@ -152,7 +152,6 @@ public class InlineDefaultValuesTestsGenerated extends AbstractInlineDefaultValu
 
     @TestMetadata("compiler/testData/codegen/boxInline/defaultValues/lambdaInlining")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class LambdaInlining extends AbstractInlineDefaultValuesTests {
         public void testAllFilesPresentInLambdaInlining() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/defaultValues/lambdaInlining"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -274,7 +273,6 @@ public class InlineDefaultValuesTestsGenerated extends AbstractInlineDefaultValu
 
         @TestMetadata("compiler/testData/codegen/boxInline/defaultValues/lambdaInlining/callableReferences")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class CallableReferences extends AbstractInlineDefaultValuesTests {
             public void testAllFilesPresentInCallableReferences() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/defaultValues/lambdaInlining/callableReferences"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -392,7 +390,6 @@ public class InlineDefaultValuesTestsGenerated extends AbstractInlineDefaultValu
 
     @TestMetadata("compiler/testData/codegen/boxInline/defaultValues/maskElimination")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class MaskElimination extends AbstractInlineDefaultValuesTests {
         @TestMetadata("32Parameters.kt")
         public void test32Parameters() throws Exception {

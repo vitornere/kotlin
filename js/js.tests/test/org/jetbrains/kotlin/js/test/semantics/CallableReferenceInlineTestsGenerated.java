@@ -104,7 +104,6 @@ public class CallableReferenceInlineTestsGenerated extends AbstractCallableRefer
 
     @TestMetadata("compiler/testData/codegen/boxInline/callableReference/bound")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Bound extends AbstractCallableReferenceInlineTests {
         public void testAllFilesPresentInBound() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/callableReference/bound"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);

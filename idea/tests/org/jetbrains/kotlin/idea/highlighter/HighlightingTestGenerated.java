@@ -140,7 +140,6 @@ public class HighlightingTestGenerated extends AbstractHighlightingTest {
 
     @TestMetadata("idea/testData/highlighter/deprecated")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Deprecated extends AbstractHighlightingTest {
         public void testAllFilesPresentInDeprecated() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/highlighter/deprecated"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);

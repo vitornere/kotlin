@@ -38,7 +38,6 @@ public class JoinLinesTestGenerated extends AbstractJoinLinesTest {
 
     @TestMetadata("idea/testData/joinLines/addSemicolon")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class AddSemicolon extends AbstractJoinLinesTest {
         public void testAllFilesPresentInAddSemicolon() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/joinLines/addSemicolon"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -149,7 +148,6 @@ public class JoinLinesTestGenerated extends AbstractJoinLinesTest {
 
     @TestMetadata("idea/testData/joinLines/declarationAndAssignment")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class DeclarationAndAssignment extends AbstractJoinLinesTest {
         public void testAllFilesPresentInDeclarationAndAssignment() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/joinLines/declarationAndAssignment"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -260,7 +258,6 @@ public class JoinLinesTestGenerated extends AbstractJoinLinesTest {
 
     @TestMetadata("idea/testData/joinLines/nestedIfs")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class NestedIfs extends AbstractJoinLinesTest {
         public void testAllFilesPresentInNestedIfs() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/joinLines/nestedIfs"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -305,7 +302,6 @@ public class JoinLinesTestGenerated extends AbstractJoinLinesTest {
 
     @TestMetadata("idea/testData/joinLines/removeBraces")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class RemoveBraces extends AbstractJoinLinesTest {
         public void testAllFilesPresentInRemoveBraces() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/joinLines/removeBraces"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);

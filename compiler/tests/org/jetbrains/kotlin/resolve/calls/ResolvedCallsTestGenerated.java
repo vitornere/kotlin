@@ -86,7 +86,6 @@ public class ResolvedCallsTestGenerated extends AbstractResolvedCallsTest {
 
     @TestMetadata("compiler/testData/resolvedCalls/arguments")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Arguments extends AbstractResolvedCallsTest {
         public void testAllFilesPresentInArguments() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/resolvedCalls/arguments"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -94,7 +93,6 @@ public class ResolvedCallsTestGenerated extends AbstractResolvedCallsTest {
 
         @TestMetadata("compiler/testData/resolvedCalls/arguments/functionLiterals")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class FunctionLiterals extends AbstractResolvedCallsTest {
             public void testAllFilesPresentInFunctionLiterals() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/resolvedCalls/arguments/functionLiterals"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -139,7 +137,6 @@ public class ResolvedCallsTestGenerated extends AbstractResolvedCallsTest {
 
         @TestMetadata("compiler/testData/resolvedCalls/arguments/genericCalls")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class GenericCalls extends AbstractResolvedCallsTest {
             public void testAllFilesPresentInGenericCalls() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/resolvedCalls/arguments/genericCalls"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -172,7 +169,6 @@ public class ResolvedCallsTestGenerated extends AbstractResolvedCallsTest {
 
         @TestMetadata("compiler/testData/resolvedCalls/arguments/namedArguments")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class NamedArguments extends AbstractResolvedCallsTest {
             public void testAllFilesPresentInNamedArguments() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/resolvedCalls/arguments/namedArguments"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -193,7 +189,6 @@ public class ResolvedCallsTestGenerated extends AbstractResolvedCallsTest {
 
         @TestMetadata("compiler/testData/resolvedCalls/arguments/oneArgument")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class OneArgument extends AbstractResolvedCallsTest {
             public void testAllFilesPresentInOneArgument() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/resolvedCalls/arguments/oneArgument"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -226,7 +221,6 @@ public class ResolvedCallsTestGenerated extends AbstractResolvedCallsTest {
 
         @TestMetadata("compiler/testData/resolvedCalls/arguments/realExamples")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class RealExamples extends AbstractResolvedCallsTest {
             public void testAllFilesPresentInRealExamples() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/resolvedCalls/arguments/realExamples"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -247,7 +241,6 @@ public class ResolvedCallsTestGenerated extends AbstractResolvedCallsTest {
 
         @TestMetadata("compiler/testData/resolvedCalls/arguments/severalCandidates")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class SeveralCandidates extends AbstractResolvedCallsTest {
             public void testAllFilesPresentInSeveralCandidates() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/resolvedCalls/arguments/severalCandidates"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -263,7 +256,6 @@ public class ResolvedCallsTestGenerated extends AbstractResolvedCallsTest {
 
     @TestMetadata("compiler/testData/resolvedCalls/differentCallElements")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class DifferentCallElements extends AbstractResolvedCallsTest {
         public void testAllFilesPresentInDifferentCallElements() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/resolvedCalls/differentCallElements"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -290,7 +282,6 @@ public class ResolvedCallsTestGenerated extends AbstractResolvedCallsTest {
 
     @TestMetadata("compiler/testData/resolvedCalls/dynamic")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Dynamic extends AbstractResolvedCallsTest {
         public void testAllFilesPresentInDynamic() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/resolvedCalls/dynamic"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -335,7 +326,6 @@ public class ResolvedCallsTestGenerated extends AbstractResolvedCallsTest {
 
     @TestMetadata("compiler/testData/resolvedCalls/functionTypes")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class FunctionTypes extends AbstractResolvedCallsTest {
         public void testAllFilesPresentInFunctionTypes() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/resolvedCalls/functionTypes"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -380,7 +370,6 @@ public class ResolvedCallsTestGenerated extends AbstractResolvedCallsTest {
 
     @TestMetadata("compiler/testData/resolvedCalls/invoke")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Invoke extends AbstractResolvedCallsTest {
         public void testAllFilesPresentInInvoke() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/resolvedCalls/invoke"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -449,7 +438,6 @@ public class ResolvedCallsTestGenerated extends AbstractResolvedCallsTest {
 
     @TestMetadata("compiler/testData/resolvedCalls/objectsAndClassObjects")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ObjectsAndClassObjects extends AbstractResolvedCallsTest {
         public void testAllFilesPresentInObjectsAndClassObjects() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/resolvedCalls/objectsAndClassObjects"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -476,7 +464,6 @@ public class ResolvedCallsTestGenerated extends AbstractResolvedCallsTest {
 
     @TestMetadata("compiler/testData/resolvedCalls/realExamples")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class RealExamples extends AbstractResolvedCallsTest {
         public void testAllFilesPresentInRealExamples() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/resolvedCalls/realExamples"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -491,7 +478,6 @@ public class ResolvedCallsTestGenerated extends AbstractResolvedCallsTest {
 
     @TestMetadata("compiler/testData/resolvedCalls/resolve")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Resolve extends AbstractResolvedCallsTest {
         public void testAllFilesPresentInResolve() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/resolvedCalls/resolve"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -512,7 +498,6 @@ public class ResolvedCallsTestGenerated extends AbstractResolvedCallsTest {
 
     @TestMetadata("compiler/testData/resolvedCalls/secondaryConstructors")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class SecondaryConstructors extends AbstractResolvedCallsTest {
         public void testAllFilesPresentInSecondaryConstructors() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/resolvedCalls/secondaryConstructors"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -605,7 +590,6 @@ public class ResolvedCallsTestGenerated extends AbstractResolvedCallsTest {
 
     @TestMetadata("compiler/testData/resolvedCalls/thisOrSuper")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ThisOrSuper extends AbstractResolvedCallsTest {
         public void testAllFilesPresentInThisOrSuper() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/resolvedCalls/thisOrSuper"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);

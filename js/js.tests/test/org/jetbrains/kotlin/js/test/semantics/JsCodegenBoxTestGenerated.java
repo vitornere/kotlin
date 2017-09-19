@@ -38,7 +38,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/annotations")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Annotations extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInAnnotations() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/annotations"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -268,7 +267,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/annotations/annotatedLambda")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class AnnotatedLambda extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInAnnotatedLambda() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/annotations/annotatedLambda"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -326,7 +324,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/argumentOrder")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ArgumentOrder extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInArgumentOrder() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/argumentOrder"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -413,7 +410,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/arrays")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Arrays extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInArrays() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/arrays"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -823,7 +819,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/arrays/multiDecl")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class MultiDecl extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInMultiDecl() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/arrays/multiDecl"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -879,7 +874,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
             @TestMetadata("compiler/testData/codegen/box/arrays/multiDecl/int")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Int extends AbstractJsCodegenBoxTest {
                 public void testAllFilesPresentInInt() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/arrays/multiDecl/int"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -912,7 +906,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
             @TestMetadata("compiler/testData/codegen/box/arrays/multiDecl/long")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Long extends AbstractJsCodegenBoxTest {
                 public void testAllFilesPresentInLong() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/arrays/multiDecl/long"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -947,7 +940,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/binaryOp")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class BinaryOp extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInBinaryOp() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/binaryOp"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -1082,7 +1074,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/boxingOptimization")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class BoxingOptimization extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInBoxingOptimization() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/boxingOptimization"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -1295,7 +1286,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/bridges")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Bridges extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInBridges() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/bridges"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -1579,7 +1569,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/bridges/substitutionInSuperClass")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class SubstitutionInSuperClass extends AbstractJsCodegenBoxTest {
             @TestMetadata("abstractFun.kt")
             public void testAbstractFun() throws Exception {
@@ -1655,7 +1644,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/builtinStubMethods")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class BuiltinStubMethods extends AbstractJsCodegenBoxTest {
         @TestMetadata("abstractMember.kt")
         public void testAbstractMember() throws Exception {
@@ -1897,7 +1885,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/builtinStubMethods/extendJavaCollections")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ExtendJavaCollections extends AbstractJsCodegenBoxTest {
             @TestMetadata("abstractSet.kt")
             public void testAbstractSet() throws Exception {
@@ -1931,7 +1918,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/callableReference")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class CallableReference extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInCallableReference() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/callableReference"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -1939,7 +1925,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/callableReference/bound")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Bound extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInBound() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/callableReference/bound"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -2043,7 +2028,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
             @TestMetadata("compiler/testData/codegen/box/callableReference/bound/equals")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Equals extends AbstractJsCodegenBoxTest {
                 public void testAllFilesPresentInEquals() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/callableReference/bound/equals"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -2100,7 +2084,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
             @TestMetadata("compiler/testData/codegen/box/callableReference/bound/inline")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Inline extends AbstractJsCodegenBoxTest {
                 public void testAllFilesPresentInInline() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/callableReference/bound/inline"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -2122,7 +2105,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/callableReference/function")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Function extends AbstractJsCodegenBoxTest {
             @TestMetadata("abstractClassMember.kt")
             public void testAbstractClassMember() throws Exception {
@@ -2448,7 +2430,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
             @TestMetadata("compiler/testData/codegen/box/callableReference/function/local")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Local extends AbstractJsCodegenBoxTest {
                 public void testAllFilesPresentInLocal() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/callableReference/function/local"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -2584,7 +2565,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/callableReference/property")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Property extends AbstractJsCodegenBoxTest {
             @TestMetadata("accessViaSubclass.kt")
             public void testAccessViaSubclass() throws Exception {
@@ -2761,7 +2741,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/callableReference/serializability")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Serializability extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInSerializability() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/callableReference/serializability"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -2831,7 +2810,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/casts")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Casts extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInCasts() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/casts"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -3013,7 +2991,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/casts/functions")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Functions extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInFunctions() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/casts/functions"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -3178,7 +3155,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/casts/literalExpressionAsGenericArgument")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class LiteralExpressionAsGenericArgument extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInLiteralExpressionAsGenericArgument() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/casts/literalExpressionAsGenericArgument"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -3235,7 +3211,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/casts/mutableCollections")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class MutableCollections extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInMutableCollections() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/casts/mutableCollections"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -3305,7 +3280,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/checkcastOptimization")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class CheckcastOptimization extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInCheckcastOptimization() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/checkcastOptimization"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -3326,7 +3300,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/classLiteral")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ClassLiteral extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInClassLiteral() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/classLiteral"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -3346,7 +3319,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/classLiteral/bound")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Bound extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInBound() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/classLiteral/bound"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -3397,7 +3369,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/classLiteral/java")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Java extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInJava() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/classLiteral/java"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -3503,7 +3474,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/classes")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Classes extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInClasses() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/classes"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -4231,7 +4201,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/classes/inner")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Inner extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInInner() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/classes/inner"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -4277,7 +4246,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/closures")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Closures extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInClosures() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/closures"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -4537,7 +4505,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/closures/captureOuterProperty")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class CaptureOuterProperty extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInCaptureOuterProperty() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/closures/captureOuterProperty"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -4594,7 +4561,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/closures/capturedVarsOptimization")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class CapturedVarsOptimization extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInCapturedVarsOptimization() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/closures/capturedVarsOptimization"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -4663,7 +4629,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/closures/closureInsideClosure")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ClosureInsideClosure extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInClosureInsideClosure() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/closures/closureInsideClosure"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -4709,7 +4674,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/collectionLiterals")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class CollectionLiterals extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInCollectionLiterals() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/collectionLiterals"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -4766,7 +4730,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/collections")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Collections extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInCollections() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/collections"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -4841,7 +4804,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/compatibility")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Compatibility extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInCompatibility() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/compatibility"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -4856,7 +4818,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/constants")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Constants extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInConstants() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/constants"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -4907,7 +4868,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/controlStructures")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ControlStructures extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInControlStructures() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/controlStructures"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -5401,7 +5361,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/controlStructures/breakContinueInExpressions")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class BreakContinueInExpressions extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInBreakContinueInExpressions() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/controlStructures/breakContinueInExpressions"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -5518,7 +5477,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/controlStructures/returnsNothing")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ReturnsNothing extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInReturnsNothing() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/controlStructures/returnsNothing"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -5557,7 +5515,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/controlStructures/tryCatchInExpressions")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class TryCatchInExpressions extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInTryCatchInExpressions() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/controlStructures/tryCatchInExpressions"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -5753,7 +5710,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/coroutines")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Coroutines extends AbstractJsCodegenBoxTest {
         @TestMetadata("32defaultParametersInSuspend.kt")
         public void test32defaultParametersInSuspend() throws Exception {
@@ -6187,7 +6143,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/coroutines/controlFlow")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ControlFlow extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInControlFlow() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/coroutines/controlFlow"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -6274,7 +6229,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/coroutines/featureIntersection")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class FeatureIntersection extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInFeatureIntersection() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/coroutines/featureIntersection"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -6319,7 +6273,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/coroutines/intLikeVarSpilling")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class IntLikeVarSpilling extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInIntLikeVarSpilling() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/coroutines/intLikeVarSpilling"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -6376,7 +6329,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/coroutines/intrinsicSemantics")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class IntrinsicSemantics extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInIntrinsicSemantics() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/coroutines/intrinsicSemantics"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -6403,7 +6355,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/coroutines/multiModule")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class MultiModule extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInMultiModule() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/coroutines/multiModule"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -6424,7 +6375,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/coroutines/stackUnwinding")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class StackUnwinding extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInStackUnwinding() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/coroutines/stackUnwinding"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -6457,7 +6407,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/coroutines/suspendFunctionAsCoroutine")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class SuspendFunctionAsCoroutine extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInSuspendFunctionAsCoroutine() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/coroutines/suspendFunctionAsCoroutine"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -6562,7 +6511,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/coroutines/suspendFunctionTypeCall")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class SuspendFunctionTypeCall extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInSuspendFunctionTypeCall() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/coroutines/suspendFunctionTypeCall"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -6589,7 +6537,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/coroutines/tailCallOptimizations")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class TailCallOptimizations extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInTailCallOptimizations() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/coroutines/tailCallOptimizations"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -6622,7 +6569,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/coroutines/tailOperations")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class TailOperations extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInTailOperations() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/coroutines/tailOperations"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -6655,7 +6601,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/coroutines/unitTypeReturn")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class UnitTypeReturn extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInUnitTypeReturn() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/coroutines/unitTypeReturn"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -6688,7 +6633,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/coroutines/varSpilling")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class VarSpilling extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInVarSpilling() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/coroutines/varSpilling"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -6710,7 +6654,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/dataClasses")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class DataClasses extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInDataClasses() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/dataClasses"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -6826,7 +6769,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/dataClasses/copy")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Copy extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInCopy() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/dataClasses/copy"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -6883,7 +6825,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/dataClasses/equals")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Equals extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInEquals() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/dataClasses/equals"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -6934,7 +6875,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/dataClasses/hashCode")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class HashCode extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInHashCode() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/dataClasses/hashCode"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -7033,7 +6973,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/dataClasses/toString")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ToString extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInToString() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/dataClasses/toString"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -7097,7 +7036,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/deadCodeElimination")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class DeadCodeElimination extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInDeadCodeElimination() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/deadCodeElimination"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -7130,7 +7068,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/defaultArguments")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class DefaultArguments extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInDefaultArguments() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/defaultArguments"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -7174,7 +7111,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/defaultArguments/constructor")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Constructor extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInConstructor() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/defaultArguments/constructor"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -7279,7 +7215,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/defaultArguments/convention")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Convention extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInConvention() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/defaultArguments/convention"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -7306,7 +7241,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/defaultArguments/function")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Function extends AbstractJsCodegenBoxTest {
             @TestMetadata("abstractClass.kt")
             public void testAbstractClass() throws Exception {
@@ -7435,7 +7369,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/defaultArguments/private")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Private extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInPrivate() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/defaultArguments/private"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -7468,7 +7401,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/defaultArguments/signature")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Signature extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInSignature() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/defaultArguments/signature"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -7496,7 +7428,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/delegatedProperty")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class DelegatedProperty extends AbstractJsCodegenBoxTest {
         @TestMetadata("accessTopLevelDelegatedPropertyInClinit.kt")
         public void testAccessTopLevelDelegatedPropertyInClinit() throws Exception {
@@ -7786,7 +7717,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/delegatedProperty/local")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Local extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInLocal() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/delegatedProperty/local"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -7879,7 +7809,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/delegatedProperty/provideDelegate")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ProvideDelegate extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInProvideDelegate() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/delegatedProperty/provideDelegate"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -7997,7 +7926,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/delegation")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Delegation extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInDelegation() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/delegation"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -8042,7 +7970,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/destructuringDeclInLambdaParam")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class DestructuringDeclInLambdaParam extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInDestructuringDeclInLambdaParam() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/destructuringDeclInLambdaParam"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -8099,7 +8026,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/diagnostics")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Diagnostics extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInDiagnostics() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/diagnostics"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -8107,7 +8033,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/diagnostics/functions")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Functions extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInFunctions() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/diagnostics/functions"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -8115,7 +8040,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
             @TestMetadata("compiler/testData/codegen/box/diagnostics/functions/inference")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Inference extends AbstractJsCodegenBoxTest {
                 public void testAllFilesPresentInInference() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/diagnostics/functions/inference"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -8130,7 +8054,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
             @TestMetadata("compiler/testData/codegen/box/diagnostics/functions/invoke")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Invoke extends AbstractJsCodegenBoxTest {
                 public void testAllFilesPresentInInvoke() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/diagnostics/functions/invoke"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -8138,7 +8061,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
                 @TestMetadata("compiler/testData/codegen/box/diagnostics/functions/invoke/onObjects")
                 @TestDataPath("$PROJECT_ROOT")
-                @RunWith(JUnit3RunnerWithInners.class)
                 public static class OnObjects extends AbstractJsCodegenBoxTest {
                     public void testAllFilesPresentInOnObjects() throws Exception {
                         KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/diagnostics/functions/invoke/onObjects"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -8208,7 +8130,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
             @TestMetadata("compiler/testData/codegen/box/diagnostics/functions/tailRecursion")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class TailRecursion extends AbstractJsCodegenBoxTest {
                 @TestMetadata("defaultArgs.kt")
                 public void ignoreDefaultArgs() throws Exception {
@@ -8440,7 +8361,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/diagnostics/vararg")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Vararg extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInVararg() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/diagnostics/vararg"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -8456,7 +8376,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/elvis")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Elvis extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInElvis() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/elvis"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -8489,7 +8408,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/enum")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Enum extends AbstractJsCodegenBoxTest {
         @TestMetadata("abstractMethodInEnum.kt")
         public void testAbstractMethodInEnum() throws Exception {
@@ -8785,7 +8703,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/enum/defaultCtor")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class DefaultCtor extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInDefaultCtor() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/enum/defaultCtor"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -8819,7 +8736,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/evaluate")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Evaluate extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInEvaluate() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/evaluate"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -9002,7 +8918,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/exclExcl")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ExclExcl extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInExclExcl() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/exclExcl"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -9023,7 +8938,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/extensionFunctions")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ExtensionFunctions extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInExtensionFunctions() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/extensionFunctions"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -9182,7 +9096,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/extensionProperties")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ExtensionProperties extends AbstractJsCodegenBoxTest {
         @TestMetadata("accessorForPrivateSetter.kt")
         public void testAccessorForPrivateSetter() throws Exception {
@@ -9281,7 +9194,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/external")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class External extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInExternal() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/external"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -9326,7 +9238,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/fakeOverride")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class FakeOverride extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInFakeOverride() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/fakeOverride"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -9359,7 +9270,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/fieldRename")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class FieldRename extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInFieldRename() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/fieldRename"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -9386,7 +9296,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/finally")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Finally extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInFinally() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/finally"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -9461,7 +9370,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/fullJdk")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class FullJdk extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInFullJdk() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/fullJdk"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -9469,7 +9377,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/fullJdk/native")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Native extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInNative() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/fullJdk/native"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -9514,7 +9421,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/fullJdk/regressions")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Regressions extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInRegressions() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/fullJdk/regressions"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -9548,7 +9454,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/functions")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Functions extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInFunctions() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/functions"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -9850,7 +9755,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/functions/functionExpression")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class FunctionExpression extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInFunctionExpression() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/functions/functionExpression"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -9883,7 +9787,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/functions/invoke")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Invoke extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInInvoke() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/functions/invoke"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -10000,7 +9903,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/functions/localFunctions")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class LocalFunctions extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInLocalFunctions() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/functions/localFunctions"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -10112,7 +10014,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/hashPMap")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class HashPMap extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInHashPMap() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/hashPMap"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -10193,7 +10094,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/ieee754")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Ieee754 extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInIeee754() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/ieee754"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -10436,7 +10336,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/increment")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Increment extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInIncrement() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/increment"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -10577,7 +10476,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/innerNested")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class InnerNested extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInInnerNested() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/innerNested"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -10705,7 +10603,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/innerNested/superConstructorCall")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class SuperConstructorCall extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInSuperConstructorCall() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/innerNested/superConstructorCall"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -10829,7 +10726,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/instructions")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Instructions extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInInstructions() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/instructions"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -10837,7 +10733,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/instructions/swap")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Swap extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInSwap() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/instructions/swap"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -10859,7 +10754,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/intrinsics")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Intrinsics extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInIntrinsics() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/intrinsics"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -11018,7 +10912,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/javaInterop")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class JavaInterop extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInJavaInterop() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/javaInterop"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -11038,7 +10931,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/javaInterop/generics")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Generics extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInGenerics() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/javaInterop/generics"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -11083,7 +10975,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/javaInterop/notNullAssertions")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class NotNullAssertions extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInNotNullAssertions() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/javaInterop/notNullAssertions"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -11110,7 +11001,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/javaInterop/objectMethods")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ObjectMethods extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInObjectMethods() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/javaInterop/objectMethods"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -11168,7 +11058,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/jdk")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Jdk extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInJdk() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/jdk"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -11201,7 +11090,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/jvmField")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class JvmField extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInJvmField() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/jvmField"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -11378,7 +11266,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/jvmName")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class JvmName extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInJvmName() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/jvmName"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -11518,7 +11405,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/jvmName/fileFacades")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class FileFacades extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInFileFacades() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/jvmName/fileFacades"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -11564,7 +11450,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/jvmOverloads")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class JvmOverloads extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInJvmOverloads() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/jvmOverloads"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -11741,7 +11626,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/jvmStatic")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class JvmStatic extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInJvmStatic() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/jvmStatic"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -12026,7 +11910,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/labels")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Labels extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInLabels() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/labels"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -12083,7 +11966,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/lazyCodegen")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class LazyCodegen extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInLazyCodegen() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/lazyCodegen"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -12145,7 +12027,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/lazyCodegen/optimizations")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Optimizations extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInOptimizations() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/lazyCodegen/optimizations"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -12209,7 +12090,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/localClasses")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class LocalClasses extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInLocalClasses() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/localClasses"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -12380,7 +12260,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/localFunctions")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class LocalFunctions extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInLocalFunctions() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/localFunctions"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -12395,7 +12274,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/mangling")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Mangling extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInMangling() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/mangling"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -12470,7 +12348,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/multiDecl")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class MultiDecl extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInMultiDecl() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/multiDecl"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -12562,7 +12439,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/multiDecl/forIterator")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ForIterator extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInForIterator() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/multiDecl/forIterator"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -12600,7 +12476,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
             @TestMetadata("compiler/testData/codegen/box/multiDecl/forIterator/longIterator")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class LongIterator extends AbstractJsCodegenBoxTest {
                 public void testAllFilesPresentInLongIterator() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/multiDecl/forIterator/longIterator"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -12634,7 +12509,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/multiDecl/forRange")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ForRange extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInForRange() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/multiDecl/forRange"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -12684,7 +12558,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
             @TestMetadata("compiler/testData/codegen/box/multiDecl/forRange/explicitRangeTo")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class ExplicitRangeTo extends AbstractJsCodegenBoxTest {
                 public void testAllFilesPresentInExplicitRangeTo() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/multiDecl/forRange/explicitRangeTo"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -12722,7 +12595,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
                 @TestMetadata("compiler/testData/codegen/box/multiDecl/forRange/explicitRangeTo/int")
                 @TestDataPath("$PROJECT_ROOT")
-                @RunWith(JUnit3RunnerWithInners.class)
                 public static class Int extends AbstractJsCodegenBoxTest {
                     public void testAllFilesPresentInInt() throws Exception {
                         KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/multiDecl/forRange/explicitRangeTo/int"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -12755,7 +12627,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
                 @TestMetadata("compiler/testData/codegen/box/multiDecl/forRange/explicitRangeTo/long")
                 @TestDataPath("$PROJECT_ROOT")
-                @RunWith(JUnit3RunnerWithInners.class)
                 public static class Long extends AbstractJsCodegenBoxTest {
                     public void testAllFilesPresentInLong() throws Exception {
                         KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/multiDecl/forRange/explicitRangeTo/long"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -12789,7 +12660,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
             @TestMetadata("compiler/testData/codegen/box/multiDecl/forRange/explicitRangeToWithDot")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class ExplicitRangeToWithDot extends AbstractJsCodegenBoxTest {
                 public void testAllFilesPresentInExplicitRangeToWithDot() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/multiDecl/forRange/explicitRangeToWithDot"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -12827,7 +12697,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
                 @TestMetadata("compiler/testData/codegen/box/multiDecl/forRange/explicitRangeToWithDot/int")
                 @TestDataPath("$PROJECT_ROOT")
-                @RunWith(JUnit3RunnerWithInners.class)
                 public static class Int extends AbstractJsCodegenBoxTest {
                     public void testAllFilesPresentInInt() throws Exception {
                         KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/multiDecl/forRange/explicitRangeToWithDot/int"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -12860,7 +12729,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
                 @TestMetadata("compiler/testData/codegen/box/multiDecl/forRange/explicitRangeToWithDot/long")
                 @TestDataPath("$PROJECT_ROOT")
-                @RunWith(JUnit3RunnerWithInners.class)
                 public static class Long extends AbstractJsCodegenBoxTest {
                     public void testAllFilesPresentInLong() throws Exception {
                         KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/multiDecl/forRange/explicitRangeToWithDot/long"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -12894,7 +12762,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
             @TestMetadata("compiler/testData/codegen/box/multiDecl/forRange/int")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Int extends AbstractJsCodegenBoxTest {
                 public void testAllFilesPresentInInt() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/multiDecl/forRange/int"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -12927,7 +12794,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
             @TestMetadata("compiler/testData/codegen/box/multiDecl/forRange/long")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Long extends AbstractJsCodegenBoxTest {
                 public void testAllFilesPresentInLong() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/multiDecl/forRange/long"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -12962,7 +12828,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/multifileClasses")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class MultifileClasses extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInMultifileClasses() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/multifileClasses"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -12970,7 +12835,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/multifileClasses/optimized")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Optimized extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInOptimized() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/multifileClasses/optimized"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -12980,7 +12844,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/nonLocalReturns")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class NonLocalReturns extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInNonLocalReturns() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/nonLocalReturns"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -13025,7 +12888,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/nullCheckOptimization")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class NullCheckOptimization extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInNullCheckOptimization() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/nullCheckOptimization"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -13052,7 +12914,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/nullabilityAssertions")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class NullabilityAssertions extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInNullabilityAssertions() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/nullabilityAssertions"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -13061,7 +12922,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/objectIntrinsics")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ObjectIntrinsics extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInObjectIntrinsics() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/objectIntrinsics"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -13076,7 +12936,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/objects")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Objects extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInObjects() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/objects"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -13391,7 +13250,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/operatorConventions")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class OperatorConventions extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInOperatorConventions() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/operatorConventions"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -13495,7 +13353,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/operatorConventions/compareTo")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class CompareTo extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInCompareTo() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/operatorConventions/compareTo"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -13565,7 +13422,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/package")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Package extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInPackage() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/package"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -13658,7 +13514,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/platformTypes")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class PlatformTypes extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInPlatformTypes() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/platformTypes"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -13666,7 +13521,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/platformTypes/primitives")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Primitives extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInPrimitives() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/platformTypes/primitives"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -13802,7 +13656,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/primitiveTypes")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class PrimitiveTypes extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInPrimitiveTypes() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/primitiveTypes"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -14188,7 +14041,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/primitiveTypes/equalityWithObject")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class EqualityWithObject extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInEqualityWithObject() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/primitiveTypes/equalityWithObject"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -14220,7 +14072,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
             @TestMetadata("compiler/testData/codegen/box/primitiveTypes/equalityWithObject/generated")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Generated extends AbstractJsCodegenBoxTest {
                 public void testAllFilesPresentInGenerated() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/primitiveTypes/equalityWithObject/generated"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -14339,7 +14190,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/private")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Private extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInPrivate() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/private"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -14360,7 +14210,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/privateConstructors")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class PrivateConstructors extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInPrivateConstructors() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/privateConstructors"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -14453,7 +14302,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/properties")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Properties extends AbstractJsCodegenBoxTest {
         @TestMetadata("accessToPrivateProperty.kt")
         public void testAccessToPrivateProperty() throws Exception {
@@ -14959,7 +14807,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/properties/const")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Const extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInConst() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/properties/const"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -15004,7 +14851,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/properties/lateinit")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Lateinit extends AbstractJsCodegenBoxTest {
             @TestMetadata("accessor.kt")
             public void testAccessor() throws Exception {
@@ -15072,7 +14918,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
             @TestMetadata("compiler/testData/codegen/box/properties/lateinit/local")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Local extends AbstractJsCodegenBoxTest {
                 public void testAllFilesPresentInLocal() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/properties/lateinit/local"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -15117,7 +14962,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
             @TestMetadata("compiler/testData/codegen/box/properties/lateinit/topLevel")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class TopLevel extends AbstractJsCodegenBoxTest {
                 @TestMetadata("accessorException.kt")
                 public void testAccessorException() throws Exception {
@@ -15158,7 +15002,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/publishedApi")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class PublishedApi extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInPublishedApi() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/publishedApi"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -15191,7 +15034,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/ranges")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Ranges extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInRanges() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/ranges"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -15247,7 +15089,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/ranges/contains")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Contains extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInContains() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/ranges/contains"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -15495,7 +15336,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
             @TestMetadata("compiler/testData/codegen/box/ranges/contains/generated")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Generated extends AbstractJsCodegenBoxTest {
                 public void testAllFilesPresentInGenerated() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/ranges/contains/generated"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -15589,7 +15429,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/ranges/expression")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Expression extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInExpression() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/ranges/expression"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -15826,7 +15665,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/ranges/forInDownTo")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ForInDownTo extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInForInDownTo() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/ranges/forInDownTo"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -15859,7 +15697,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/ranges/forInIndices")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ForInIndices extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInForInIndices() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/ranges/forInIndices"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -15964,7 +15801,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/ranges/forInUntil")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ForInUntil extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInForInUntil() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/ranges/forInUntil"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -16027,7 +15863,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/ranges/literal")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Literal extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInLiteral() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/ranges/literal"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -16264,7 +16099,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/ranges/nullableLoopParameter")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class NullableLoopParameter extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInNullableLoopParameter() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/ranges/nullableLoopParameter"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -16292,7 +16126,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/reflection")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Reflection extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInReflection() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/reflection"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -16300,7 +16133,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/reflection/annotations")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Annotations extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInAnnotations() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/reflection/annotations"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -16465,7 +16297,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/reflection/call")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Call extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInCall() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/reflection/call"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -16749,7 +16580,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
             @TestMetadata("compiler/testData/codegen/box/reflection/call/bound")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Bound extends AbstractJsCodegenBoxTest {
                 public void testAllFilesPresentInBound() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/reflection/call/bound"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -16915,7 +16745,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/reflection/callBy")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class CallBy extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInCallBy() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/reflection/callBy"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -17164,7 +16993,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/reflection/classLiterals")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ClassLiterals extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInClassLiterals() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/reflection/classLiterals"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -17245,7 +17073,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/reflection/classes")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Classes extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInClasses() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/reflection/classes"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -17392,7 +17219,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/reflection/constructors")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Constructors extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInConstructors() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/reflection/constructors"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -17461,7 +17287,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/reflection/createAnnotation")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class CreateAnnotation extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInCreateAnnotation() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/reflection/createAnnotation"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -17614,7 +17439,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/reflection/enclosing")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Enclosing extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInEnclosing() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/reflection/enclosing"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -17911,7 +17735,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/reflection/functions")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Functions extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInFunctions() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/reflection/functions"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -18034,7 +17857,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/reflection/genericSignature")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class GenericSignature extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInGenericSignature() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/reflection/genericSignature"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -18211,7 +18033,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/reflection/isInstance")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class IsInstance extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInIsInstance() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/reflection/isInstance"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -18232,7 +18053,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/reflection/kClassInAnnotation")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class KClassInAnnotation extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInKClassInAnnotation() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/reflection/kClassInAnnotation"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -18349,7 +18169,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/reflection/lambdaClasses")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class LambdaClasses extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInLambdaClasses() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/reflection/lambdaClasses"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -18370,7 +18189,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/reflection/mapping")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Mapping extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInMapping() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/reflection/mapping"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -18522,7 +18340,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
             @TestMetadata("compiler/testData/codegen/box/reflection/mapping/fakeOverrides")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class FakeOverrides extends AbstractJsCodegenBoxTest {
                 public void testAllFilesPresentInFakeOverrides() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/reflection/mapping/fakeOverrides"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -18555,7 +18372,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
             @TestMetadata("compiler/testData/codegen/box/reflection/mapping/jvmStatic")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class JvmStatic extends AbstractJsCodegenBoxTest {
                 public void testAllFilesPresentInJvmStatic() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/reflection/mapping/jvmStatic"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -18588,7 +18404,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
             @TestMetadata("compiler/testData/codegen/box/reflection/mapping/types")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Types extends AbstractJsCodegenBoxTest {
                 public void testAllFilesPresentInTypes() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/reflection/mapping/types"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -18778,7 +18593,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/reflection/methodsFromAny")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class MethodsFromAny extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInMethodsFromAny() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/reflection/methodsFromAny"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -18991,7 +18805,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/reflection/modifiers")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Modifiers extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInModifiers() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/reflection/modifiers"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -19108,7 +18921,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/reflection/multifileClasses")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class MultifileClasses extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInMultifileClasses() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/reflection/multifileClasses"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -19153,7 +18965,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/reflection/noReflectAtRuntime")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class NoReflectAtRuntime extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInNoReflectAtRuntime() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/reflection/noReflectAtRuntime"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -19215,7 +19026,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
             @TestMetadata("compiler/testData/codegen/box/reflection/noReflectAtRuntime/methodsFromAny")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class MethodsFromAny extends AbstractJsCodegenBoxTest {
                 public void testAllFilesPresentInMethodsFromAny() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/reflection/noReflectAtRuntime/methodsFromAny"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -19261,7 +19071,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/reflection/parameters")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Parameters extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInParameters() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/reflection/parameters"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -19402,7 +19211,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/reflection/properties")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Properties extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInProperties() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/reflection/properties"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -19758,7 +19566,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
             @TestMetadata("compiler/testData/codegen/box/reflection/properties/accessors")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Accessors extends AbstractJsCodegenBoxTest {
                 @TestMetadata("accessorNames.kt")
                 public void testAccessorNames() throws Exception {
@@ -19827,7 +19634,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
             @TestMetadata("compiler/testData/codegen/box/reflection/properties/getDelegate")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class GetDelegate extends AbstractJsCodegenBoxTest {
                 public void testAllFilesPresentInGetDelegate() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/reflection/properties/getDelegate"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -20016,7 +19822,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
             @TestMetadata("compiler/testData/codegen/box/reflection/properties/localDelegated")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class LocalDelegated extends AbstractJsCodegenBoxTest {
                 public void testAllFilesPresentInLocalDelegated() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/reflection/properties/localDelegated"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -20026,7 +19831,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/reflection/specialBuiltIns")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class SpecialBuiltIns extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInSpecialBuiltIns() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/reflection/specialBuiltIns"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -20047,7 +19851,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/reflection/supertypes")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Supertypes extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInSupertypes() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/reflection/supertypes"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -20116,7 +19919,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/reflection/typeParameters")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class TypeParameters extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInTypeParameters() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/reflection/typeParameters"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -20161,7 +19963,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/reflection/types")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Types extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInTypes() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/reflection/types"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -20289,7 +20090,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
             @TestMetadata("compiler/testData/codegen/box/reflection/types/createType")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class CreateType extends AbstractJsCodegenBoxTest {
                 public void testAllFilesPresentInCreateType() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/reflection/types/createType"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -20358,7 +20158,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
             @TestMetadata("compiler/testData/codegen/box/reflection/types/subtyping")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Subtyping extends AbstractJsCodegenBoxTest {
                 public void testAllFilesPresentInSubtyping() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/reflection/types/subtyping"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -20417,7 +20216,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/regressions")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Regressions extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInRegressions() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/regressions"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -21098,7 +20896,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/reified")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Reified extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInReified() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/reified"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -21418,7 +21215,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/reified/arraysReification")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ArraysReification extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInArraysReification() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/reified/arraysReification"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -21488,7 +21284,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/safeCall")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class SafeCall extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInSafeCall() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/safeCall"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -21581,7 +21376,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/sam")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Sam extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInSam() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/sam"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -21589,7 +21383,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/sam/constructors")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Constructors extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInConstructors() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/sam/constructors"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -21659,7 +21452,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/sealed")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Sealed extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInSealed() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/sealed"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -21680,7 +21472,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/secondaryConstructors")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class SecondaryConstructors extends AbstractJsCodegenBoxTest {
         @TestMetadata("accessToCompanion.kt")
         public void testAccessToCompanion() throws Exception {
@@ -21857,7 +21648,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/smap")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Smap extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInSmap() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/smap"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -21866,7 +21656,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/smartCasts")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class SmartCasts extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInSmartCasts() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/smartCasts"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -21965,7 +21754,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/specialBuiltins")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class SpecialBuiltins extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInSpecialBuiltins() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/specialBuiltins"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -22148,7 +21936,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/statics")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Statics extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInStatics() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/statics"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -22301,7 +22088,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/storeStackBeforeInline")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class StoreStackBeforeInline extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInStoreStackBeforeInline() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/storeStackBeforeInline"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -22340,7 +22126,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/strings")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Strings extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInStrings() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/strings"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -22469,7 +22254,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/super")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Super extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInSuper() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/super"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -22645,7 +22429,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/super/superConstructor")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class SuperConstructor extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInSuperConstructor() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/super/superConstructor"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -22691,7 +22474,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/synchronized")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Synchronized extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInSynchronized() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/synchronized"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -22832,7 +22614,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/syntheticAccessors")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class SyntheticAccessors extends AbstractJsCodegenBoxTest {
         @TestMetadata("accessorForProtected.kt")
         public void testAccessorForProtected() throws Exception {
@@ -22913,7 +22694,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/toArray")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ToArray extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInToArray() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/toArray"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -22946,7 +22726,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/topLevelPrivate")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class TopLevelPrivate extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInTopLevelPrivate() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/topLevelPrivate"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -23015,7 +22794,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/traits")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Traits extends AbstractJsCodegenBoxTest {
         @TestMetadata("abstractClassInheritsFromInterface.kt")
         public void testAbstractClassInheritsFromInterface() throws Exception {
@@ -23246,7 +23024,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/typeInfo")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class TypeInfo extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInTypeInfo() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/typeInfo"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -23303,7 +23080,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/typeMapping")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class TypeMapping extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInTypeMapping() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/typeMapping"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -23396,7 +23172,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/typealias")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Typealias extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInTypealias() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/typealias"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -23513,7 +23288,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/unaryOp")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class UnaryOp extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInUnaryOp() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/unaryOp"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -23558,7 +23332,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/unit")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Unit extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInUnit() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/unit"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -23633,7 +23406,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/vararg")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Vararg extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInVararg() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/vararg"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -23708,7 +23480,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
     @TestMetadata("compiler/testData/codegen/box/when")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class When extends AbstractJsCodegenBoxTest {
         public void testAllFilesPresentInWhen() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/when"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -23926,7 +23697,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/when/enumOptimization")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class EnumOptimization extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInEnumOptimization() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/when/enumOptimization"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);
@@ -24025,7 +23795,6 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
 
         @TestMetadata("compiler/testData/codegen/box/when/stringOptimization")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class StringOptimization extends AbstractJsCodegenBoxTest {
             public void testAllFilesPresentInStringOptimization() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/box/when/stringOptimization"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.JS, true);

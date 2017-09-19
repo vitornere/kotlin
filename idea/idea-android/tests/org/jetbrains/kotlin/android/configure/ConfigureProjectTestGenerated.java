@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
 public class ConfigureProjectTestGenerated extends AbstractConfigureProjectTest {
     @TestMetadata("idea/testData/configuration/android-gradle")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Android_gradle extends AbstractConfigureProjectTest {
         public void testAllFilesPresentInAndroid_gradle() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/configuration/android-gradle"), Pattern.compile("(\\w+)_before\\.gradle$"), TargetBackend.ANY, true);
@@ -106,7 +105,6 @@ public class ConfigureProjectTestGenerated extends AbstractConfigureProjectTest 
 
         @TestMetadata("idea/testData/configuration/android-gradle/gradleExamples")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class GradleExamples extends AbstractConfigureProjectTest {
             public void testAllFilesPresentInGradleExamples() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/configuration/android-gradle/gradleExamples"), Pattern.compile("(\\w+)_before\\.gradle$"), TargetBackend.ANY, true);
@@ -170,7 +168,6 @@ public class ConfigureProjectTestGenerated extends AbstractConfigureProjectTest 
 
     @TestMetadata("idea/testData/configuration/android-gsk")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Android_gsk extends AbstractConfigureProjectTest {
         public void testAllFilesPresentInAndroid_gsk() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/configuration/android-gsk"), Pattern.compile("(\\w+)_before\\.gradle.kts$"), TargetBackend.ANY, true);

@@ -50,7 +50,6 @@ public class WriteFlagsTestGenerated extends AbstractWriteFlagsTest {
 
     @TestMetadata("compiler/testData/codegen/java8/writeFlags/defaults")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Defaults extends AbstractWriteFlagsTest {
         public void testAllFilesPresentInDefaults() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/java8/writeFlags/defaults"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);

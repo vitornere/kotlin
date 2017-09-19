@@ -98,7 +98,6 @@ public class CodeFragmentCompletionTestGenerated extends AbstractCodeFragmentCom
 
     @TestMetadata("idea/idea-completion/testData/basic/codeFragments/runtimeType")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class RuntimeType extends AbstractCodeFragmentCompletionTest {
         public void testAllFilesPresentInRuntimeType() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/idea-completion/testData/basic/codeFragments/runtimeType"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);

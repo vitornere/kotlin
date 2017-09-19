@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
 public class InspectionTestGenerated extends AbstractInspectionTest {
     @TestMetadata("idea/testData/intentions")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Intentions extends AbstractInspectionTest {
         public void testAllFilesPresentInIntentions() throws Exception {
             KotlinTestUtils.assertAllTestsPresentInSingleGeneratedClass(this.getClass(), new File("idea/testData/intentions"), Pattern.compile("^(inspections\\.test)$"), TargetBackend.ANY);
@@ -107,7 +106,6 @@ public class InspectionTestGenerated extends AbstractInspectionTest {
 
     @TestMetadata("idea/testData/inspections")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Inspections extends AbstractInspectionTest {
         @TestMetadata("addVarianceModifier/inspectionData/inspections.test")
         public void testAddVarianceModifier_inspectionData_Inspections_test() throws Exception {

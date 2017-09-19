@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
 public class ReferenceResolveInJavaTestGenerated extends AbstractReferenceResolveInJavaTest {
     @TestMetadata("idea/testData/resolve/referenceInJava/binaryAndSource")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class BinaryAndSource extends AbstractReferenceResolveInJavaTest {
         public void testAllFilesPresentInBinaryAndSource() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/resolve/referenceInJava/binaryAndSource"), Pattern.compile("^(.+)\\.java$"), TargetBackend.ANY, true);
@@ -113,7 +112,6 @@ public class ReferenceResolveInJavaTestGenerated extends AbstractReferenceResolv
 
     @TestMetadata("idea/testData/resolve/referenceInJava/sourceOnly")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class SourceOnly extends AbstractReferenceResolveInJavaTest {
         public void testAllFilesPresentInSourceOnly() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/resolve/referenceInJava/sourceOnly"), Pattern.compile("^(.+)\\.java$"), TargetBackend.ANY, true);

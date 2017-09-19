@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
 public class ParsingTestGenerated extends AbstractParsingTest {
     @TestMetadata("compiler/testData/psi")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Psi extends AbstractParsingTest {
         @TestMetadata("AbsentInnerType.kt")
         public void testAbsentInnerType() throws Exception {
@@ -856,7 +855,6 @@ public class ParsingTestGenerated extends AbstractParsingTest {
 
         @TestMetadata("compiler/testData/psi/annotation")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Annotation extends AbstractParsingTest {
             public void testAllFilesPresentInAnnotation() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/psi/annotation"), Pattern.compile("^(.*)\\.kts?$"), TargetBackend.ANY, true);
@@ -942,7 +940,6 @@ public class ParsingTestGenerated extends AbstractParsingTest {
 
             @TestMetadata("compiler/testData/psi/annotation/at")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class At extends AbstractParsingTest {
                 public void testAllFilesPresentInAt() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/psi/annotation/at"), Pattern.compile("^(.*)\\.kts?$"), TargetBackend.ANY, true);
@@ -1023,7 +1020,6 @@ public class ParsingTestGenerated extends AbstractParsingTest {
 
             @TestMetadata("compiler/testData/psi/annotation/list")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class List extends AbstractParsingTest {
                 public void testAllFilesPresentInList() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/psi/annotation/list"), Pattern.compile("^(.*)\\.kts?$"), TargetBackend.ANY, true);
@@ -1044,7 +1040,6 @@ public class ParsingTestGenerated extends AbstractParsingTest {
 
             @TestMetadata("compiler/testData/psi/annotation/modifiersMigration")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class ModifiersMigration extends AbstractParsingTest {
                 public void testAllFilesPresentInModifiersMigration() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/psi/annotation/modifiersMigration"), Pattern.compile("^(.*)\\.kts?$"), TargetBackend.ANY, true);
@@ -1065,7 +1060,6 @@ public class ParsingTestGenerated extends AbstractParsingTest {
 
             @TestMetadata("compiler/testData/psi/annotation/options")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Options extends AbstractParsingTest {
                 public void testAllFilesPresentInOptions() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/psi/annotation/options"), Pattern.compile("^(.*)\\.kts?$"), TargetBackend.ANY, true);
@@ -1098,7 +1092,6 @@ public class ParsingTestGenerated extends AbstractParsingTest {
 
             @TestMetadata("compiler/testData/psi/annotation/targeted")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Targeted extends AbstractParsingTest {
                 public void testAllFilesPresentInTargeted() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/psi/annotation/targeted"), Pattern.compile("^(.*)\\.kts?$"), TargetBackend.ANY, true);
@@ -1106,7 +1099,6 @@ public class ParsingTestGenerated extends AbstractParsingTest {
 
                 @TestMetadata("compiler/testData/psi/annotation/targeted/onField")
                 @TestDataPath("$PROJECT_ROOT")
-                @RunWith(JUnit3RunnerWithInners.class)
                 public static class OnField extends AbstractParsingTest {
                     public void testAllFilesPresentInOnField() throws Exception {
                         KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/psi/annotation/targeted/onField"), Pattern.compile("^(.*)\\.kts?$"), TargetBackend.ANY, true);
@@ -1145,7 +1137,6 @@ public class ParsingTestGenerated extends AbstractParsingTest {
 
                 @TestMetadata("compiler/testData/psi/annotation/targeted/onFile")
                 @TestDataPath("$PROJECT_ROOT")
-                @RunWith(JUnit3RunnerWithInners.class)
                 public static class OnFile extends AbstractParsingTest {
                     public void testAllFilesPresentInOnFile() throws Exception {
                         KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/psi/annotation/targeted/onFile"), Pattern.compile("^(.*)\\.kts?$"), TargetBackend.ANY, true);
@@ -1202,7 +1193,6 @@ public class ParsingTestGenerated extends AbstractParsingTest {
 
                 @TestMetadata("compiler/testData/psi/annotation/targeted/onGetSetSparam")
                 @TestDataPath("$PROJECT_ROOT")
-                @RunWith(JUnit3RunnerWithInners.class)
                 public static class OnGetSetSparam extends AbstractParsingTest {
                     public void testAllFilesPresentInOnGetSetSparam() throws Exception {
                         KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/psi/annotation/targeted/onGetSetSparam"), Pattern.compile("^(.*)\\.kts?$"), TargetBackend.ANY, true);
@@ -1229,7 +1219,6 @@ public class ParsingTestGenerated extends AbstractParsingTest {
 
                 @TestMetadata("compiler/testData/psi/annotation/targeted/onParam")
                 @TestDataPath("$PROJECT_ROOT")
-                @RunWith(JUnit3RunnerWithInners.class)
                 public static class OnParam extends AbstractParsingTest {
                     public void testAllFilesPresentInOnParam() throws Exception {
                         KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/psi/annotation/targeted/onParam"), Pattern.compile("^(.*)\\.kts?$"), TargetBackend.ANY, true);
@@ -1264,7 +1253,6 @@ public class ParsingTestGenerated extends AbstractParsingTest {
 
         @TestMetadata("compiler/testData/psi/examples")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Examples extends AbstractParsingTest {
             public void testAllFilesPresentInExamples() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/psi/examples"), Pattern.compile("^(.*)\\.kts?$"), TargetBackend.ANY, true);
@@ -1356,7 +1344,6 @@ public class ParsingTestGenerated extends AbstractParsingTest {
 
             @TestMetadata("compiler/testData/psi/examples/array")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Array extends AbstractParsingTest {
                 public void testAllFilesPresentInArray() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/psi/examples/array"), Pattern.compile("^(.*)\\.kts?$"), TargetBackend.ANY, true);
@@ -1371,7 +1358,6 @@ public class ParsingTestGenerated extends AbstractParsingTest {
 
             @TestMetadata("compiler/testData/psi/examples/collections")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Collections extends AbstractParsingTest {
                 public void testAllFilesPresentInCollections() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/psi/examples/collections"), Pattern.compile("^(.*)\\.kts?$"), TargetBackend.ANY, true);
@@ -1452,7 +1438,6 @@ public class ParsingTestGenerated extends AbstractParsingTest {
 
             @TestMetadata("compiler/testData/psi/examples/io")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Io extends AbstractParsingTest {
                 public void testAllFilesPresentInIo() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/psi/examples/io"), Pattern.compile("^(.*)\\.kts?$"), TargetBackend.ANY, true);
@@ -1467,7 +1452,6 @@ public class ParsingTestGenerated extends AbstractParsingTest {
 
             @TestMetadata("compiler/testData/psi/examples/map")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Map extends AbstractParsingTest {
                 public void testAllFilesPresentInMap() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/psi/examples/map"), Pattern.compile("^(.*)\\.kts?$"), TargetBackend.ANY, true);
@@ -1482,7 +1466,6 @@ public class ParsingTestGenerated extends AbstractParsingTest {
 
             @TestMetadata("compiler/testData/psi/examples/priorityqueues")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Priorityqueues extends AbstractParsingTest {
                 public void testAllFilesPresentInPriorityqueues() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/psi/examples/priorityqueues"), Pattern.compile("^(.*)\\.kts?$"), TargetBackend.ANY, true);
@@ -1509,7 +1492,6 @@ public class ParsingTestGenerated extends AbstractParsingTest {
 
             @TestMetadata("compiler/testData/psi/examples/util")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Util extends AbstractParsingTest {
                 public void testAllFilesPresentInUtil() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/psi/examples/util"), Pattern.compile("^(.*)\\.kts?$"), TargetBackend.ANY, true);
@@ -1531,7 +1513,6 @@ public class ParsingTestGenerated extends AbstractParsingTest {
 
         @TestMetadata("compiler/testData/psi/functionReceivers")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class FunctionReceivers extends AbstractParsingTest {
             public void testAllFilesPresentInFunctionReceivers() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/psi/functionReceivers"), Pattern.compile("^(.*)\\.kts?$"), TargetBackend.ANY, true);
@@ -1582,7 +1563,6 @@ public class ParsingTestGenerated extends AbstractParsingTest {
 
         @TestMetadata("compiler/testData/psi/greatSyntacticShift")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class GreatSyntacticShift extends AbstractParsingTest {
             public void testAllFilesPresentInGreatSyntacticShift() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/psi/greatSyntacticShift"), Pattern.compile("^(.*)\\.kts?$"), TargetBackend.ANY, true);
@@ -1615,7 +1595,6 @@ public class ParsingTestGenerated extends AbstractParsingTest {
 
         @TestMetadata("compiler/testData/psi/kdoc")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Kdoc extends AbstractParsingTest {
             public void testAllFilesPresentInKdoc() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/psi/kdoc"), Pattern.compile("^(.*)\\.kts?$"), TargetBackend.ANY, true);
@@ -1756,7 +1735,6 @@ public class ParsingTestGenerated extends AbstractParsingTest {
 
         @TestMetadata("compiler/testData/psi/newLabels")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class NewLabels extends AbstractParsingTest {
             public void testAllFilesPresentInNewLabels() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/psi/newLabels"), Pattern.compile("^(.*)\\.kts?$"), TargetBackend.ANY, true);
@@ -1789,7 +1767,6 @@ public class ParsingTestGenerated extends AbstractParsingTest {
 
         @TestMetadata("compiler/testData/psi/packages")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Packages extends AbstractParsingTest {
             public void testAllFilesPresentInPackages() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/psi/packages"), Pattern.compile("^(.*)\\.kts?$"), TargetBackend.ANY, true);
@@ -1864,7 +1841,6 @@ public class ParsingTestGenerated extends AbstractParsingTest {
 
         @TestMetadata("compiler/testData/psi/platformTypesRecovery")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class PlatformTypesRecovery extends AbstractParsingTest {
             public void testAllFilesPresentInPlatformTypesRecovery() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/psi/platformTypesRecovery"), Pattern.compile("^(.*)\\.kts?$"), TargetBackend.ANY, true);
@@ -1933,7 +1909,6 @@ public class ParsingTestGenerated extends AbstractParsingTest {
 
         @TestMetadata("compiler/testData/psi/primaryConstructor")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class PrimaryConstructor extends AbstractParsingTest {
             public void testAllFilesPresentInPrimaryConstructor() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/psi/primaryConstructor"), Pattern.compile("^(.*)\\.kts?$"), TargetBackend.ANY, true);
@@ -1972,7 +1947,6 @@ public class ParsingTestGenerated extends AbstractParsingTest {
 
         @TestMetadata("compiler/testData/psi/propertyDelegate")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class PropertyDelegate extends AbstractParsingTest {
             public void testAllFilesPresentInPropertyDelegate() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/psi/propertyDelegate"), Pattern.compile("^(.*)\\.kts?$"), TargetBackend.ANY, true);
@@ -2047,7 +2021,6 @@ public class ParsingTestGenerated extends AbstractParsingTest {
 
         @TestMetadata("compiler/testData/psi/recovery")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Recovery extends AbstractParsingTest {
             @TestMetadata("AbsentLeftHandSide.kt")
             public void testAbsentLeftHandSide() throws Exception {
@@ -2427,7 +2400,6 @@ public class ParsingTestGenerated extends AbstractParsingTest {
 
             @TestMetadata("compiler/testData/psi/recovery/objects")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Objects extends AbstractParsingTest {
                 public void testAllFilesPresentInObjects() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/psi/recovery/objects"), Pattern.compile("^(.*)\\.kts?$"), TargetBackend.ANY, true);
@@ -2435,7 +2407,6 @@ public class ParsingTestGenerated extends AbstractParsingTest {
 
                 @TestMetadata("compiler/testData/psi/recovery/objects/declarations")
                 @TestDataPath("$PROJECT_ROOT")
-                @RunWith(JUnit3RunnerWithInners.class)
                 public static class Declarations extends AbstractParsingTest {
                     public void testAllFilesPresentInDeclarations() throws Exception {
                         KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/psi/recovery/objects/declarations"), Pattern.compile("^(.*)\\.kts?$"), TargetBackend.ANY, true);
@@ -2492,7 +2463,6 @@ public class ParsingTestGenerated extends AbstractParsingTest {
 
                 @TestMetadata("compiler/testData/psi/recovery/objects/expressions")
                 @TestDataPath("$PROJECT_ROOT")
-                @RunWith(JUnit3RunnerWithInners.class)
                 public static class Expressions extends AbstractParsingTest {
                     public void testAllFilesPresentInExpressions() throws Exception {
                         KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/psi/recovery/objects/expressions"), Pattern.compile("^(.*)\\.kts?$"), TargetBackend.ANY, true);
@@ -2556,7 +2526,6 @@ public class ParsingTestGenerated extends AbstractParsingTest {
 
             @TestMetadata("compiler/testData/psi/recovery/qualifiedExpression")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class QualifiedExpression extends AbstractParsingTest {
                 public void testAllFilesPresentInQualifiedExpression() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/psi/recovery/qualifiedExpression"), Pattern.compile("^(.*)\\.kts?$"), TargetBackend.ANY, true);
@@ -2601,7 +2570,6 @@ public class ParsingTestGenerated extends AbstractParsingTest {
 
             @TestMetadata("compiler/testData/psi/recovery/unnamedParameter")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class UnnamedParameter extends AbstractParsingTest {
                 public void testAllFilesPresentInUnnamedParameter() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/psi/recovery/unnamedParameter"), Pattern.compile("^(.*)\\.kts?$"), TargetBackend.ANY, true);
@@ -2677,7 +2645,6 @@ public class ParsingTestGenerated extends AbstractParsingTest {
 
         @TestMetadata("compiler/testData/psi/script")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Script extends AbstractParsingTest {
             public void testAllFilesPresentInScript() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/psi/script"), Pattern.compile("^(.*)\\.kts?$"), TargetBackend.ANY, true);
@@ -2752,7 +2719,6 @@ public class ParsingTestGenerated extends AbstractParsingTest {
 
         @TestMetadata("compiler/testData/psi/secondaryConstructors")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class SecondaryConstructors extends AbstractParsingTest {
             public void testAllFilesPresentInSecondaryConstructors() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/psi/secondaryConstructors"), Pattern.compile("^(.*)\\.kts?$"), TargetBackend.ANY, true);
@@ -2827,7 +2793,6 @@ public class ParsingTestGenerated extends AbstractParsingTest {
 
         @TestMetadata("compiler/testData/psi/stringTemplates")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class StringTemplates extends AbstractParsingTest {
             public void testAllFilesPresentInStringTemplates() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/psi/stringTemplates"), Pattern.compile("^(.*)\\.kts?$"), TargetBackend.ANY, true);
@@ -2843,7 +2808,6 @@ public class ParsingTestGenerated extends AbstractParsingTest {
 
     @TestMetadata("compiler/testData/parseCodeFragment/expression")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Expression extends AbstractParsingTest {
         public void testAllFilesPresentInExpression() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/parseCodeFragment/expression"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -2864,7 +2828,6 @@ public class ParsingTestGenerated extends AbstractParsingTest {
 
     @TestMetadata("compiler/testData/parseCodeFragment/block")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Block extends AbstractParsingTest {
         public void testAllFilesPresentInBlock() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/parseCodeFragment/block"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);

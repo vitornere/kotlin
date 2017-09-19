@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
 public class PullUpTestGenerated extends AbstractPullUpTest {
     @TestMetadata("idea/testData/refactoring/pullUp/k2k")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class K2K extends AbstractPullUpTest {
         @TestMetadata("abstractFromInterfaceToInterface.kt")
         public void testAbstractFromInterfaceToInterface() throws Exception {
@@ -371,7 +370,6 @@ public class PullUpTestGenerated extends AbstractPullUpTest {
 
     @TestMetadata("idea/testData/refactoring/pullUp/k2j")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class K2J extends AbstractPullUpTest {
         public void testAllFilesPresentInK2J() throws Exception {
             KotlinTestUtils.assertAllTestsPresentInSingleGeneratedClass(this.getClass(), new File("idea/testData/refactoring/pullUp/k2j"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY);
@@ -452,7 +450,6 @@ public class PullUpTestGenerated extends AbstractPullUpTest {
 
     @TestMetadata("idea/testData/refactoring/pullUp/j2k")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class J2K extends AbstractPullUpTest {
         public void testAllFilesPresentInJ2K() throws Exception {
             KotlinTestUtils.assertAllTestsPresentInSingleGeneratedClass(this.getClass(), new File("idea/testData/refactoring/pullUp/j2k"), Pattern.compile("^(.+)\\.java$"), TargetBackend.ANY);

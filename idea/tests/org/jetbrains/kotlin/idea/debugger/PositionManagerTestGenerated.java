@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
 public class PositionManagerTestGenerated extends AbstractPositionManagerTest {
     @TestMetadata("idea/testData/debugger/positionManager")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class SingleFile extends AbstractPositionManagerTest {
         public void testAllFilesPresentInSingleFile() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/debugger/positionManager"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, false);
@@ -161,7 +160,6 @@ public class PositionManagerTestGenerated extends AbstractPositionManagerTest {
 
     @TestMetadata("idea/testData/debugger/positionManager")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class MultiFile extends AbstractPositionManagerTest {
         public void testAllFilesPresentInMultiFile() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/debugger/positionManager"), Pattern.compile("^([^\\.]+)$"), TargetBackend.ANY, false);

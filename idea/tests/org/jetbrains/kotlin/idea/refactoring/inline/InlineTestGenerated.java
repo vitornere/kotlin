@@ -38,7 +38,6 @@ public class InlineTestGenerated extends AbstractInlineTest {
 
     @TestMetadata("idea/testData/refactoring/inline/function")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Function extends AbstractInlineTest {
         public void testAllFilesPresentInFunction() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/refactoring/inline/function"), Pattern.compile("^(\\w+)\\.kt$"), TargetBackend.ANY, true);
@@ -112,7 +111,6 @@ public class InlineTestGenerated extends AbstractInlineTest {
 
         @TestMetadata("idea/testData/refactoring/inline/function/expressionBody")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ExpressionBody extends AbstractInlineTest {
             public void testAllFilesPresentInExpressionBody() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/refactoring/inline/function/expressionBody"), Pattern.compile("^(\\w+)\\.kt$"), TargetBackend.ANY, true);
@@ -259,7 +257,6 @@ public class InlineTestGenerated extends AbstractInlineTest {
 
         @TestMetadata("idea/testData/refactoring/inline/function/fromIntellij")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class FromIntellij extends AbstractInlineTest {
             public void testAllFilesPresentInFromIntellij() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/refactoring/inline/function/fromIntellij"), Pattern.compile("^(\\w+)\\.kt$"), TargetBackend.ANY, true);
@@ -382,7 +379,6 @@ public class InlineTestGenerated extends AbstractInlineTest {
 
         @TestMetadata("idea/testData/refactoring/inline/function/returnAtEnd")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ReturnAtEnd extends AbstractInlineTest {
             @TestMetadata("AddBlockToControlStatement.kt")
             public void testAddBlockToControlStatement() throws Exception {
@@ -506,7 +502,6 @@ public class InlineTestGenerated extends AbstractInlineTest {
 
     @TestMetadata("idea/testData/refactoring/inline/inlineTypeAlias")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class InlineTypeAlias extends AbstractInlineTest {
         public void testAllFilesPresentInInlineTypeAlias() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/refactoring/inline/inlineTypeAlias"), Pattern.compile("^(\\w+)\\.kt$"), TargetBackend.ANY, true);
@@ -551,7 +546,6 @@ public class InlineTestGenerated extends AbstractInlineTest {
 
     @TestMetadata("idea/testData/refactoring/inline/inlineVariableOrProperty")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class InlineVariableOrProperty extends AbstractInlineTest {
         public void testAllFilesPresentInInlineVariableOrProperty() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/refactoring/inline/inlineVariableOrProperty"), Pattern.compile("^(\\w+)\\.kt$"), TargetBackend.ANY, true);
@@ -679,7 +673,6 @@ public class InlineTestGenerated extends AbstractInlineTest {
 
         @TestMetadata("idea/testData/refactoring/inline/inlineVariableOrProperty/addParenthesis")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class AddParenthesis extends AbstractInlineTest {
             public void testAllFilesPresentInAddParenthesis() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/refactoring/inline/inlineVariableOrProperty/addParenthesis"), Pattern.compile("^(\\w+)\\.kt$"), TargetBackend.ANY, true);
@@ -880,7 +873,6 @@ public class InlineTestGenerated extends AbstractInlineTest {
 
         @TestMetadata("idea/testData/refactoring/inline/inlineVariableOrProperty/explicateParameterTypes")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ExplicateParameterTypes extends AbstractInlineTest {
             public void testAllFilesPresentInExplicateParameterTypes() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/refactoring/inline/inlineVariableOrProperty/explicateParameterTypes"), Pattern.compile("^(\\w+)\\.kt$"), TargetBackend.ANY, true);
@@ -931,7 +923,6 @@ public class InlineTestGenerated extends AbstractInlineTest {
 
         @TestMetadata("idea/testData/refactoring/inline/inlineVariableOrProperty/explicateTypeArgument")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ExplicateTypeArgument extends AbstractInlineTest {
             public void testAllFilesPresentInExplicateTypeArgument() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/refactoring/inline/inlineVariableOrProperty/explicateTypeArgument"), Pattern.compile("^(\\w+)\\.kt$"), TargetBackend.ANY, true);
@@ -1000,7 +991,6 @@ public class InlineTestGenerated extends AbstractInlineTest {
 
         @TestMetadata("idea/testData/refactoring/inline/inlineVariableOrProperty/property")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Property extends AbstractInlineTest {
             public void testAllFilesPresentInProperty() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/refactoring/inline/inlineVariableOrProperty/property"), Pattern.compile("^(\\w+)\\.kt$"), TargetBackend.ANY, true);
@@ -1074,7 +1064,6 @@ public class InlineTestGenerated extends AbstractInlineTest {
 
             @TestMetadata("idea/testData/refactoring/inline/inlineVariableOrProperty/property/accessors")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Accessors extends AbstractInlineTest {
                 public void testAllFilesPresentInAccessors() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/refactoring/inline/inlineVariableOrProperty/property/accessors"), Pattern.compile("^(\\w+)\\.kt$"), TargetBackend.ANY, true);
@@ -1120,7 +1109,6 @@ public class InlineTestGenerated extends AbstractInlineTest {
 
         @TestMetadata("idea/testData/refactoring/inline/inlineVariableOrProperty/stringTemplates")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class StringTemplates extends AbstractInlineTest {
             @TestMetadata("addBraces.kt")
             public void testAddBraces() throws Exception {

@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
 public class AndroidBoxTestGenerated extends AbstractAndroidBoxTest {
     @TestMetadata("plugins/android-extensions/android-extensions-compiler/testData/codegen/android")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Android extends AbstractAndroidBoxTest {
         public void testAllFilesPresentInAndroid() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("plugins/android-extensions/android-extensions-compiler/testData/codegen/android"), Pattern.compile("^([^\\.]+)$"), TargetBackend.ANY, false);
@@ -101,7 +100,6 @@ public class AndroidBoxTestGenerated extends AbstractAndroidBoxTest {
 
     @TestMetadata("plugins/android-extensions/android-extensions-compiler/testData/codegen/android")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Invoke extends AbstractAndroidBoxTest {
         public void testAllFilesPresentInInvoke() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("plugins/android-extensions/android-extensions-compiler/testData/codegen/android"), Pattern.compile("^([^\\.]+)$"), TargetBackend.ANY, false);

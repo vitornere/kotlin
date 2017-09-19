@@ -38,7 +38,6 @@ public class MultiLineStringIndentTestGenerated extends AbstractMultiLineStringI
 
     @TestMetadata("idea/testData/editor/enterHandler/multilineString/spaces")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Spaces extends AbstractMultiLineStringIndentTest {
         public void testAllFilesPresentInSpaces() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/editor/enterHandler/multilineString/spaces"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -269,7 +268,6 @@ public class MultiLineStringIndentTestGenerated extends AbstractMultiLineStringI
 
     @TestMetadata("idea/testData/editor/enterHandler/multilineString/withTabs")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class WithTabs extends AbstractMultiLineStringIndentTest {
         public void testAllFilesPresentInWithTabs() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/editor/enterHandler/multilineString/withTabs"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -277,7 +275,6 @@ public class MultiLineStringIndentTestGenerated extends AbstractMultiLineStringI
 
         @TestMetadata("idea/testData/editor/enterHandler/multilineString/withTabs/tabs2")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Tabs2 extends AbstractMultiLineStringIndentTest {
             public void testAllFilesPresentInTabs2() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/editor/enterHandler/multilineString/withTabs/tabs2"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -352,7 +349,6 @@ public class MultiLineStringIndentTestGenerated extends AbstractMultiLineStringI
 
         @TestMetadata("idea/testData/editor/enterHandler/multilineString/withTabs/tabs4")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Tabs4 extends AbstractMultiLineStringIndentTest {
             public void testAllFilesPresentInTabs4() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/editor/enterHandler/multilineString/withTabs/tabs4"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);

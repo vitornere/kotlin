@@ -38,7 +38,6 @@ public class ControlFlowTestGenerated extends AbstractControlFlowTest {
 
     @TestMetadata("compiler/testData/cfg/arrays")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Arrays extends AbstractControlFlowTest {
         public void testAllFilesPresentInArrays() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/cfg/arrays"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -107,7 +106,6 @@ public class ControlFlowTestGenerated extends AbstractControlFlowTest {
 
     @TestMetadata("compiler/testData/cfg/basic")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Basic extends AbstractControlFlowTest {
         public void testAllFilesPresentInBasic() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/cfg/basic"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -134,7 +132,6 @@ public class ControlFlowTestGenerated extends AbstractControlFlowTest {
 
     @TestMetadata("compiler/testData/cfg/bugs")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Bugs extends AbstractControlFlowTest {
         public void testAllFilesPresentInBugs() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/cfg/bugs"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -173,7 +170,6 @@ public class ControlFlowTestGenerated extends AbstractControlFlowTest {
 
     @TestMetadata("compiler/testData/cfg/controlStructures")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ControlStructures extends AbstractControlFlowTest {
         public void testAllFilesPresentInControlStructures() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/cfg/controlStructures"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -284,7 +280,6 @@ public class ControlFlowTestGenerated extends AbstractControlFlowTest {
 
     @TestMetadata("compiler/testData/cfg/conventions")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Conventions extends AbstractControlFlowTest {
         public void testAllFilesPresentInConventions() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/cfg/conventions"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -323,7 +318,6 @@ public class ControlFlowTestGenerated extends AbstractControlFlowTest {
 
     @TestMetadata("compiler/testData/cfg/deadCode")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class DeadCode extends AbstractControlFlowTest {
         public void testAllFilesPresentInDeadCode() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/cfg/deadCode"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -362,7 +356,6 @@ public class ControlFlowTestGenerated extends AbstractControlFlowTest {
 
     @TestMetadata("compiler/testData/cfg/declarations")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Declarations extends AbstractControlFlowTest {
         public void testAllFilesPresentInDeclarations() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/cfg/declarations"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -370,7 +363,6 @@ public class ControlFlowTestGenerated extends AbstractControlFlowTest {
 
         @TestMetadata("compiler/testData/cfg/declarations/classesAndObjects")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ClassesAndObjects extends AbstractControlFlowTest {
             public void testAllFilesPresentInClassesAndObjects() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/cfg/declarations/classesAndObjects"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -415,7 +407,6 @@ public class ControlFlowTestGenerated extends AbstractControlFlowTest {
 
         @TestMetadata("compiler/testData/cfg/declarations/functionLiterals")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class FunctionLiterals extends AbstractControlFlowTest {
             public void testAllFilesPresentInFunctionLiterals() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/cfg/declarations/functionLiterals"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -430,7 +421,6 @@ public class ControlFlowTestGenerated extends AbstractControlFlowTest {
 
         @TestMetadata("compiler/testData/cfg/declarations/functions")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Functions extends AbstractControlFlowTest {
             public void testAllFilesPresentInFunctions() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/cfg/declarations/functions"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -469,7 +459,6 @@ public class ControlFlowTestGenerated extends AbstractControlFlowTest {
 
         @TestMetadata("compiler/testData/cfg/declarations/local")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Local extends AbstractControlFlowTest {
             public void testAllFilesPresentInLocal() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/cfg/declarations/local"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -514,7 +503,6 @@ public class ControlFlowTestGenerated extends AbstractControlFlowTest {
 
         @TestMetadata("compiler/testData/cfg/declarations/multiDeclaration")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class MultiDeclaration extends AbstractControlFlowTest {
             public void testAllFilesPresentInMultiDeclaration() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/cfg/declarations/multiDeclaration"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -535,7 +523,6 @@ public class ControlFlowTestGenerated extends AbstractControlFlowTest {
 
         @TestMetadata("compiler/testData/cfg/declarations/properties")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Properties extends AbstractControlFlowTest {
             public void testAllFilesPresentInProperties() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/cfg/declarations/properties"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -557,7 +544,6 @@ public class ControlFlowTestGenerated extends AbstractControlFlowTest {
 
     @TestMetadata("compiler/testData/cfg/expressions")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Expressions extends AbstractControlFlowTest {
         public void testAllFilesPresentInExpressions() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/cfg/expressions"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -704,7 +690,6 @@ public class ControlFlowTestGenerated extends AbstractControlFlowTest {
 
     @TestMetadata("compiler/testData/cfg/functions")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Functions extends AbstractControlFlowTest {
         public void testAllFilesPresentInFunctions() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/cfg/functions"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -725,7 +710,6 @@ public class ControlFlowTestGenerated extends AbstractControlFlowTest {
 
     @TestMetadata("compiler/testData/cfg/secondaryConstructors")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class SecondaryConstructors extends AbstractControlFlowTest {
         public void testAllFilesPresentInSecondaryConstructors() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/cfg/secondaryConstructors"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -764,7 +748,6 @@ public class ControlFlowTestGenerated extends AbstractControlFlowTest {
 
     @TestMetadata("compiler/testData/cfg/tailCalls")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class TailCalls extends AbstractControlFlowTest {
         public void testAllFilesPresentInTailCalls() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/cfg/tailCalls"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);

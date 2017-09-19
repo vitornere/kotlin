@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
 public class NavigateToLibrarySourceTestGenerated extends AbstractNavigateToLibrarySourceTest {
     @TestMetadata("idea/testData/decompiler/navigation/usercode")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Usercode extends AbstractNavigateToLibrarySourceTest {
         public void testAllFilesPresentInUsercode() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/decompiler/navigation/usercode"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -131,7 +130,6 @@ public class NavigateToLibrarySourceTestGenerated extends AbstractNavigateToLibr
 
     @TestMetadata("idea/testData/decompiler/navigation/usercode")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class UsercodeWithJSModule extends AbstractNavigateToLibrarySourceTest {
         public void testAllFilesPresentInUsercodeWithJSModule() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/decompiler/navigation/usercode"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);

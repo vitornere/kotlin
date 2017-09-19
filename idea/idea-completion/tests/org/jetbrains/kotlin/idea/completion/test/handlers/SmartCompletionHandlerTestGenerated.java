@@ -872,7 +872,6 @@ public class SmartCompletionHandlerTestGenerated extends AbstractSmartCompletion
 
     @TestMetadata("idea/idea-completion/testData/handlers/smart/lambda")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Lambda extends AbstractSmartCompletionHandlerTest {
         @TestMetadata("1.kt")
         public void test1() throws Exception {
@@ -929,7 +928,6 @@ public class SmartCompletionHandlerTestGenerated extends AbstractSmartCompletion
 
     @TestMetadata("idea/idea-completion/testData/handlers/smart/lambdaSignature")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class LambdaSignature extends AbstractSmartCompletionHandlerTest {
         public void testAllFilesPresentInLambdaSignature() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/idea-completion/testData/handlers/smart/lambdaSignature"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);

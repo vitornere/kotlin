@@ -38,7 +38,6 @@ public class AndroidQuickFixMultiFileTestGenerated extends AbstractAndroidQuickF
 
     @TestMetadata("idea/testData/android/quickfix/autoImports")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class AutoImports extends AbstractAndroidQuickFixMultiFileTest {
         public void testAllFilesPresentInAutoImports() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/android/quickfix/autoImports"), Pattern.compile("^(\\w+)\\.((before\\.Main\\.\\w+)|(test))$"), TargetBackend.ANY, true);
@@ -53,7 +52,6 @@ public class AndroidQuickFixMultiFileTestGenerated extends AbstractAndroidQuickF
 
     @TestMetadata("idea/testData/android/quickfix/viewConstructor")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ViewConstructor extends AbstractAndroidQuickFixMultiFileTest {
         public void testAllFilesPresentInViewConstructor() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/android/quickfix/viewConstructor"), Pattern.compile("^(\\w+)\\.((before\\.Main\\.\\w+)|(test))$"), TargetBackend.ANY, true);

@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
 public class CliTestGenerated extends AbstractCliTest {
     @TestMetadata("compiler/testData/cli/jvm")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Jvm extends AbstractCliTest {
         public void testAllFilesPresentInJvm() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/cli/jvm"), Pattern.compile("^(.+)\\.args$"), TargetBackend.ANY, false);
@@ -479,7 +478,6 @@ public class CliTestGenerated extends AbstractCliTest {
 
     @TestMetadata("compiler/testData/cli/js")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Js extends AbstractCliTest {
         public void testAllFilesPresentInJs() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/cli/js"), Pattern.compile("^(.+)\\.args$"), TargetBackend.ANY, false);
@@ -662,7 +660,6 @@ public class CliTestGenerated extends AbstractCliTest {
 
     @TestMetadata("compiler/testData/cli/js-dce")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Js_dce extends AbstractCliTest {
         public void testAllFilesPresentInJs_dce() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/cli/js-dce"), Pattern.compile("^(.+)\\.args$"), TargetBackend.ANY, false);

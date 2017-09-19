@@ -182,7 +182,6 @@ public class DiagnosticsTestWithStdLibGenerated extends AbstractDiagnosticsTestW
 
     @TestMetadata("compiler/testData/diagnostics/testsWithStdLib/annotations")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Annotations extends AbstractDiagnosticsTestWithStdLib {
         public void testAllFilesPresentInAnnotations() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/diagnostics/testsWithStdLib/annotations"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -244,7 +243,6 @@ public class DiagnosticsTestWithStdLibGenerated extends AbstractDiagnosticsTestW
 
         @TestMetadata("compiler/testData/diagnostics/testsWithStdLib/annotations/annotationApplicability")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class AnnotationApplicability extends AbstractDiagnosticsTestWithStdLib {
             public void testAllFilesPresentInAnnotationApplicability() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/diagnostics/testsWithStdLib/annotations/annotationApplicability"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -289,7 +287,6 @@ public class DiagnosticsTestWithStdLibGenerated extends AbstractDiagnosticsTestW
 
         @TestMetadata("compiler/testData/diagnostics/testsWithStdLib/annotations/annotationParameterMustBeConstant")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class AnnotationParameterMustBeConstant extends AbstractDiagnosticsTestWithStdLib {
             public void testAllFilesPresentInAnnotationParameterMustBeConstant() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/diagnostics/testsWithStdLib/annotations/annotationParameterMustBeConstant"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -322,7 +319,6 @@ public class DiagnosticsTestWithStdLibGenerated extends AbstractDiagnosticsTestW
 
         @TestMetadata("compiler/testData/diagnostics/testsWithStdLib/annotations/annotationParameters")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class AnnotationParameters extends AbstractDiagnosticsTestWithStdLib {
             public void testAllFilesPresentInAnnotationParameters() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/diagnostics/testsWithStdLib/annotations/annotationParameters"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -379,7 +375,6 @@ public class DiagnosticsTestWithStdLibGenerated extends AbstractDiagnosticsTestW
 
         @TestMetadata("compiler/testData/diagnostics/testsWithStdLib/annotations/annotationWithVarargParameter")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class AnnotationWithVarargParameter extends AbstractDiagnosticsTestWithStdLib {
             public void testAllFilesPresentInAnnotationWithVarargParameter() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/diagnostics/testsWithStdLib/annotations/annotationWithVarargParameter"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -400,7 +395,6 @@ public class DiagnosticsTestWithStdLibGenerated extends AbstractDiagnosticsTestW
 
         @TestMetadata("compiler/testData/diagnostics/testsWithStdLib/annotations/javaAnnotationsWithKClassParameter")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class JavaAnnotationsWithKClassParameter extends AbstractDiagnosticsTestWithStdLib {
             public void testAllFilesPresentInJavaAnnotationsWithKClassParameter() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/diagnostics/testsWithStdLib/annotations/javaAnnotationsWithKClassParameter"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -481,7 +475,6 @@ public class DiagnosticsTestWithStdLibGenerated extends AbstractDiagnosticsTestW
 
         @TestMetadata("compiler/testData/diagnostics/testsWithStdLib/annotations/jvmField")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class JvmField extends AbstractDiagnosticsTestWithStdLib {
             public void testAllFilesPresentInJvmField() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/diagnostics/testsWithStdLib/annotations/jvmField"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -514,7 +507,6 @@ public class DiagnosticsTestWithStdLibGenerated extends AbstractDiagnosticsTestW
 
         @TestMetadata("compiler/testData/diagnostics/testsWithStdLib/annotations/jvmOverloads")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class JvmOverloads extends AbstractDiagnosticsTestWithStdLib {
             public void testAllFilesPresentInJvmOverloads() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/diagnostics/testsWithStdLib/annotations/jvmOverloads"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -541,7 +533,6 @@ public class DiagnosticsTestWithStdLibGenerated extends AbstractDiagnosticsTestW
 
         @TestMetadata("compiler/testData/diagnostics/testsWithStdLib/annotations/jvmStatic")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class JvmStatic extends AbstractDiagnosticsTestWithStdLib {
             public void testAllFilesPresentInJvmStatic() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/diagnostics/testsWithStdLib/annotations/jvmStatic"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -592,7 +583,6 @@ public class DiagnosticsTestWithStdLibGenerated extends AbstractDiagnosticsTestW
 
         @TestMetadata("compiler/testData/diagnostics/testsWithStdLib/annotations/kClass")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class KClass extends AbstractDiagnosticsTestWithStdLib {
             public void testAllFilesPresentInKClass() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/diagnostics/testsWithStdLib/annotations/kClass"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -643,7 +633,6 @@ public class DiagnosticsTestWithStdLibGenerated extends AbstractDiagnosticsTestW
 
         @TestMetadata("compiler/testData/diagnostics/testsWithStdLib/annotations/prohibitPositionedArgument")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ProhibitPositionedArgument extends AbstractDiagnosticsTestWithStdLib {
             public void testAllFilesPresentInProhibitPositionedArgument() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/diagnostics/testsWithStdLib/annotations/prohibitPositionedArgument"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -683,7 +672,6 @@ public class DiagnosticsTestWithStdLibGenerated extends AbstractDiagnosticsTestW
 
     @TestMetadata("compiler/testData/diagnostics/testsWithStdLib/builtins")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Builtins extends AbstractDiagnosticsTestWithStdLib {
         public void testAllFilesPresentInBuiltins() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/diagnostics/testsWithStdLib/builtins"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -698,7 +686,6 @@ public class DiagnosticsTestWithStdLibGenerated extends AbstractDiagnosticsTestW
 
     @TestMetadata("compiler/testData/diagnostics/testsWithStdLib/cast")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Cast extends AbstractDiagnosticsTestWithStdLib {
         public void testAllFilesPresentInCast() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/diagnostics/testsWithStdLib/cast"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -725,7 +712,6 @@ public class DiagnosticsTestWithStdLibGenerated extends AbstractDiagnosticsTestW
 
     @TestMetadata("compiler/testData/diagnostics/testsWithStdLib/coroutines")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Coroutines extends AbstractDiagnosticsTestWithStdLib {
         public void testAllFilesPresentInCoroutines() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/diagnostics/testsWithStdLib/coroutines"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -865,7 +851,6 @@ public class DiagnosticsTestWithStdLibGenerated extends AbstractDiagnosticsTestW
 
         @TestMetadata("compiler/testData/diagnostics/testsWithStdLib/coroutines/inference")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Inference extends AbstractDiagnosticsTestWithStdLib {
             public void testAllFilesPresentInInference() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/diagnostics/testsWithStdLib/coroutines/inference"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -952,7 +937,6 @@ public class DiagnosticsTestWithStdLibGenerated extends AbstractDiagnosticsTestW
 
         @TestMetadata("compiler/testData/diagnostics/testsWithStdLib/coroutines/restrictSuspension")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class RestrictSuspension extends AbstractDiagnosticsTestWithStdLib {
             public void testAllFilesPresentInRestrictSuspension() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/diagnostics/testsWithStdLib/coroutines/restrictSuspension"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -991,7 +975,6 @@ public class DiagnosticsTestWithStdLibGenerated extends AbstractDiagnosticsTestW
 
         @TestMetadata("compiler/testData/diagnostics/testsWithStdLib/coroutines/suspendFunctionType")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class SuspendFunctionType extends AbstractDiagnosticsTestWithStdLib {
             public void testAllFilesPresentInSuspendFunctionType() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/diagnostics/testsWithStdLib/coroutines/suspendFunctionType"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1084,7 +1067,6 @@ public class DiagnosticsTestWithStdLibGenerated extends AbstractDiagnosticsTestW
 
         @TestMetadata("compiler/testData/diagnostics/testsWithStdLib/coroutines/tailCalls")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class TailCalls extends AbstractDiagnosticsTestWithStdLib {
             public void testAllFilesPresentInTailCalls() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/diagnostics/testsWithStdLib/coroutines/tailCalls"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1130,7 +1112,6 @@ public class DiagnosticsTestWithStdLibGenerated extends AbstractDiagnosticsTestW
 
     @TestMetadata("compiler/testData/diagnostics/testsWithStdLib/duplicateJvmSignature")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class DuplicateJvmSignature extends AbstractDiagnosticsTestWithStdLib {
         public void testAllFilesPresentInDuplicateJvmSignature() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/diagnostics/testsWithStdLib/duplicateJvmSignature"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1174,7 +1155,6 @@ public class DiagnosticsTestWithStdLibGenerated extends AbstractDiagnosticsTestW
 
         @TestMetadata("compiler/testData/diagnostics/testsWithStdLib/duplicateJvmSignature/statics")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Statics extends AbstractDiagnosticsTestWithStdLib {
             public void testAllFilesPresentInStatics() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/diagnostics/testsWithStdLib/duplicateJvmSignature/statics"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1208,7 +1188,6 @@ public class DiagnosticsTestWithStdLibGenerated extends AbstractDiagnosticsTestW
 
     @TestMetadata("compiler/testData/diagnostics/testsWithStdLib/functionLiterals")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class FunctionLiterals extends AbstractDiagnosticsTestWithStdLib {
         public void testAllFilesPresentInFunctionLiterals() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/diagnostics/testsWithStdLib/functionLiterals"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1223,7 +1202,6 @@ public class DiagnosticsTestWithStdLibGenerated extends AbstractDiagnosticsTestW
 
     @TestMetadata("compiler/testData/diagnostics/testsWithStdLib/inference")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Inference extends AbstractDiagnosticsTestWithStdLib {
         public void testAllFilesPresentInInference() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/diagnostics/testsWithStdLib/inference"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1261,7 +1239,6 @@ public class DiagnosticsTestWithStdLibGenerated extends AbstractDiagnosticsTestW
 
         @TestMetadata("compiler/testData/diagnostics/testsWithStdLib/inference/annotationsForResolve")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class AnnotationsForResolve extends AbstractDiagnosticsTestWithStdLib {
             public void testAllFilesPresentInAnnotationsForResolve() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/diagnostics/testsWithStdLib/inference/annotationsForResolve"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1313,7 +1290,6 @@ public class DiagnosticsTestWithStdLibGenerated extends AbstractDiagnosticsTestW
 
     @TestMetadata("compiler/testData/diagnostics/testsWithStdLib/inline")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Inline extends AbstractDiagnosticsTestWithStdLib {
         public void testAllFilesPresentInInline() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/diagnostics/testsWithStdLib/inline"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1328,7 +1304,6 @@ public class DiagnosticsTestWithStdLibGenerated extends AbstractDiagnosticsTestW
 
     @TestMetadata("compiler/testData/diagnostics/testsWithStdLib/java")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Java extends AbstractDiagnosticsTestWithStdLib {
         public void testAllFilesPresentInJava() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/diagnostics/testsWithStdLib/java"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1343,7 +1318,6 @@ public class DiagnosticsTestWithStdLibGenerated extends AbstractDiagnosticsTestW
 
     @TestMetadata("compiler/testData/diagnostics/testsWithStdLib/kt7585")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Kt7585 extends AbstractDiagnosticsTestWithStdLib {
         public void testAllFilesPresentInKt7585() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/diagnostics/testsWithStdLib/kt7585"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1358,7 +1332,6 @@ public class DiagnosticsTestWithStdLibGenerated extends AbstractDiagnosticsTestW
 
     @TestMetadata("compiler/testData/diagnostics/testsWithStdLib/native")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Native extends AbstractDiagnosticsTestWithStdLib {
         @TestMetadata("abstract.kt")
         public void testAbstract() throws Exception {
@@ -1421,7 +1394,6 @@ public class DiagnosticsTestWithStdLibGenerated extends AbstractDiagnosticsTestW
 
     @TestMetadata("compiler/testData/diagnostics/testsWithStdLib/purelyImplementedCollection")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class PurelyImplementedCollection extends AbstractDiagnosticsTestWithStdLib {
         public void testAllFilesPresentInPurelyImplementedCollection() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/diagnostics/testsWithStdLib/purelyImplementedCollection"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1490,7 +1462,6 @@ public class DiagnosticsTestWithStdLibGenerated extends AbstractDiagnosticsTestW
 
     @TestMetadata("compiler/testData/diagnostics/testsWithStdLib/regression")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Regression extends AbstractDiagnosticsTestWithStdLib {
         public void testAllFilesPresentInRegression() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/diagnostics/testsWithStdLib/regression"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1553,7 +1524,6 @@ public class DiagnosticsTestWithStdLibGenerated extends AbstractDiagnosticsTestW
 
     @TestMetadata("compiler/testData/diagnostics/testsWithStdLib/reified")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Reified extends AbstractDiagnosticsTestWithStdLib {
         public void testAllFilesPresentInReified() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/diagnostics/testsWithStdLib/reified"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1586,7 +1556,6 @@ public class DiagnosticsTestWithStdLibGenerated extends AbstractDiagnosticsTestW
 
     @TestMetadata("compiler/testData/diagnostics/testsWithStdLib/resolve")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Resolve extends AbstractDiagnosticsTestWithStdLib {
         public void testAllFilesPresentInResolve() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/diagnostics/testsWithStdLib/resolve"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1673,7 +1642,6 @@ public class DiagnosticsTestWithStdLibGenerated extends AbstractDiagnosticsTestW
 
     @TestMetadata("compiler/testData/diagnostics/testsWithStdLib/smartcasts")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Smartcasts extends AbstractDiagnosticsTestWithStdLib {
         public void testAllFilesPresentInSmartcasts() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/diagnostics/testsWithStdLib/smartcasts"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1760,7 +1728,6 @@ public class DiagnosticsTestWithStdLibGenerated extends AbstractDiagnosticsTestW
 
     @TestMetadata("compiler/testData/diagnostics/testsWithStdLib/sourceCompatibility")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class SourceCompatibility extends AbstractDiagnosticsTestWithStdLib {
         public void testAllFilesPresentInSourceCompatibility() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/diagnostics/testsWithStdLib/sourceCompatibility"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1775,7 +1742,6 @@ public class DiagnosticsTestWithStdLibGenerated extends AbstractDiagnosticsTestW
 
     @TestMetadata("compiler/testData/diagnostics/testsWithStdLib/targetedBuiltIns")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class TargetedBuiltIns extends AbstractDiagnosticsTestWithStdLib {
         public void testAllFilesPresentInTargetedBuiltIns() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/diagnostics/testsWithStdLib/targetedBuiltIns"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1796,7 +1762,6 @@ public class DiagnosticsTestWithStdLibGenerated extends AbstractDiagnosticsTestW
 
     @TestMetadata("compiler/testData/diagnostics/testsWithStdLib/typealias")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Typealias extends AbstractDiagnosticsTestWithStdLib {
         public void testAllFilesPresentInTypealias() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/diagnostics/testsWithStdLib/typealias"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1841,7 +1806,6 @@ public class DiagnosticsTestWithStdLibGenerated extends AbstractDiagnosticsTestW
 
     @TestMetadata("compiler/testData/diagnostics/testsWithStdLib/varargs")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Varargs extends AbstractDiagnosticsTestWithStdLib {
         public void testAllFilesPresentInVarargs() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/diagnostics/testsWithStdLib/varargs"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1868,7 +1832,6 @@ public class DiagnosticsTestWithStdLibGenerated extends AbstractDiagnosticsTestW
 
     @TestMetadata("compiler/testData/diagnostics/testsWithStdLib/when")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class When extends AbstractDiagnosticsTestWithStdLib {
         public void testAllFilesPresentInWhen() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/diagnostics/testsWithStdLib/when"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);

@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
 public class CompileTimeConstantEvaluatorTestGenerated extends AbstractCompileTimeConstantEvaluatorTest {
     @TestMetadata("compiler/testData/evaluate/constant")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Constant extends AbstractCompileTimeConstantEvaluatorTest {
         public void testAllFilesPresentInConstant() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/evaluate/constant"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -167,7 +166,6 @@ public class CompileTimeConstantEvaluatorTestGenerated extends AbstractCompileTi
 
     @TestMetadata("compiler/testData/evaluate/isPure")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class IsPure extends AbstractCompileTimeConstantEvaluatorTest {
         public void testAllFilesPresentInIsPure() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/evaluate/isPure"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -206,7 +204,6 @@ public class CompileTimeConstantEvaluatorTestGenerated extends AbstractCompileTi
 
     @TestMetadata("compiler/testData/evaluate/usesVariableAsConstant")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class UsesVariableAsConstant extends AbstractCompileTimeConstantEvaluatorTest {
         public void testAllFilesPresentInUsesVariableAsConstant() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/evaluate/usesVariableAsConstant"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);

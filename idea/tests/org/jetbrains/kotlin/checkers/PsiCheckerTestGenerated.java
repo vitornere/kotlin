@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
 public class PsiCheckerTestGenerated extends AbstractPsiCheckerTest {
     @TestMetadata("idea/testData/checker")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Checker extends AbstractPsiCheckerTest {
         @TestMetadata("Abstract.kt")
         public void testAbstract() throws Exception {
@@ -413,7 +412,6 @@ public class PsiCheckerTestGenerated extends AbstractPsiCheckerTest {
 
     @TestMetadata("idea/testData/checker/regression")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Regression extends AbstractPsiCheckerTest {
         public void testAllFilesPresentInRegression() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/checker/regression"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -698,7 +696,6 @@ public class PsiCheckerTestGenerated extends AbstractPsiCheckerTest {
 
     @TestMetadata("idea/testData/checker/recovery")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Recovery extends AbstractPsiCheckerTest {
         public void testAllFilesPresentInRecovery() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/checker/recovery"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -725,7 +722,6 @@ public class PsiCheckerTestGenerated extends AbstractPsiCheckerTest {
 
     @TestMetadata("idea/testData/checker/rendering")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Rendering extends AbstractPsiCheckerTest {
         public void testAllFilesPresentInRendering() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/checker/rendering"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -740,7 +736,6 @@ public class PsiCheckerTestGenerated extends AbstractPsiCheckerTest {
 
     @TestMetadata("idea/testData/checker/scripts")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Scripts extends AbstractPsiCheckerTest {
         public void testAllFilesPresentInScripts() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/checker/scripts"), Pattern.compile("^(.+)\\.kts$"), TargetBackend.ANY, true);
@@ -773,7 +768,6 @@ public class PsiCheckerTestGenerated extends AbstractPsiCheckerTest {
 
     @TestMetadata("idea/testData/checker/duplicateJvmSignature")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class DuplicateJvmSignature extends AbstractPsiCheckerTest {
         public void testAllFilesPresentInDuplicateJvmSignature() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/checker/duplicateJvmSignature"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -781,7 +775,6 @@ public class PsiCheckerTestGenerated extends AbstractPsiCheckerTest {
 
         @TestMetadata("idea/testData/checker/duplicateJvmSignature/fields")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Fields extends AbstractPsiCheckerTest {
             public void testAllFilesPresentInFields() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/checker/duplicateJvmSignature/fields"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -796,7 +789,6 @@ public class PsiCheckerTestGenerated extends AbstractPsiCheckerTest {
 
         @TestMetadata("idea/testData/checker/duplicateJvmSignature/functionAndProperty")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class FunctionAndProperty extends AbstractPsiCheckerTest {
             public void testAllFilesPresentInFunctionAndProperty() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/checker/duplicateJvmSignature/functionAndProperty"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -865,7 +857,6 @@ public class PsiCheckerTestGenerated extends AbstractPsiCheckerTest {
 
         @TestMetadata("idea/testData/checker/duplicateJvmSignature/traitImpl")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class TraitImpl extends AbstractPsiCheckerTest {
             public void testAllFilesPresentInTraitImpl() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/checker/duplicateJvmSignature/traitImpl"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -881,7 +872,6 @@ public class PsiCheckerTestGenerated extends AbstractPsiCheckerTest {
 
     @TestMetadata("idea/testData/checker/infos")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Infos extends AbstractPsiCheckerTest {
         public void testAllFilesPresentInInfos() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/checker/infos"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -980,7 +970,6 @@ public class PsiCheckerTestGenerated extends AbstractPsiCheckerTest {
 
     @TestMetadata("idea/testData/checker/diagnosticsMessage")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class DiagnosticsMessage extends AbstractPsiCheckerTest {
         public void testAllFilesPresentInDiagnosticsMessage() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/checker/diagnosticsMessage"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);

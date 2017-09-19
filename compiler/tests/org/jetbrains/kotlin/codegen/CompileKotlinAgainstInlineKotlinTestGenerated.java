@@ -38,7 +38,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
     @TestMetadata("compiler/testData/codegen/boxInline/anonymousObject")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class AnonymousObject extends AbstractCompileKotlinAgainstInlineKotlinTest {
         public void testAllFilesPresentInAnonymousObject() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/anonymousObject"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -298,7 +297,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
         @TestMetadata("compiler/testData/codegen/boxInline/anonymousObject/enumWhen")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class EnumWhen extends AbstractCompileKotlinAgainstInlineKotlinTest {
             public void testAllFilesPresentInEnumWhen() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/anonymousObject/enumWhen"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -331,7 +329,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
         @TestMetadata("compiler/testData/codegen/boxInline/anonymousObject/properRecapturing")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ProperRecapturing extends AbstractCompileKotlinAgainstInlineKotlinTest {
             public void testAllFilesPresentInProperRecapturing() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/anonymousObject/properRecapturing"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -376,7 +373,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
         @TestMetadata("compiler/testData/codegen/boxInline/anonymousObject/properRecapturingInClass")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ProperRecapturingInClass extends AbstractCompileKotlinAgainstInlineKotlinTest {
             public void testAllFilesPresentInProperRecapturingInClass() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/anonymousObject/properRecapturingInClass"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -457,7 +453,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
         @TestMetadata("compiler/testData/codegen/boxInline/anonymousObject/twoCapturedReceivers")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class TwoCapturedReceivers extends AbstractCompileKotlinAgainstInlineKotlinTest {
             public void testAllFilesPresentInTwoCapturedReceivers() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/anonymousObject/twoCapturedReceivers"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -497,7 +492,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
     @TestMetadata("compiler/testData/codegen/boxInline/argumentOrder")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ArgumentOrder extends AbstractCompileKotlinAgainstInlineKotlinTest {
         public void testAllFilesPresentInArgumentOrder() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/argumentOrder"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -578,7 +572,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
     @TestMetadata("compiler/testData/codegen/boxInline/arrayConvention")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ArrayConvention extends AbstractCompileKotlinAgainstInlineKotlinTest {
         public void testAllFilesPresentInArrayConvention() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/arrayConvention"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -623,7 +616,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
     @TestMetadata("compiler/testData/codegen/boxInline/builders")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Builders extends AbstractCompileKotlinAgainstInlineKotlinTest {
         public void testAllFilesPresentInBuilders() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/builders"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -644,7 +636,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
     @TestMetadata("compiler/testData/codegen/boxInline/callableReference")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class CallableReference extends AbstractCompileKotlinAgainstInlineKotlinTest {
         public void testAllFilesPresentInCallableReference() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/callableReference"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -718,7 +709,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
         @TestMetadata("compiler/testData/codegen/boxInline/callableReference/bound")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Bound extends AbstractCompileKotlinAgainstInlineKotlinTest {
             public void testAllFilesPresentInBound() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/callableReference/bound"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -818,7 +808,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
     @TestMetadata("compiler/testData/codegen/boxInline/capture")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Capture extends AbstractCompileKotlinAgainstInlineKotlinTest {
         public void testAllFilesPresentInCapture() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/capture"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -863,7 +852,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
     @TestMetadata("compiler/testData/codegen/boxInline/complex")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Complex extends AbstractCompileKotlinAgainstInlineKotlinTest {
         public void testAllFilesPresentInComplex() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/complex"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -914,7 +902,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
     @TestMetadata("compiler/testData/codegen/boxInline/complexStack")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ComplexStack extends AbstractCompileKotlinAgainstInlineKotlinTest {
         public void testAllFilesPresentInComplexStack() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/complexStack"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -965,7 +952,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
     @TestMetadata("compiler/testData/codegen/boxInline/defaultValues")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class DefaultValues extends AbstractCompileKotlinAgainstInlineKotlinTest {
         @TestMetadata("33Parameters.kt")
         public void test33Parameters() throws Exception {
@@ -1087,7 +1073,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
         @TestMetadata("compiler/testData/codegen/boxInline/defaultValues/lambdaInlining")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class LambdaInlining extends AbstractCompileKotlinAgainstInlineKotlinTest {
             public void testAllFilesPresentInLambdaInlining() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/defaultValues/lambdaInlining"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1203,7 +1188,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
             @TestMetadata("compiler/testData/codegen/boxInline/defaultValues/lambdaInlining/callableReferences")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class CallableReferences extends AbstractCompileKotlinAgainstInlineKotlinTest {
                 public void testAllFilesPresentInCallableReferences() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/defaultValues/lambdaInlining/callableReferences"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1321,7 +1305,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
         @TestMetadata("compiler/testData/codegen/boxInline/defaultValues/maskElimination")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class MaskElimination extends AbstractCompileKotlinAgainstInlineKotlinTest {
             @TestMetadata("32Parameters.kt")
             public void test32Parameters() throws Exception {
@@ -1373,7 +1356,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
     @TestMetadata("compiler/testData/codegen/boxInline/delegatedProperty")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class DelegatedProperty extends AbstractCompileKotlinAgainstInlineKotlinTest {
         public void testAllFilesPresentInDelegatedProperty() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/delegatedProperty"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1406,7 +1388,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
     @TestMetadata("compiler/testData/codegen/boxInline/enclosingInfo")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class EnclosingInfo extends AbstractCompileKotlinAgainstInlineKotlinTest {
         public void testAllFilesPresentInEnclosingInfo() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/enclosingInfo"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1457,7 +1438,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
     @TestMetadata("compiler/testData/codegen/boxInline/enum")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Enum extends AbstractCompileKotlinAgainstInlineKotlinTest {
         public void testAllFilesPresentInEnum() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/enum"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1538,7 +1518,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
     @TestMetadata("compiler/testData/codegen/boxInline/functionExpression")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class FunctionExpression extends AbstractCompileKotlinAgainstInlineKotlinTest {
         public void testAllFilesPresentInFunctionExpression() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/functionExpression"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1553,7 +1532,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
     @TestMetadata("compiler/testData/codegen/boxInline/innerClasses")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class InnerClasses extends AbstractCompileKotlinAgainstInlineKotlinTest {
         public void testAllFilesPresentInInnerClasses() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/innerClasses"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1574,7 +1552,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
     @TestMetadata("compiler/testData/codegen/boxInline/lambdaClassClash")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class LambdaClassClash extends AbstractCompileKotlinAgainstInlineKotlinTest {
         public void testAllFilesPresentInLambdaClassClash() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/lambdaClassClash"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1595,7 +1572,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
     @TestMetadata("compiler/testData/codegen/boxInline/lambdaTransformation")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class LambdaTransformation extends AbstractCompileKotlinAgainstInlineKotlinTest {
         public void testAllFilesPresentInLambdaTransformation() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/lambdaTransformation"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1634,7 +1610,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
     @TestMetadata("compiler/testData/codegen/boxInline/localFunInLambda")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class LocalFunInLambda extends AbstractCompileKotlinAgainstInlineKotlinTest {
         public void testAllFilesPresentInLocalFunInLambda() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/localFunInLambda"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1661,7 +1636,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
     @TestMetadata("compiler/testData/codegen/boxInline/multifileClasses")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class MultifileClasses extends AbstractCompileKotlinAgainstInlineKotlinTest {
         public void testAllFilesPresentInMultifileClasses() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/multifileClasses"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1682,7 +1656,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
     @TestMetadata("compiler/testData/codegen/boxInline/noInline")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class NoInline extends AbstractCompileKotlinAgainstInlineKotlinTest {
         public void testAllFilesPresentInNoInline() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/noInline"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1733,7 +1706,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
     @TestMetadata("compiler/testData/codegen/boxInline/nonLocalReturns")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class NonLocalReturns extends AbstractCompileKotlinAgainstInlineKotlinTest {
         public void testAllFilesPresentInNonLocalReturns() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/nonLocalReturns"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1819,7 +1791,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
         @TestMetadata("compiler/testData/codegen/boxInline/nonLocalReturns/deparenthesize")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Deparenthesize extends AbstractCompileKotlinAgainstInlineKotlinTest {
             public void testAllFilesPresentInDeparenthesize() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/nonLocalReturns/deparenthesize"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1840,7 +1811,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
         @TestMetadata("compiler/testData/codegen/boxInline/nonLocalReturns/tryFinally")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class TryFinally extends AbstractCompileKotlinAgainstInlineKotlinTest {
             public void testAllFilesPresentInTryFinally() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/nonLocalReturns/tryFinally"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1878,7 +1848,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
             @TestMetadata("compiler/testData/codegen/boxInline/nonLocalReturns/tryFinally/callSite")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class CallSite extends AbstractCompileKotlinAgainstInlineKotlinTest {
                 public void testAllFilesPresentInCallSite() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/nonLocalReturns/tryFinally/callSite"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1923,7 +1892,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
             @TestMetadata("compiler/testData/codegen/boxInline/nonLocalReturns/tryFinally/chained")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Chained extends AbstractCompileKotlinAgainstInlineKotlinTest {
                 public void testAllFilesPresentInChained() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/nonLocalReturns/tryFinally/chained"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1980,7 +1948,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
             @TestMetadata("compiler/testData/codegen/boxInline/nonLocalReturns/tryFinally/declSite")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class DeclSite extends AbstractCompileKotlinAgainstInlineKotlinTest {
                 public void testAllFilesPresentInDeclSite() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/nonLocalReturns/tryFinally/declSite"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -2061,7 +2028,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
             @TestMetadata("compiler/testData/codegen/boxInline/nonLocalReturns/tryFinally/exceptionTable")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class ExceptionTable extends AbstractCompileKotlinAgainstInlineKotlinTest {
                 public void testAllFilesPresentInExceptionTable() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/nonLocalReturns/tryFinally/exceptionTable"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -2166,7 +2132,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
             @TestMetadata("compiler/testData/codegen/boxInline/nonLocalReturns/tryFinally/variables")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Variables extends AbstractCompileKotlinAgainstInlineKotlinTest {
                 public void testAllFilesPresentInVariables() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/nonLocalReturns/tryFinally/variables"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -2183,7 +2148,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
     @TestMetadata("compiler/testData/codegen/boxInline/private")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Private extends AbstractCompileKotlinAgainstInlineKotlinTest {
         @TestMetadata("accessorForConst.kt")
         public void testAccessorForConst() throws Exception {
@@ -2264,7 +2228,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
     @TestMetadata("compiler/testData/codegen/boxInline/property")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Property extends AbstractCompileKotlinAgainstInlineKotlinTest {
         public void testAllFilesPresentInProperty() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/property"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -2339,7 +2302,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
     @TestMetadata("compiler/testData/codegen/boxInline/reified")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Reified extends AbstractCompileKotlinAgainstInlineKotlinTest {
         public void testAllFilesPresentInReified() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/reified"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -2431,7 +2393,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
         @TestMetadata("compiler/testData/codegen/boxInline/reified/checkCast")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class CheckCast extends AbstractCompileKotlinAgainstInlineKotlinTest {
             public void testAllFilesPresentInCheckCast() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/reified/checkCast"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -2476,7 +2437,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
         @TestMetadata("compiler/testData/codegen/boxInline/reified/defaultLambda")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class DefaultLambda extends AbstractCompileKotlinAgainstInlineKotlinTest {
             public void testAllFilesPresentInDefaultLambda() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/reified/defaultLambda"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -2533,7 +2493,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
         @TestMetadata("compiler/testData/codegen/boxInline/reified/isCheck")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class IsCheck extends AbstractCompileKotlinAgainstInlineKotlinTest {
             public void testAllFilesPresentInIsCheck() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/reified/isCheck"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -2561,7 +2520,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
     @TestMetadata("compiler/testData/codegen/boxInline/signature")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Signature extends AbstractCompileKotlinAgainstInlineKotlinTest {
         public void testAllFilesPresentInSignature() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/signature"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -2624,7 +2582,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
     @TestMetadata("compiler/testData/codegen/boxInline/simple")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Simple extends AbstractCompileKotlinAgainstInlineKotlinTest {
         public void testAllFilesPresentInSimple() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/simple"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -2747,7 +2704,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
     @TestMetadata("compiler/testData/codegen/boxInline/smap")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Smap extends AbstractCompileKotlinAgainstInlineKotlinTest {
         public void testAllFilesPresentInSmap() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/smap"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -2785,7 +2741,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
         @TestMetadata("compiler/testData/codegen/boxInline/smap/anonymous")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Anonymous extends AbstractCompileKotlinAgainstInlineKotlinTest {
             public void testAllFilesPresentInAnonymous() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/smap/anonymous"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -2854,7 +2809,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
         @TestMetadata("compiler/testData/codegen/boxInline/smap/defaultLambda")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class DefaultLambda extends AbstractCompileKotlinAgainstInlineKotlinTest {
             public void testAllFilesPresentInDefaultLambda() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/smap/defaultLambda"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -2875,7 +2829,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
         @TestMetadata("compiler/testData/codegen/boxInline/smap/inlineOnly")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class InlineOnly extends AbstractCompileKotlinAgainstInlineKotlinTest {
             public void testAllFilesPresentInInlineOnly() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/smap/inlineOnly"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -2908,7 +2861,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
         @TestMetadata("compiler/testData/codegen/boxInline/smap/newsmap")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Newsmap extends AbstractCompileKotlinAgainstInlineKotlinTest {
             public void testAllFilesPresentInNewsmap() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/smap/newsmap"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -2941,7 +2893,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
         @TestMetadata("compiler/testData/codegen/boxInline/smap/resolve")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Resolve extends AbstractCompileKotlinAgainstInlineKotlinTest {
             public void testAllFilesPresentInResolve() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/smap/resolve"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -2963,7 +2914,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
     @TestMetadata("compiler/testData/codegen/boxInline/special")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Special extends AbstractCompileKotlinAgainstInlineKotlinTest {
         public void testAllFilesPresentInSpecial() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/special"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -3020,7 +2970,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
     @TestMetadata("compiler/testData/codegen/boxInline/stackOnReturn")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class StackOnReturn extends AbstractCompileKotlinAgainstInlineKotlinTest {
         public void testAllFilesPresentInStackOnReturn() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/stackOnReturn"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -3113,7 +3062,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
     @TestMetadata("compiler/testData/codegen/boxInline/syntheticAccessors")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class SyntheticAccessors extends AbstractCompileKotlinAgainstInlineKotlinTest {
         public void testAllFilesPresentInSyntheticAccessors() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/syntheticAccessors"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -3163,7 +3111,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
         @TestMetadata("compiler/testData/codegen/boxInline/syntheticAccessors/withinInlineLambda")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class WithinInlineLambda extends AbstractCompileKotlinAgainstInlineKotlinTest {
             public void testAllFilesPresentInWithinInlineLambda() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/syntheticAccessors/withinInlineLambda"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -3209,7 +3156,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
     @TestMetadata("compiler/testData/codegen/boxInline/trait")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Trait extends AbstractCompileKotlinAgainstInlineKotlinTest {
         public void testAllFilesPresentInTrait() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/trait"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -3224,7 +3170,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
     @TestMetadata("compiler/testData/codegen/boxInline/tryCatchFinally")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class TryCatchFinally extends AbstractCompileKotlinAgainstInlineKotlinTest {
         public void testAllFilesPresentInTryCatchFinally() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/tryCatchFinally"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -3257,7 +3202,6 @@ public class CompileKotlinAgainstInlineKotlinTestGenerated extends AbstractCompi
 
     @TestMetadata("compiler/testData/codegen/boxInline/varargs")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Varargs extends AbstractCompileKotlinAgainstInlineKotlinTest {
         public void testAllFilesPresentInVarargs() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/codegen/boxInline/varargs"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);

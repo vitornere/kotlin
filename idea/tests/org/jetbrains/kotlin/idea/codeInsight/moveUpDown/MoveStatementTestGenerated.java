@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
 public class MoveStatementTestGenerated extends AbstractMoveStatementTest {
     @TestMetadata("idea/testData/codeInsight/moveUpDown/classBodyDeclarations")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ClassBodyDeclarations extends AbstractMoveStatementTest {
         public void testAllFilesPresentInClassBodyDeclarations() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/codeInsight/moveUpDown/classBodyDeclarations"), Pattern.compile("^(.+)\\.(kt|kts)$"), TargetBackend.ANY, true);
@@ -40,7 +39,6 @@ public class MoveStatementTestGenerated extends AbstractMoveStatementTest {
 
         @TestMetadata("idea/testData/codeInsight/moveUpDown/classBodyDeclarations/accessors")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Accessors extends AbstractMoveStatementTest {
             @TestMetadata("accessor1.kt")
             public void testAccessor1() throws Exception {
@@ -73,7 +71,6 @@ public class MoveStatementTestGenerated extends AbstractMoveStatementTest {
 
         @TestMetadata("idea/testData/codeInsight/moveUpDown/classBodyDeclarations/class")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Class extends AbstractMoveStatementTest {
             public void testAllFilesPresentInClass() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/codeInsight/moveUpDown/classBodyDeclarations/class"), Pattern.compile("^(.+)\\.(kt|kts)$"), TargetBackend.ANY, true);
@@ -202,7 +199,6 @@ public class MoveStatementTestGenerated extends AbstractMoveStatementTest {
 
         @TestMetadata("idea/testData/codeInsight/moveUpDown/classBodyDeclarations/classInitializer")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ClassInitializer extends AbstractMoveStatementTest {
             public void testAllFilesPresentInClassInitializer() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/codeInsight/moveUpDown/classBodyDeclarations/classInitializer"), Pattern.compile("^(.+)\\.(kt|kts)$"), TargetBackend.ANY, true);
@@ -283,7 +279,6 @@ public class MoveStatementTestGenerated extends AbstractMoveStatementTest {
 
         @TestMetadata("idea/testData/codeInsight/moveUpDown/classBodyDeclarations/enums")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Enums extends AbstractMoveStatementTest {
             public void testAllFilesPresentInEnums() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/codeInsight/moveUpDown/classBodyDeclarations/enums"), Pattern.compile("^(.+)\\.(kt|kts)$"), TargetBackend.ANY, true);
@@ -340,7 +335,6 @@ public class MoveStatementTestGenerated extends AbstractMoveStatementTest {
 
         @TestMetadata("idea/testData/codeInsight/moveUpDown/classBodyDeclarations/function")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Function extends AbstractMoveStatementTest {
             public void testAllFilesPresentInFunction() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/codeInsight/moveUpDown/classBodyDeclarations/function"), Pattern.compile("^(.+)\\.(kt|kts)$"), TargetBackend.ANY, true);
@@ -451,7 +445,6 @@ public class MoveStatementTestGenerated extends AbstractMoveStatementTest {
 
         @TestMetadata("idea/testData/codeInsight/moveUpDown/classBodyDeclarations/functionAnchors")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class FunctionAnchors extends AbstractMoveStatementTest {
             public void testAllFilesPresentInFunctionAnchors() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/codeInsight/moveUpDown/classBodyDeclarations/functionAnchors"), Pattern.compile("^(.+)\\.(kt|kts)$"), TargetBackend.ANY, true);
@@ -496,7 +489,6 @@ public class MoveStatementTestGenerated extends AbstractMoveStatementTest {
 
         @TestMetadata("idea/testData/codeInsight/moveUpDown/classBodyDeclarations/property")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Property extends AbstractMoveStatementTest {
             public void testAllFilesPresentInProperty() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/codeInsight/moveUpDown/classBodyDeclarations/property"), Pattern.compile("^(.+)\\.(kt|kts)$"), TargetBackend.ANY, true);
@@ -601,7 +593,6 @@ public class MoveStatementTestGenerated extends AbstractMoveStatementTest {
 
         @TestMetadata("idea/testData/codeInsight/moveUpDown/classBodyDeclarations/propertyAnchors")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class PropertyAnchors extends AbstractMoveStatementTest {
             public void testAllFilesPresentInPropertyAnchors() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/codeInsight/moveUpDown/classBodyDeclarations/propertyAnchors"), Pattern.compile("^(.+)\\.(kt|kts)$"), TargetBackend.ANY, true);
@@ -629,7 +620,6 @@ public class MoveStatementTestGenerated extends AbstractMoveStatementTest {
 
     @TestMetadata("idea/testData/codeInsight/moveUpDown/closingBraces")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ClosingBraces extends AbstractMoveStatementTest {
         public void testAllFilesPresentInClosingBraces() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/codeInsight/moveUpDown/closingBraces"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -637,7 +627,6 @@ public class MoveStatementTestGenerated extends AbstractMoveStatementTest {
 
         @TestMetadata("idea/testData/codeInsight/moveUpDown/closingBraces/for")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class For extends AbstractMoveStatementTest {
             public void testAllFilesPresentInFor() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/codeInsight/moveUpDown/closingBraces/for"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -658,7 +647,6 @@ public class MoveStatementTestGenerated extends AbstractMoveStatementTest {
 
         @TestMetadata("idea/testData/codeInsight/moveUpDown/closingBraces/function")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Function extends AbstractMoveStatementTest {
             public void testAllFilesPresentInFunction() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/codeInsight/moveUpDown/closingBraces/function"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -691,7 +679,6 @@ public class MoveStatementTestGenerated extends AbstractMoveStatementTest {
 
         @TestMetadata("idea/testData/codeInsight/moveUpDown/closingBraces/if")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class If extends AbstractMoveStatementTest {
             public void testAllFilesPresentInIf() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/codeInsight/moveUpDown/closingBraces/if"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -724,7 +711,6 @@ public class MoveStatementTestGenerated extends AbstractMoveStatementTest {
 
         @TestMetadata("idea/testData/codeInsight/moveUpDown/closingBraces/nested")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Nested extends AbstractMoveStatementTest {
             public void testAllFilesPresentInNested() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/codeInsight/moveUpDown/closingBraces/nested"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -745,7 +731,6 @@ public class MoveStatementTestGenerated extends AbstractMoveStatementTest {
 
         @TestMetadata("idea/testData/codeInsight/moveUpDown/closingBraces/when")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class When extends AbstractMoveStatementTest {
             public void testAllFilesPresentInWhen() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/codeInsight/moveUpDown/closingBraces/when"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -790,7 +775,6 @@ public class MoveStatementTestGenerated extends AbstractMoveStatementTest {
 
         @TestMetadata("idea/testData/codeInsight/moveUpDown/closingBraces/while")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class While extends AbstractMoveStatementTest {
             public void testAllFilesPresentInWhile() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/codeInsight/moveUpDown/closingBraces/while"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -824,7 +808,6 @@ public class MoveStatementTestGenerated extends AbstractMoveStatementTest {
 
     @TestMetadata("idea/testData/codeInsight/moveUpDown/expressions")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Expressions extends AbstractMoveStatementTest {
         public void testAllFilesPresentInExpressions() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/codeInsight/moveUpDown/expressions"), Pattern.compile("^(.+)\\.(kt|kts)$"), TargetBackend.ANY, true);
@@ -1247,7 +1230,6 @@ public class MoveStatementTestGenerated extends AbstractMoveStatementTest {
 
     @TestMetadata("idea/testData/codeInsight/moveUpDown/parametersAndArguments")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class ParametersAndArguments extends AbstractMoveStatementTest {
         public void testAllFilesPresentInParametersAndArguments() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/codeInsight/moveUpDown/parametersAndArguments"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);

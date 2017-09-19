@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
 public class JavacDiagnosticsTestGenerated extends AbstractJavacDiagnosticsTest {
     @TestMetadata("compiler/testData/javac/diagnostics/tests")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Tests extends AbstractJavacDiagnosticsTest {
         public void testAllFilesPresentInTests() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/javac/diagnostics/tests"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -46,7 +45,6 @@ public class JavacDiagnosticsTestGenerated extends AbstractJavacDiagnosticsTest 
 
         @TestMetadata("compiler/testData/javac/diagnostics/tests/imports")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Imports extends AbstractJavacDiagnosticsTest {
             public void testAllFilesPresentInImports() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/javac/diagnostics/tests/imports"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -157,7 +155,6 @@ public class JavacDiagnosticsTestGenerated extends AbstractJavacDiagnosticsTest 
 
         @TestMetadata("compiler/testData/javac/diagnostics/tests/inheritance")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Inheritance extends AbstractJavacDiagnosticsTest {
             public void testAllFilesPresentInInheritance() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/javac/diagnostics/tests/inheritance"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -280,7 +277,6 @@ public class JavacDiagnosticsTestGenerated extends AbstractJavacDiagnosticsTest 
 
         @TestMetadata("compiler/testData/javac/diagnostics/tests/inners")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Inners extends AbstractJavacDiagnosticsTest {
             public void testAllFilesPresentInInners() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/javac/diagnostics/tests/inners"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -331,7 +327,6 @@ public class JavacDiagnosticsTestGenerated extends AbstractJavacDiagnosticsTest 
 
         @TestMetadata("compiler/testData/javac/diagnostics/tests/qualifiedExpression")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class QualifiedExpression extends AbstractJavacDiagnosticsTest {
             public void testAllFilesPresentInQualifiedExpression() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/javac/diagnostics/tests/qualifiedExpression"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -370,7 +365,6 @@ public class JavacDiagnosticsTestGenerated extends AbstractJavacDiagnosticsTest 
 
         @TestMetadata("compiler/testData/javac/diagnostics/tests/typeParameters")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class TypeParameters extends AbstractJavacDiagnosticsTest {
             public void testAllFilesPresentInTypeParameters() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/javac/diagnostics/tests/typeParameters"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -422,7 +416,6 @@ public class JavacDiagnosticsTestGenerated extends AbstractJavacDiagnosticsTest 
 
     @TestMetadata("compiler/testData/javac/diagnostics/tests")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class TestsWithoutJavac extends AbstractJavacDiagnosticsTest {
         public void testAllFilesPresentInTestsWithoutJavac() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/javac/diagnostics/tests"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -436,7 +429,6 @@ public class JavacDiagnosticsTestGenerated extends AbstractJavacDiagnosticsTest 
 
         @TestMetadata("compiler/testData/javac/diagnostics/tests/imports")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Imports extends AbstractJavacDiagnosticsTest {
             public void testAllFilesPresentInImports() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/javac/diagnostics/tests/imports"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -547,7 +539,6 @@ public class JavacDiagnosticsTestGenerated extends AbstractJavacDiagnosticsTest 
 
         @TestMetadata("compiler/testData/javac/diagnostics/tests/inheritance")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Inheritance extends AbstractJavacDiagnosticsTest {
             public void testAllFilesPresentInInheritance() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/javac/diagnostics/tests/inheritance"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -670,7 +661,6 @@ public class JavacDiagnosticsTestGenerated extends AbstractJavacDiagnosticsTest 
 
         @TestMetadata("compiler/testData/javac/diagnostics/tests/inners")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Inners extends AbstractJavacDiagnosticsTest {
             public void testAllFilesPresentInInners() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/javac/diagnostics/tests/inners"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -721,7 +711,6 @@ public class JavacDiagnosticsTestGenerated extends AbstractJavacDiagnosticsTest 
 
         @TestMetadata("compiler/testData/javac/diagnostics/tests/qualifiedExpression")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class QualifiedExpression extends AbstractJavacDiagnosticsTest {
             public void testAllFilesPresentInQualifiedExpression() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/javac/diagnostics/tests/qualifiedExpression"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -760,7 +749,6 @@ public class JavacDiagnosticsTestGenerated extends AbstractJavacDiagnosticsTest 
 
         @TestMetadata("compiler/testData/javac/diagnostics/tests/typeParameters")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class TypeParameters extends AbstractJavacDiagnosticsTest {
             public void testAllFilesPresentInTypeParameters() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/javac/diagnostics/tests/typeParameters"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);

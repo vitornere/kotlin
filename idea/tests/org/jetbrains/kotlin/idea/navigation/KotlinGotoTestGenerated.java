@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
 public class KotlinGotoTestGenerated extends AbstractKotlinGotoTest {
     @TestMetadata("idea/testData/navigation/gotoClass")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class GotoClass extends AbstractKotlinGotoTest {
         public void testAllFilesPresentInGotoClass() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/navigation/gotoClass"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -107,7 +106,6 @@ public class KotlinGotoTestGenerated extends AbstractKotlinGotoTest {
 
     @TestMetadata("idea/testData/navigation/gotoSymbol")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class GotoSymbol extends AbstractKotlinGotoTest {
         public void testAllFilesPresentInGotoSymbol() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/navigation/gotoSymbol"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);

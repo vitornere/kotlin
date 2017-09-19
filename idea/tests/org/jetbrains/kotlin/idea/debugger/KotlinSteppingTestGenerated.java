@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
 public class KotlinSteppingTestGenerated extends AbstractKotlinSteppingTest {
     @TestMetadata("idea/testData/debugger/tinyApp/src/stepping/stepIntoAndSmartStepInto")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class StepInto extends AbstractKotlinSteppingTest {
         public void testAllFilesPresentInStepInto() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/debugger/tinyApp/src/stepping/stepIntoAndSmartStepInto"), Pattern.compile("^([^.]+)\\.kt$"), TargetBackend.ANY, true);
@@ -119,7 +118,6 @@ public class KotlinSteppingTestGenerated extends AbstractKotlinSteppingTest {
 
     @TestMetadata("idea/testData/debugger/tinyApp/src/stepping/stepIntoAndSmartStepInto")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class SmartStepInto extends AbstractKotlinSteppingTest {
         public void testAllFilesPresentInSmartStepInto() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/debugger/tinyApp/src/stepping/stepIntoAndSmartStepInto"), Pattern.compile("^([^.]+)\\.kt$"), TargetBackend.ANY, true);
@@ -206,7 +204,6 @@ public class KotlinSteppingTestGenerated extends AbstractKotlinSteppingTest {
 
     @TestMetadata("idea/testData/debugger/tinyApp/src/stepping/stepInto")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class StepIntoOnly extends AbstractKotlinSteppingTest {
         @TestMetadata("accessors.kt")
         public void testAccessors() throws Exception {
@@ -347,7 +344,6 @@ public class KotlinSteppingTestGenerated extends AbstractKotlinSteppingTest {
 
     @TestMetadata("idea/testData/debugger/tinyApp/src/stepping/stepOut")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class StepOut extends AbstractKotlinSteppingTest {
         public void testAllFilesPresentInStepOut() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/debugger/tinyApp/src/stepping/stepOut"), Pattern.compile("^([^.]+)\\.kt$"), TargetBackend.ANY, true);
@@ -410,7 +406,6 @@ public class KotlinSteppingTestGenerated extends AbstractKotlinSteppingTest {
 
     @TestMetadata("idea/testData/debugger/tinyApp/src/stepping/stepOver")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class StepOver extends AbstractKotlinSteppingTest {
         public void testAllFilesPresentInStepOver() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/debugger/tinyApp/src/stepping/stepOver"), Pattern.compile("^([^.]+)\\.kt$"), TargetBackend.ANY, true);
@@ -1013,7 +1008,6 @@ public class KotlinSteppingTestGenerated extends AbstractKotlinSteppingTest {
 
     @TestMetadata("idea/testData/debugger/tinyApp/src/stepping/stepOverForce")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class StepOverForce extends AbstractKotlinSteppingTest {
         public void testAllFilesPresentInStepOverForce() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/debugger/tinyApp/src/stepping/stepOverForce"), Pattern.compile("^([^.]+)\\.kt$"), TargetBackend.ANY, true);
@@ -1028,7 +1022,6 @@ public class KotlinSteppingTestGenerated extends AbstractKotlinSteppingTest {
 
     @TestMetadata("idea/testData/debugger/tinyApp/src/stepping/filters")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Filters extends AbstractKotlinSteppingTest {
         public void testAllFilesPresentInFilters() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/debugger/tinyApp/src/stepping/filters"), Pattern.compile("^([^.]+)\\.kt$"), TargetBackend.ANY, true);
@@ -1109,7 +1102,6 @@ public class KotlinSteppingTestGenerated extends AbstractKotlinSteppingTest {
 
     @TestMetadata("idea/testData/debugger/tinyApp/src/stepping/custom")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Custom extends AbstractKotlinSteppingTest {
         public void testAllFilesPresentInCustom() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/debugger/tinyApp/src/stepping/custom"), Pattern.compile("^([^.]+)\\.kt$"), TargetBackend.ANY, true);

@@ -92,7 +92,6 @@ public class ForeignAnnotationsNoAnnotationInClasspathTestGenerated extends Abst
 
     @TestMetadata("compiler/testData/foreignAnnotations/tests/jsr305Ignore")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Jsr305Ignore extends AbstractForeignAnnotationsNoAnnotationInClasspathTest {
         public void testAllFilesPresentInJsr305Ignore() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/foreignAnnotations/tests/jsr305Ignore"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -107,7 +106,6 @@ public class ForeignAnnotationsNoAnnotationInClasspathTestGenerated extends Abst
 
     @TestMetadata("compiler/testData/foreignAnnotations/tests/jsr305NullabilityWarnings")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Jsr305NullabilityWarnings extends AbstractForeignAnnotationsNoAnnotationInClasspathTest {
         public void testAllFilesPresentInJsr305NullabilityWarnings() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/foreignAnnotations/tests/jsr305NullabilityWarnings"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -139,7 +137,6 @@ public class ForeignAnnotationsNoAnnotationInClasspathTestGenerated extends Abst
 
         @TestMetadata("compiler/testData/foreignAnnotations/tests/jsr305NullabilityWarnings/fromPlatformTypes")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class FromPlatformTypes extends AbstractForeignAnnotationsNoAnnotationInClasspathTest {
             public void testAllFilesPresentInFromPlatformTypes() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/foreignAnnotations/tests/jsr305NullabilityWarnings/fromPlatformTypes"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -268,7 +265,6 @@ public class ForeignAnnotationsNoAnnotationInClasspathTestGenerated extends Abst
 
         @TestMetadata("compiler/testData/foreignAnnotations/tests/jsr305NullabilityWarnings/typeQualifierDefault")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class TypeQualifierDefault extends AbstractForeignAnnotationsNoAnnotationInClasspathTest {
             public void testAllFilesPresentInTypeQualifierDefault() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/foreignAnnotations/tests/jsr305NullabilityWarnings/typeQualifierDefault"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -320,7 +316,6 @@ public class ForeignAnnotationsNoAnnotationInClasspathTestGenerated extends Abst
 
     @TestMetadata("compiler/testData/foreignAnnotations/tests/typeQualifierDefault")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class TypeQualifierDefault extends AbstractForeignAnnotationsNoAnnotationInClasspathTest {
         public void testAllFilesPresentInTypeQualifierDefault() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/foreignAnnotations/tests/typeQualifierDefault"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);

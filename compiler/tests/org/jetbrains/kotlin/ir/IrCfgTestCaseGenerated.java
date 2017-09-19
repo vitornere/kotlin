@@ -74,7 +74,6 @@ public class IrCfgTestCaseGenerated extends AbstractIrCfgTestCase {
 
     @TestMetadata("compiler/testData/ir/irCfg/loop")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Loop extends AbstractIrCfgTestCase {
         public void testAllFilesPresentInLoop() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/ir/irCfg/loop"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -101,7 +100,6 @@ public class IrCfgTestCaseGenerated extends AbstractIrCfgTestCase {
 
     @TestMetadata("compiler/testData/ir/irCfg/when")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class When extends AbstractIrCfgTestCase {
         public void testAllFilesPresentInWhen() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/ir/irCfg/when"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);

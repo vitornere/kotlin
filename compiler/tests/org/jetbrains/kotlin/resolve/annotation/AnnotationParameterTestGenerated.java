@@ -80,7 +80,6 @@ public class AnnotationParameterTestGenerated extends AbstractAnnotationParamete
 
     @TestMetadata("compiler/testData/resolveAnnotations/parameters/expressions")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class Expressions extends AbstractAnnotationParameterTest {
         public void testAllFilesPresentInExpressions() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/resolveAnnotations/parameters/expressions"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);

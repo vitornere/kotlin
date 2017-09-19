@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
 public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeDescriptorLoaderTest {
     @TestMetadata("compiler/testData/loadJava/compiledKotlin")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class CompiledKotlin extends AbstractJvmRuntimeDescriptorLoaderTest {
         public void testAllFilesPresentInCompiledKotlin() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -40,7 +39,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
         @TestMetadata("compiler/testData/loadJava/compiledKotlin/annotations")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Annotations extends AbstractJvmRuntimeDescriptorLoaderTest {
             public void testAllFilesPresentInAnnotations() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin/annotations"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -96,7 +94,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
             @TestMetadata("compiler/testData/loadJava/compiledKotlin/annotations/classMembers")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class ClassMembers extends AbstractJvmRuntimeDescriptorLoaderTest {
                 public void testAllFilesPresentInClassMembers() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin/annotations/classMembers"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -159,7 +156,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
             @TestMetadata("compiler/testData/loadJava/compiledKotlin/annotations/classes")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Classes extends AbstractJvmRuntimeDescriptorLoaderTest {
                 public void testAllFilesPresentInClasses() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin/annotations/classes"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -258,7 +254,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
             @TestMetadata("compiler/testData/loadJava/compiledKotlin/annotations/packageMembers")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class PackageMembers extends AbstractJvmRuntimeDescriptorLoaderTest {
                 public void testAllFilesPresentInPackageMembers() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin/annotations/packageMembers"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -315,7 +310,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
             @TestMetadata("compiler/testData/loadJava/compiledKotlin/annotations/parameters")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Parameters extends AbstractJvmRuntimeDescriptorLoaderTest {
                 public void testAllFilesPresentInParameters() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin/annotations/parameters"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -396,7 +390,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
             @TestMetadata("compiler/testData/loadJava/compiledKotlin/annotations/propertiesWithoutBackingFields")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class PropertiesWithoutBackingFields extends AbstractJvmRuntimeDescriptorLoaderTest {
                 public void testAllFilesPresentInPropertiesWithoutBackingFields() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin/annotations/propertiesWithoutBackingFields"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -453,7 +446,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
             @TestMetadata("compiler/testData/loadJava/compiledKotlin/annotations/types")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Types extends AbstractJvmRuntimeDescriptorLoaderTest {
                 public void testAllFilesPresentInTypes() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin/annotations/types"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -504,7 +496,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
             @TestMetadata("compiler/testData/loadJava/compiledKotlin/annotations/withUseSiteTarget")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class WithUseSiteTarget extends AbstractJvmRuntimeDescriptorLoaderTest {
                 public void testAllFilesPresentInWithUseSiteTarget() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin/annotations/withUseSiteTarget"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -532,7 +523,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
         @TestMetadata("compiler/testData/loadJava/compiledKotlin/class")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Class extends AbstractJvmRuntimeDescriptorLoaderTest {
             public void testAllFilesPresentInClass() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin/class"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -750,7 +740,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
             @TestMetadata("compiler/testData/loadJava/compiledKotlin/class/javaBean")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class JavaBean extends AbstractJvmRuntimeDescriptorLoaderTest {
                 public void testAllFilesPresentInJavaBean() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin/class/javaBean"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -796,7 +785,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
         @TestMetadata("compiler/testData/loadJava/compiledKotlin/classFun")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ClassFun extends AbstractJvmRuntimeDescriptorLoaderTest {
             public void testAllFilesPresentInClassFun() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin/classFun"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -835,7 +823,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
         @TestMetadata("compiler/testData/loadJava/compiledKotlin/classObject")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ClassObject extends AbstractJvmRuntimeDescriptorLoaderTest {
             public void testAllFilesPresentInClassObject() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin/classObject"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -922,7 +909,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
         @TestMetadata("compiler/testData/loadJava/compiledKotlin/constructor")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Constructor extends AbstractJvmRuntimeDescriptorLoaderTest {
             public void testAllFilesPresentInConstructor() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin/constructor"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1026,7 +1012,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
             @TestMetadata("compiler/testData/loadJava/compiledKotlin/constructor/vararg")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Vararg extends AbstractJvmRuntimeDescriptorLoaderTest {
                 public void testAllFilesPresentInVararg() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin/constructor/vararg"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1048,7 +1033,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
         @TestMetadata("compiler/testData/loadJava/compiledKotlin/coroutines")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Coroutines extends AbstractJvmRuntimeDescriptorLoaderTest {
             public void testAllFilesPresentInCoroutines() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin/coroutines"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1063,7 +1047,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
         @TestMetadata("compiler/testData/loadJava/compiledKotlin/dataClass")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class DataClass extends AbstractJvmRuntimeDescriptorLoaderTest {
             public void testAllFilesPresentInDataClass() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin/dataClass"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1096,7 +1079,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
         @TestMetadata("compiler/testData/loadJava/compiledKotlin/enum")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Enum extends AbstractJvmRuntimeDescriptorLoaderTest {
             public void testAllFilesPresentInEnum() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin/enum"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1141,7 +1123,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
         @TestMetadata("compiler/testData/loadJava/compiledKotlin/fromLoadJava")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class FromLoadJava extends AbstractJvmRuntimeDescriptorLoaderTest {
             public void testAllFilesPresentInFromLoadJava() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin/fromLoadJava"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1353,7 +1334,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
             @TestMetadata("compiler/testData/loadJava/compiledKotlin/fromLoadJava/kotlinSignature")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class KotlinSignature extends AbstractJvmRuntimeDescriptorLoaderTest {
                 @TestMetadata("AllBoundsInWhen.kt")
                 public void testAllBoundsInWhen() throws Exception {
@@ -1457,7 +1437,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
                 @TestMetadata("compiler/testData/loadJava/compiledKotlin/fromLoadJava/kotlinSignature/error")
                 @TestDataPath("$PROJECT_ROOT")
-                @RunWith(JUnit3RunnerWithInners.class)
                 public static class Error extends AbstractJvmRuntimeDescriptorLoaderTest {
                     @TestMetadata("AddingNullability.kt")
                     public void testAddingNullability() throws Exception {
@@ -1628,7 +1607,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
                 @TestMetadata("compiler/testData/loadJava/compiledKotlin/fromLoadJava/kotlinSignature/propagation")
                 @TestDataPath("$PROJECT_ROOT")
-                @RunWith(JUnit3RunnerWithInners.class)
                 public static class Propagation extends AbstractJvmRuntimeDescriptorLoaderTest {
                     public void testAllFilesPresentInPropagation() throws Exception {
                         KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin/fromLoadJava/kotlinSignature/propagation"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1642,7 +1620,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
                     @TestMetadata("compiler/testData/loadJava/compiledKotlin/fromLoadJava/kotlinSignature/propagation/parameter")
                     @TestDataPath("$PROJECT_ROOT")
-                    @RunWith(JUnit3RunnerWithInners.class)
                     public static class Parameter extends AbstractJvmRuntimeDescriptorLoaderTest {
                         public void testAllFilesPresentInParameter() throws Exception {
                             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin/fromLoadJava/kotlinSignature/propagation/parameter"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -1807,7 +1784,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
                     @TestMetadata("compiler/testData/loadJava/compiledKotlin/fromLoadJava/kotlinSignature/propagation/return")
                     @TestDataPath("$PROJECT_ROOT")
-                    @RunWith(JUnit3RunnerWithInners.class)
                     public static class Return extends AbstractJvmRuntimeDescriptorLoaderTest {
                         @TestMetadata("AddNotNullJavaSubtype.kt")
                         public void testAddNotNullJavaSubtype() throws Exception {
@@ -2020,7 +1996,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
                     @TestMetadata("compiler/testData/loadJava/compiledKotlin/fromLoadJava/kotlinSignature/propagation/typeParameter")
                     @TestDataPath("$PROJECT_ROOT")
-                    @RunWith(JUnit3RunnerWithInners.class)
                     public static class TypeParameter extends AbstractJvmRuntimeDescriptorLoaderTest {
                         public void testAllFilesPresentInTypeParameter() throws Exception {
                             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin/fromLoadJava/kotlinSignature/propagation/typeParameter"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -2085,7 +2060,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
             @TestMetadata("compiler/testData/loadJava/compiledKotlin/fromLoadJava/library")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Library extends AbstractJvmRuntimeDescriptorLoaderTest {
                 public void testAllFilesPresentInLibrary() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin/fromLoadJava/library"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -2112,7 +2086,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
             @TestMetadata("compiler/testData/loadJava/compiledKotlin/fromLoadJava/modality")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Modality extends AbstractJvmRuntimeDescriptorLoaderTest {
                 public void testAllFilesPresentInModality() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin/fromLoadJava/modality"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -2127,7 +2100,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
             @TestMetadata("compiler/testData/loadJava/compiledKotlin/fromLoadJava/notNull")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class NotNull extends AbstractJvmRuntimeDescriptorLoaderTest {
                 public void testAllFilesPresentInNotNull() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin/fromLoadJava/notNull"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -2167,7 +2139,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
         @TestMetadata("compiler/testData/loadJava/compiledKotlin/fun")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Fun extends AbstractJvmRuntimeDescriptorLoaderTest {
             public void testAllFilesPresentInFun() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin/fun"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -2241,7 +2212,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
             @TestMetadata("compiler/testData/loadJava/compiledKotlin/fun/genericWithTypeVariables")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class GenericWithTypeVariables extends AbstractJvmRuntimeDescriptorLoaderTest {
                 public void testAllFilesPresentInGenericWithTypeVariables() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin/fun/genericWithTypeVariables"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -2310,7 +2280,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
             @TestMetadata("compiler/testData/loadJava/compiledKotlin/fun/genericWithoutTypeVariables")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class GenericWithoutTypeVariables extends AbstractJvmRuntimeDescriptorLoaderTest {
                 public void testAllFilesPresentInGenericWithoutTypeVariables() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin/fun/genericWithoutTypeVariables"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -2349,7 +2318,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
             @TestMetadata("compiler/testData/loadJava/compiledKotlin/fun/nonGeneric")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class NonGeneric extends AbstractJvmRuntimeDescriptorLoaderTest {
                 public void testAllFilesPresentInNonGeneric() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin/fun/nonGeneric"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -2454,7 +2422,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
             @TestMetadata("compiler/testData/loadJava/compiledKotlin/fun/vararg")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Vararg extends AbstractJvmRuntimeDescriptorLoaderTest {
                 public void testAllFilesPresentInVararg() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin/fun/vararg"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -2482,7 +2449,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
         @TestMetadata("compiler/testData/loadJava/compiledKotlin/inline")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Inline extends AbstractJvmRuntimeDescriptorLoaderTest {
             public void testAllFilesPresentInInline() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin/inline"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -2497,7 +2463,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
         @TestMetadata("compiler/testData/loadJava/compiledKotlin/memberOrder")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class MemberOrder extends AbstractJvmRuntimeDescriptorLoaderTest {
             public void testAllFilesPresentInMemberOrder() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin/memberOrder"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -2542,7 +2507,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
         @TestMetadata("compiler/testData/loadJava/compiledKotlin/nested")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Nested extends AbstractJvmRuntimeDescriptorLoaderTest {
             public void testAllFilesPresentInNested() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin/nested"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -2569,7 +2533,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
         @TestMetadata("compiler/testData/loadJava/compiledKotlin/platformTypes")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class PlatformTypes extends AbstractJvmRuntimeDescriptorLoaderTest {
             public void testAllFilesPresentInPlatformTypes() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin/platformTypes"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -2590,7 +2553,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
         @TestMetadata("compiler/testData/loadJava/compiledKotlin/prop")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Prop extends AbstractJvmRuntimeDescriptorLoaderTest {
             public void testAllFilesPresentInProp() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin/prop"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -2796,7 +2758,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
             @TestMetadata("compiler/testData/loadJava/compiledKotlin/prop/defaultAccessors")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class DefaultAccessors extends AbstractJvmRuntimeDescriptorLoaderTest {
                 public void testAllFilesPresentInDefaultAccessors() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin/prop/defaultAccessors"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -2866,7 +2827,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
         @TestMetadata("compiler/testData/loadJava/compiledKotlin/type")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Type extends AbstractJvmRuntimeDescriptorLoaderTest {
             public void testAllFilesPresentInType() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin/type"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -3061,7 +3021,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
         @TestMetadata("compiler/testData/loadJava/compiledKotlin/typealias")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Typealias extends AbstractJvmRuntimeDescriptorLoaderTest {
             public void testAllFilesPresentInTypealias() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin/typealias"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -3088,7 +3047,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
         @TestMetadata("compiler/testData/loadJava/compiledKotlin/visibility")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Visibility extends AbstractJvmRuntimeDescriptorLoaderTest {
             public void testAllFilesPresentInVisibility() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledKotlin/visibility"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -3164,7 +3122,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
     @TestMetadata("compiler/testData/loadJava/compiledJava")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class CompiledJava extends AbstractJvmRuntimeDescriptorLoaderTest {
         public void testAllFilesPresentInCompiledJava() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledJava"), Pattern.compile("^(.+)\\.java$"), TargetBackend.ANY, true, "sam", "kotlinSignature/propagation");
@@ -3442,7 +3399,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
         @TestMetadata("compiler/testData/loadJava/compiledJava/annotations")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Annotations extends AbstractJvmRuntimeDescriptorLoaderTest {
             public void testAllFilesPresentInAnnotations() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledJava/annotations"), Pattern.compile("^(.+)\\.java$"), TargetBackend.ANY, true);
@@ -3637,7 +3593,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
         @TestMetadata("compiler/testData/loadJava/compiledJava/constructor")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Constructor extends AbstractJvmRuntimeDescriptorLoaderTest {
             public void testAllFilesPresentInConstructor() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledJava/constructor"), Pattern.compile("^(.+)\\.java$"), TargetBackend.ANY, true);
@@ -3664,7 +3619,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
         @TestMetadata("compiler/testData/loadJava/compiledJava/enum")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Enum extends AbstractJvmRuntimeDescriptorLoaderTest {
             public void testAllFilesPresentInEnum() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledJava/enum"), Pattern.compile("^(.+)\\.java$"), TargetBackend.ANY, true);
@@ -3691,7 +3645,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
         @TestMetadata("compiler/testData/loadJava/compiledJava/javaBean")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class JavaBean extends AbstractJvmRuntimeDescriptorLoaderTest {
             public void testAllFilesPresentInJavaBean() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledJava/javaBean"), Pattern.compile("^(.+)\\.java$"), TargetBackend.ANY, true);
@@ -3736,7 +3689,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
         @TestMetadata("compiler/testData/loadJava/compiledJava/kotlinSignature")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class KotlinSignature extends AbstractJvmRuntimeDescriptorLoaderTest {
             @TestMetadata("AllBoundsInWhen.java")
             public void testAllBoundsInWhen() throws Exception {
@@ -3840,7 +3792,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
             @TestMetadata("compiler/testData/loadJava/compiledJava/kotlinSignature/error")
             @TestDataPath("$PROJECT_ROOT")
-            @RunWith(JUnit3RunnerWithInners.class)
             public static class Error extends AbstractJvmRuntimeDescriptorLoaderTest {
                 public void testAllFilesPresentInError() throws Exception {
                     KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledJava/kotlinSignature/error"), Pattern.compile("^(.+)\\.java$"), TargetBackend.ANY, true);
@@ -3874,7 +3825,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
         @TestMetadata("compiler/testData/loadJava/compiledJava/library")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Library extends AbstractJvmRuntimeDescriptorLoaderTest {
             public void testAllFilesPresentInLibrary() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledJava/library"), Pattern.compile("^(.+)\\.java$"), TargetBackend.ANY, true);
@@ -3901,7 +3851,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
         @TestMetadata("compiler/testData/loadJava/compiledJava/modality")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Modality extends AbstractJvmRuntimeDescriptorLoaderTest {
             public void testAllFilesPresentInModality() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledJava/modality"), Pattern.compile("^(.+)\\.java$"), TargetBackend.ANY, true);
@@ -3916,7 +3865,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
         @TestMetadata("compiler/testData/loadJava/compiledJava/mutability")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Mutability extends AbstractJvmRuntimeDescriptorLoaderTest {
             public void testAllFilesPresentInMutability() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledJava/mutability"), Pattern.compile("^(.+)\\.java$"), TargetBackend.ANY, true);
@@ -3955,7 +3903,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
         @TestMetadata("compiler/testData/loadJava/compiledJava/notNull")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class NotNull extends AbstractJvmRuntimeDescriptorLoaderTest {
             public void testAllFilesPresentInNotNull() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledJava/notNull"), Pattern.compile("^(.+)\\.java$"), TargetBackend.ANY, true);
@@ -3994,7 +3941,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
         @TestMetadata("compiler/testData/loadJava/compiledJava/protectedPackage")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ProtectedPackage extends AbstractJvmRuntimeDescriptorLoaderTest {
             public void testAllFilesPresentInProtectedPackage() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledJava/protectedPackage"), Pattern.compile("^(.+)\\.java$"), TargetBackend.ANY, true);
@@ -4021,7 +3967,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
         @TestMetadata("compiler/testData/loadJava/compiledJava/protectedStatic")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class ProtectedStatic extends AbstractJvmRuntimeDescriptorLoaderTest {
             public void testAllFilesPresentInProtectedStatic() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledJava/protectedStatic"), Pattern.compile("^(.+)\\.java$"), TargetBackend.ANY, true);
@@ -4036,7 +3981,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
         @TestMetadata("compiler/testData/loadJava/compiledJava/rendering")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Rendering extends AbstractJvmRuntimeDescriptorLoaderTest {
             public void testAllFilesPresentInRendering() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledJava/rendering"), Pattern.compile("^(.+)\\.java$"), TargetBackend.ANY, true);
@@ -4051,7 +3995,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
         @TestMetadata("compiler/testData/loadJava/compiledJava/signaturePropagation")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class SignaturePropagation extends AbstractJvmRuntimeDescriptorLoaderTest {
             public void testAllFilesPresentInSignaturePropagation() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledJava/signaturePropagation"), Pattern.compile("^(.+)\\.java$"), TargetBackend.ANY, true);
@@ -4114,7 +4057,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
         @TestMetadata("compiler/testData/loadJava/compiledJava/static")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Static extends AbstractJvmRuntimeDescriptorLoaderTest {
             public void testAllFilesPresentInStatic() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledJava/static"), Pattern.compile("^(.+)\\.java$"), TargetBackend.ANY, true);
@@ -4189,7 +4131,6 @@ public class JvmRuntimeDescriptorLoaderTestGenerated extends AbstractJvmRuntimeD
 
         @TestMetadata("compiler/testData/loadJava/compiledJava/vararg")
         @TestDataPath("$PROJECT_ROOT")
-        @RunWith(JUnit3RunnerWithInners.class)
         public static class Vararg extends AbstractJvmRuntimeDescriptorLoaderTest {
             public void testAllFilesPresentInVararg() throws Exception {
                 KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/loadJava/compiledJava/vararg"), Pattern.compile("^(.+)\\.java$"), TargetBackend.ANY, true);

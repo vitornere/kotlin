@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
 public class SelectExpressionForDebuggerTestGenerated extends AbstractSelectExpressionForDebuggerTest {
     @TestMetadata("idea/testData/debugger/selectExpression")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class SelectExpression extends AbstractSelectExpressionForDebuggerTest {
         public void testAllFilesPresentInSelectExpression() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/debugger/selectExpression"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, false);
@@ -263,7 +262,6 @@ public class SelectExpressionForDebuggerTestGenerated extends AbstractSelectExpr
 
     @TestMetadata("idea/testData/debugger/selectExpression/disallowMethodCalls")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class DisallowMethodCalls extends AbstractSelectExpressionForDebuggerTest {
         public void testAllFilesPresentInDisallowMethodCalls() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/debugger/selectExpression/disallowMethodCalls"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);

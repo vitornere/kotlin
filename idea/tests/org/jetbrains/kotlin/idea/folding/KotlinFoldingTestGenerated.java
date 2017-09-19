@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
 public class KotlinFoldingTestGenerated extends AbstractKotlinFoldingTest {
     @TestMetadata("idea/testData/folding/noCollapse")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class NoCollapse extends AbstractKotlinFoldingTest {
         public void testAllFilesPresentInNoCollapse() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/folding/noCollapse"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
@@ -89,7 +88,6 @@ public class KotlinFoldingTestGenerated extends AbstractKotlinFoldingTest {
 
     @TestMetadata("idea/testData/folding/checkCollapse")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class CheckCollapse extends AbstractKotlinFoldingTest {
         public void testAllFilesPresentInCheckCollapse() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("idea/testData/folding/checkCollapse"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);

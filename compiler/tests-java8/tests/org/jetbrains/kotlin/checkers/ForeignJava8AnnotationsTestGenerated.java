@@ -56,7 +56,6 @@ public class ForeignJava8AnnotationsTestGenerated extends AbstractForeignJava8An
 
     @TestMetadata("compiler/testData/foreignAnnotationsJava8/tests/typeEnhancement")
     @TestDataPath("$PROJECT_ROOT")
-    @RunWith(JUnit3RunnerWithInners.class)
     public static class TypeEnhancement extends AbstractForeignJava8AnnotationsTest {
         public void testAllFilesPresentInTypeEnhancement() throws Exception {
             KotlinTestUtils.assertAllTestsPresentByMetadata(this.getClass(), new File("compiler/testData/foreignAnnotationsJava8/tests/typeEnhancement"), Pattern.compile("^(.+)\\.kt$"), TargetBackend.ANY, true);
