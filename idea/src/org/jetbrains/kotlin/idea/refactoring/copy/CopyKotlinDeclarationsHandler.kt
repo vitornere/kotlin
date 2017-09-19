@@ -39,6 +39,8 @@ import com.intellij.util.IncorrectOperationException
 import com.intellij.util.containers.MultiMap
 import org.jetbrains.annotations.TestOnly
 import org.jetbrains.kotlin.idea.codeInsight.shorten.performDelayedRefactoringRequests
+import org.jetbrains.kotlin.idea.core.getPackage
+import org.jetbrains.kotlin.idea.core.packageMatchesDirectory
 import org.jetbrains.kotlin.idea.refactoring.checkConflictsInteractively
 import org.jetbrains.kotlin.idea.refactoring.createKotlinFile
 import org.jetbrains.kotlin.idea.refactoring.move.*
@@ -63,8 +65,11 @@ class CopyKotlinDeclarationsHandler : CopyHandlerDelegateBase() {
         @set:TestOnly
         var Project.newName: String? by UserDataProperty(Key.create("NEW_NAME"))
 
+        private fun PsiElement.getCopyableElement() =
+                parentsWithSelf.firstOrNull { it is KtFile || (it is KtNamedDeclaration && it.parent is KtFile) } as? KtElement
+
         private fun PsiElement.getElementsToCopy(): List<KtElement> {
-            val declarationOrFile = parentsWithSelf.firstOrNull { it is KtFile || (it is KtNamedDeclaration && it.parent is KtFile) }
+            val declarationOrFile = getCopyableElement()
             return when (declarationOrFile) {
                 is KtFile -> declarationOrFile.declarations.filterIsInstance<KtNamedDeclaration>().ifEmpty { listOf(declarationOrFile) }
                 is KtNamedDeclaration -> listOf(declarationOrFile)
@@ -174,7 +179,7 @@ class CopyKotlinDeclarationsHandler : CopyHandlerDelegateBase() {
             return copyFilesHandler.doCopy(sourceFiles, defaultTargetDirectory)
         }
 
-        val elementsToCopy = elements.flatMap { it.getElementsToCopy() }
+        val elementsToCopy = elements.mapNotNull { it.getCopyableElement() }
         if (elementsToCopy.isEmpty()) return
 
         val singleElementToCopy = elementsToCopy.singleOrNull()
@@ -248,6 +253,9 @@ class CopyKotlinDeclarationsHandler : CopyHandlerDelegateBase() {
                     if (singleElementToCopy is KtFile) {
                         targetFile = runWriteAction {
                             val copiedFile = targetDirectory.copyFileFrom(targetFileName, singleElementToCopy) as KtFile
+                            if (singleElementToCopy.packageMatchesDirectory()) {
+                                targetDirectory.getPackage()?.qualifiedName?.let { copiedFile.packageFqName = FqName(it) }
+                            }
                             performDelayedRefactoringRequests(project)
                             copiedFile
                         }
