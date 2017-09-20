@@ -38,32 +38,32 @@ public abstract class AbstractDataFlowTest extends AbstractPseudocodeTest {
             @NotNull StringBuilder out,
             @NotNull BindingContext bindingContext
     ) {
-        PseudocodeVariablesData pseudocodeVariablesData = new PseudocodeVariablesData(pseudocode.getRootPseudocode(), bindingContext);
-        Map<Instruction, Edges<InitControlFlowInfo>> variableInitializers =
-                pseudocodeVariablesData.getVariableInitializers();
-        Map<Instruction, Edges<UseControlFlowInfo>> useStatusData =
-                pseudocodeVariablesData.getVariableUseStatusData();
-        String initPrefix = "    INIT:";
-        String usePrefix = "    USE:";
-        int initializersColumnWidth = countDataColumnWidth(initPrefix, pseudocode.getInstructionsIncludingDeadCode(), variableInitializers);
-
-        dumpInstructions(pseudocode, out, (instruction, next, prev) -> {
-            StringBuilder result = new StringBuilder();
-            Edges<InitControlFlowInfo> initializersEdges = variableInitializers.get(instruction);
-            Edges<InitControlFlowInfo> previousInitializersEdges = variableInitializers.get(prev);
-            String initializersData = "";
-            if (initializersEdges != null && !initializersEdges.equals(previousInitializersEdges)) {
-                initializersData = dumpEdgesData(initPrefix, initializersEdges);
-            }
-            result.append(String.format("%1$-" + initializersColumnWidth + "s", initializersData));
-
-            Edges<UseControlFlowInfo> useStatusEdges = useStatusData.get(instruction);
-            Edges<UseControlFlowInfo> nextUseStatusEdges = useStatusData.get(next);
-            if (useStatusEdges != null && !useStatusEdges.equals(nextUseStatusEdges)) {
-                result.append(dumpEdgesData(usePrefix, useStatusEdges));
-            }
-            return result.toString();
-        });
+        //PseudocodeVariablesData pseudocodeVariablesData = new PseudocodeVariablesData(pseudocode.getRootPseudocode(), bindingContext);
+        //Map<Instruction, Edges<InitControlFlowInfo>> variableInitializers =
+        //        pseudocodeVariablesData.getVariableInitializers();
+        //Map<Instruction, Edges<UseControlFlowInfo>> useStatusData =
+        //        pseudocodeVariablesData.getVariableUseStatusData();
+        //String initPrefix = "    INIT:";
+        //String usePrefix = "    USE:";
+        //int initializersColumnWidth = countDataColumnWidth(initPrefix, pseudocode.getInstructionsIncludingDeadCode(), variableInitializers);
+        //
+        //dumpInstructions(pseudocode, out, (instruction, next, prev) -> {
+        //    StringBuilder result = new StringBuilder();
+        //    Edges<InitControlFlowInfo> initializersEdges = variableInitializers.get(instruction);
+        //    Edges<InitControlFlowInfo> previousInitializersEdges = variableInitializers.get(prev);
+        //    String initializersData = "";
+        //    if (initializersEdges != null && !initializersEdges.equals(previousInitializersEdges)) {
+        //        initializersData = dumpEdgesData(initPrefix, initializersEdges);
+        //    }
+        //    result.append(String.format("%1$-" + initializersColumnWidth + "s", initializersData));
+        //
+        //    Edges<UseControlFlowInfo> useStatusEdges = useStatusData.get(instruction);
+        //    Edges<UseControlFlowInfo> nextUseStatusEdges = useStatusData.get(next);
+        //    if (useStatusEdges != null && !useStatusEdges.equals(nextUseStatusEdges)) {
+        //        result.append(dumpEdgesData(usePrefix, useStatusEdges));
+        //    }
+        //    return result.toString();
+        //});
     }
 
     private static int countDataColumnWidth(

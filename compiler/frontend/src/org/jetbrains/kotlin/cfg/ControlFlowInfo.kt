@@ -41,6 +41,8 @@ internal constructor(
         return copy(map.put(key, value))
     }
 
+    fun getOrNull(variableDescriptor: VariableDescriptor): D? = this[variableDescriptor].getOrElse(null as D?)
+
     fun retainAll(predicate: (VariableDescriptor) -> Boolean): S = copy(map.removeAll(map.keySet().filterNot(predicate)))
 
     override fun equals(other: Any?) = map == (other as? ControlFlowInfo<*, *>)?.map
@@ -53,16 +55,24 @@ internal constructor(
 operator fun <T> Tuple2<T, *>.component1(): T = _1()
 operator fun <T> Tuple2<*, T>.component2(): T = _2()
 
-fun <K, V> ImmutableMap<K, V>.getOrNull(k: K): V? = this[k].getOrElse(null as V?)
+interface ReadOnlyControlFlowInfo<out D : Any> {
+    fun getOrNull(variableDescriptor: VariableDescriptor): D?
+}
+
+interface ReadOnlyInitControlFlowInfo : ReadOnlyControlFlowInfo<VariableControlFlowState> {
+    fun checkDefiniteInitializationInWhen(merge: ReadOnlyInitControlFlowInfo): Boolean
+}
+
+typealias ReadOnlyUseControlFlowInfo = ReadOnlyControlFlowInfo<VariableUseState>
 
 class InitControlFlowInfo(map: ImmutableMap<VariableDescriptor, VariableControlFlowState> = ImmutableHashMap.empty()) :
-        ControlFlowInfo<InitControlFlowInfo, VariableControlFlowState>(map) {
+        ControlFlowInfo<InitControlFlowInfo, VariableControlFlowState>(map), ReadOnlyInitControlFlowInfo {
     override fun copy(newMap: ImmutableMap<VariableDescriptor, VariableControlFlowState>) = InitControlFlowInfo(newMap)
 
     // this = output of EXHAUSTIVE_WHEN_ELSE instruction
     // merge = input of MergeInstruction
     // returns true if definite initialization in when happens here
-    fun checkDefiniteInitializationInWhen(merge: InitControlFlowInfo): Boolean {
+    override fun checkDefiniteInitializationInWhen(merge: ReadOnlyInitControlFlowInfo): Boolean {
         for ((key, value) in iterator()) {
             if (value.initState == InitState.INITIALIZED_EXHAUSTIVELY &&
                 merge.getOrNull(key)?.initState == InitState.INITIALIZED) {
@@ -74,7 +84,7 @@ class InitControlFlowInfo(map: ImmutableMap<VariableDescriptor, VariableControlF
 }
 
 class UseControlFlowInfo(map: ImmutableMap<VariableDescriptor, VariableUseState> = ImmutableHashMap.empty()) :
-        ControlFlowInfo<UseControlFlowInfo, VariableUseState>(map) {
+        ControlFlowInfo<UseControlFlowInfo, VariableUseState>(map), ReadOnlyUseControlFlowInfo {
     override fun copy(newMap: ImmutableMap<VariableDescriptor, VariableUseState>) = UseControlFlowInfo(newMap)
 }
 
