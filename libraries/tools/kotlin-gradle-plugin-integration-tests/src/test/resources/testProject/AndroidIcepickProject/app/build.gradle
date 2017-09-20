@@ -36,7 +36,7 @@ repositories {
     maven {
         url "https://clojars.org/repo/"
     }
-    if (System.getProperty('maven.repo.local') == null) { mavenLocal() } else { maven { url 'file://' + new File(System.getProperty('maven.repo.local')).absolutePath } }
+    mavenLocal()
     maven { url 'https://maven.google.com' }
 }
 
