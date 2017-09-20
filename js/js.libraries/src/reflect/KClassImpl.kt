@@ -18,16 +18,12 @@ package kotlin.reflect.js.internal
 
 import kotlin.reflect.*
 
-internal class KClassImpl<T : Any>(
-        internal val jClass: JsClass<T>
+internal abstract class KClassImpl<T : Any>(
+        internal val jClass: JsClass<T>,
+        private val givenSimpleName: String? = null
 ) : KClass<T> {
-
-    private val metadata = jClass.asDynamic().`$metadata$`
     // TODO: use FQN
-    private val hashCode = simpleName?.hashCode() ?: 0
-
-    override val simpleName: String?
-        get() = metadata?.simpleName
+    private val hashCodeValue = simpleName?.hashCode() ?: 0
 
     override val annotations: List<Annotation>
         get() = TODO()
@@ -67,15 +63,38 @@ internal class KClassImpl<T : Any>(
     }
 
     override fun hashCode(): Int {
-        return hashCode
-    }
-
-    override fun isInstance(value: Any?): Boolean {
-        return js("Kotlin").isType(value, jClass)
+        return hashCodeValue
     }
 
     override fun toString(): String {
         // TODO: use FQN
         return "class $simpleName"
+    }
+}
+
+internal class SimpleKClassImpl<T : Any>(jClass: JsClass<T>) : KClassImpl<T>(jClass) {
+    private val metadata = jClass.asDynamic().`$metadata$`
+
+    override val simpleName: String? = metadata?.simpleName
+
+    override fun isInstance(value: Any?): Boolean {
+        return js("Kotlin").isType(value, jClass)
+    }
+}
+
+internal class PrimitiveKClassImpl<T : Any>(
+        jClass: JsClass<T>,
+        private val givenSimpleName: String,
+        private val isInstanceFunction: (Any?) -> Boolean
+) : KClassImpl<T>(jClass) {
+    override fun equals(other: Any?): Boolean {
+        if (other !is PrimitiveKClassImpl<*>) return false
+        return super.equals(other) && givenSimpleName == other.givenSimpleName
+    }
+
+    override val simpleName: String? = givenSimpleName
+
+    override fun isInstance(value: Any?): Boolean {
+        return isInstanceFunction(value)
     }
 }
