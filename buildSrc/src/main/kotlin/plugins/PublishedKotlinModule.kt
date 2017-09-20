@@ -4,6 +4,7 @@ import org.codehaus.groovy.runtime.InvokerHelper
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.api.artifacts.Dependency
+import org.gradle.api.artifacts.maven.MavenDeployment
 import org.gradle.api.artifacts.maven.MavenResolver
 
 import org.gradle.api.plugins.MavenRepositoryHandlerConvention
@@ -104,6 +105,12 @@ open class PublishedKotlinModule : Plugin<Project> {
 
                         mavenDeployer {
                             withGroovyBuilder {
+                                "beforeDeployment" {
+                                    val signing = project.the<SigningExtension>()
+                                    if (signing.isRequired)
+                                        signing.signPom(this as MavenDeployment)
+                                }
+
                                 "repository"("url" to repoUrl)!!.also { repository = it as MavenRemoteRepository }.withGroovyBuilder {
                                     if (username != null && password != null) {
                                         "authentication"("userName" to username, "password" to password)
