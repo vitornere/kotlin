@@ -88,6 +88,10 @@ fun Project.codegenTest(taskName: String, body: Test.() -> Unit): Test = project
     environment("TEST_SERVER_CLASSES_DIRS", project(":compiler:tests-common-jvm6").the<JavaPluginConvention>().sourceSets.getByName("main").output.classesDirs.asPath)
     filter.includeTestsMatching("org.jetbrains.kotlin.codegen.CodegenJdkCommonTestSuite*")
     body()
+}.also {
+    task(taskName.replace(Regex("-[a-z]"), { it.value.takeLast(1).toUpperCase() })) {
+        dependsOn(it)
+    }
 }
 
 codegenTest("codegen-target6-jvm6-test") {
